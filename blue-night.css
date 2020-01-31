@@ -696,8 +696,8 @@ img[title="Time"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/08f951ad9ae9389911dca8c6a68fe9d41aa2599a/time.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/time.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -709,8 +709,8 @@ img[title="Snatches"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/505b149d98276f13b9124ef4317bacae9a1ca720/snatched.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/snatched.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -722,8 +722,8 @@ img[title="Leechers"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/f3b3010630b15510019a77138e2170190303f3ea/arrow-down-white.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-white.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -735,8 +735,8 @@ img[title="Seeders"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/8a5361dd7df013e8d8ebad7f58f2f8006126393c/arrow-up-white.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -790,7 +790,7 @@ img[title="Seeders"] {
 	position: absolute;
 	right: 3px;
 	top: 3px;
-	background-image: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/f7047f97645faaab5bbabc52fb8da26c50099940/seen.svg");
+	background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 20px;
@@ -874,13 +874,13 @@ img[title="Seeders"] {
 }
 
 .torrent_table img[src="static/common/check.png"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/9800e21756efa91c97e0bc863c6c4fbaabf3ba55/badge-checker.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg") no-repeat
+		center center;
 }
 
 .torrent_table img[src="static/common/x.png"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/a66611995a4f8bd00f6272cda7bac7a4ba9705ea/not-approved.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/not-approved.svg") no-repeat
+		center center;
 }
 
 img[src="static/common/Poppy1.png"] {
@@ -890,8 +890,8 @@ img[src="static/common/Poppy1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 70px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/c0d9e143a7e1b5173502622ab0d4b59d373c9bfb/poppy.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/poppy.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 	margin-right: 10px;
@@ -910,29 +910,28 @@ img[src="static/common/Poppy1.png"] {
 }
 
 #movie-ratings-table #imdb-title-link img {
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/ca768efb7e088822364331a8dacd013af99589a4/imdb-logo.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg") no-repeat center
+		center;
 	width: 64px !important;
 	height: 64px !important;
 }
 
 #movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/ca768efb7e088822364331a8dacd013af99589a4/metacritic-logo.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg") no-repeat
+		center center;
 	width: 48px !important;
 	height: 48px !important;
 }
 
 #movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/1aa24b3b11117a178ba3b62a848a68d5b0ab4f95/popcorn-colored.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
+		center center;
 	width: 48px !important;
 	height: 48px !important;
 }
 
 #movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/87fd95c6bd5c5be2accc9b43f3fda7abf457e27b/rt.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg") no-repeat center center;
 }
 
 #movie-ratings-table #imdb-title-link img,
@@ -956,8 +955,8 @@ img[src="static/common/Poppy1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 20px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/1aa24b3b11117a178ba3b62a848a68d5b0ab4f95/popcorn-colored.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1043,103 +1042,89 @@ img[src="static/common/Poppy1.png"] {
 }
 
 .js-bbcode-toolbar__bold-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/bold.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bold.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__italic-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/italic.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/italic.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__underline-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/underline.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/underline.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__strikethrough-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/strikethrough.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/strikethrough.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__link-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/link.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/link.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__image-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/image.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/image.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__hide-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/hide.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/hide.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__spoiler-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/spoiler.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/spoiler.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__quote-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/quote.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/quote.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__size-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/font-size.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/font-size.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__color-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/color.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/color.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__youtube-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/vid-ut.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/vid-ut.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__mediainfo-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/mediainfo.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/mediainfo.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__align-center-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/align.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__align-right-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/align-right.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align-right.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__code-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/code.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/code.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__list-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/bullet-list.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bullet-list.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__emoticon-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/emojis.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/emojis.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__comparison-button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/compare.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/compare.svg") no-repeat;
 }
 
 a[title="BBCode help"] .bbcode-toolbar__button {
-	background: url("https://gistcdn.githack.com/surrealfuse/0907fa75da2497f9a61eaab014b8ad2b/raw/6f12bbd87fd604cfd64d8834e6bf274769137b0e/question.svg")
-		no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/question.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__bold-button,
@@ -1289,173 +1274,182 @@ img[src="static/common/smileys/sorry.gif"] {
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
 img[src="static/common/smileys/smile.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/9c2535c6acebb162e14f74d4dfb6ab9816a8630e/smile.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
 img[src="static/common/smileys/sad.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/81e25bac9b186412d6275709057ab5078d2a437b/sad.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
 img[src="static/common/smileys/biggrin.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/big-grin.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
 img[src="static/common/smileys/ohshit.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/cd18210a068b987f074d94574f376b8f8e99c093/oh-shit.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
 img[src="static/common/smileys/tongue.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/2ab5a67f5ca301cc6f7beae4c4b88fbbf4d0ebe8/tongue.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
 img[src="static/common/smileys/blank.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/blank-straight-face.svg") no-repeat
-		center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg")
+		no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],
 img[src="static/common/smileys/angry.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/angry.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
 img[src="static/common/smileys/blush.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/blush.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
 img[src="static/common/smileys/cool.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/cool.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
 img[src="static/common/smileys/creepy.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/creepy.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
 img[src="static/common/smileys/crying.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/crying.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
 img[src="static/common/smileys/eyesright.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/eyes-right.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg") no-repeat
+		center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
 img[src="static/common/smileys/frown.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/frown.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
 img[src="static/common/smileys/hmm.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/93c35c14db38583238f760d3f1aedf3a3ab5c0b0/hmm.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
 img[src="static/common/smileys/laughing.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/4609db354800db78b3b9c979c7d505b2186aa28b/laughing.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
 img[src="static/common/smileys/ninja.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/91a10c70fefafe5681bad19a661c1e96d746dd6b/ninja.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
 img[src="static/common/smileys/no.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/0a571272f4dab8a69c725012def1d470644501a4/no.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
 img[src="static/common/smileys/nod.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/40e132475b05d7c148535280df73f71a26a105e6/nod.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
 img[src="static/common/smileys/ohnoes.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/54d8c4b7d3196ec784481a7c38761a465c53f2ef/oh-noes.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
 img[src="static/common/smileys/omg.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/62881eb8531c7f3925f3c2761ac176d6fcaf26f0/omg.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
 img[src="static/common/smileys/shifty.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/98c9c103cd293af366d51dc7c0de5054b5c0159d/shifty.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
 img[src="static/common/smileys/sick.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/464291d87e369b1b720d2d00a463a8c18a89d28a/sick.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
 img[src="static/common/smileys/wink.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/863df1aa7477d891234f93b0be22f009bc3a33dd/wink.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
 img[src="static/common/smileys/worried.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/1ea2455a0c0776b0277f143c69ebaa92d1afcc8d/worried.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
 img[src="static/common/smileys/wtf.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/cf8d1d87b14673a99e91740813dda038e3f96525/wtf.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
 img[src="static/common/smileys/wub.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/4c214dbc0af4f2a1fbe53afff8800fbec36cdb75/wub.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
 img[src="static/common/smileys/paddle.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/84df72210d8298d0e7bf9b364ae148a55871099b/paddle-alt.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg") no-repeat
+		center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
 img[src="static/common/smileys/wave.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/233e96fa819f70c1472dbdc29a86ca0fa7eb9a05/wave-hug.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
 img[src="static/common/smileys/heart.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/heart.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
 img[src="static/common/smileys/thanks.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/96a6deac1ec15c52c16702d38ade4d1496a088a2/thanks.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg") no-repeat center
+		center;
 }
 
 img[src="static/common/smileys/thanks.gif"] {
@@ -1469,13 +1463,14 @@ img[src="static/common/smileys/thanks.gif"] {
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
 img[src="static/common/smileys/crom.gif"] {
-	background: url("https://rawcdn.githack.com/datFunc/ptpStuff/master/emojis/crom-thanks.svg") no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg") no-repeat
+		center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
 img[src="static/common/smileys/sorry.gif"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/e707816b5a3a6e5ffd6b8a2146b4461c/raw/67d806f194732ae5cf8f075d37c69afc9fc3069c/sorry.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg") no-repeat center
+		center;
 }
 
 .bonus-point-history--received {
@@ -1585,7 +1580,7 @@ img[src="static/common/smileys/sorry.gif"] {
 	position: absolute;
 	right: 3px;
 	top: 3px;
-	background-image: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/f7047f97645faaab5bbabc52fb8da26c50099940/seen.svg");
+	background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 20px;
@@ -1717,8 +1712,8 @@ img[src="static/common/smileys/sorry.gif"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/08f951ad9ae9389911dca8c6a68fe9d41aa2599a/settings.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/settings.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 	-webkit-transition: -webkit-transform 2s ease-in-out;
@@ -1800,8 +1795,8 @@ img[src="static/common/symbols/donor.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/8a75af9177d71c8f63ef3382f50e799a476aaf79/donor.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/donor.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1813,8 +1808,8 @@ img[src="static/common/symbols/miner.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/0e09cb884319868db1c6e4766af43431994cc52f/miner-alt.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/miner-alt.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1826,8 +1821,8 @@ img[src="static/common/symbols/filmclub.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 20px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/a52d54171593ff073fb8d7e5c9c42d30029a753e/film-club-icon.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/film-club-icon.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1839,8 +1834,8 @@ img[src="static/common/symbols/encoder.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/6eb57b2bc54cb154f7538a20f75a107976fa9381/encoder.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/encoder.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1853,7 +1848,7 @@ img[src="static/common/quality.gif"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/88203a8c9e9dac6562d49e017998d90a430c42d4/gold-encode-checker.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -1866,8 +1861,8 @@ img[src="static/common/symbols/badge_checker.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/9800e21756efa91c97e0bc863c6c4fbaabf3ba55/badge-checker.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1879,8 +1874,8 @@ img[src="static/common/symbols/badge_gpchecker.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/1261d539ef94ded95ca8b4f194e2f6a802d02691/badge_gpchecker.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge_gpchecker.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1893,8 +1888,8 @@ img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 11px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/9d06531d2e749659affcde815564e58b1dfbfed4/banned.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1906,8 +1901,8 @@ img[src="static/common/symbols/Rank1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/10c4081fe713583f64c7e98b35743071ab1e9464/rank-1.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-1.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1919,8 +1914,8 @@ img[src="static/common/symbols/Rank2.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/67c1d1848eeb7714ae8dbdc9f09f6245af6ff9e6/rank-2.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-2.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1932,8 +1927,8 @@ img[src="static/common/symbols/Rank3.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/d33aef5fe890b9808ac936837f1109026716580c/rank-3.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-3.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1945,8 +1940,8 @@ img[src="static/common/symbols/Rank4.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/8aced97143c4cc566c9df52f1910dd27bb6775f6/rank-4.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-4.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1958,8 +1953,8 @@ img[src="static/common/symbols/Rank5.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/9e1273b80e6fc02891936788868f489c2e46ad0f/rank-5.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-5.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1971,8 +1966,8 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/88203a8c9e9dac6562d49e017998d90a430c42d4/rank-6.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-6.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -2027,8 +2022,8 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/30eb2fb12e317c608a198021d3e89ede41513a9d/post-topic-read.svg")
-		no-repeat left center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg") no-repeat
+		left center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -2040,7 +2035,7 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/0bc20037ae2194b965f6829eb6902f1079392a2b/post-topic-unread.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg")
 		no-repeat left center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -2053,7 +2048,7 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/c51fd137e3f8304dfe7c02b986442998f29e28fe/topic-locked-read.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
 		no-repeat left center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -2066,7 +2061,7 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 1rem;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/bad2b0054a1bd3d8df77af7d45976164a96c2ee5/topic-sticky-read.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -2075,7 +2070,7 @@ img[src="static/common/symbols/Rank6.png"] {
 .forum-topic--is-read-locked {
 	width: 30px;
 	height: 30px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/c51fd137e3f8304dfe7c02b986442998f29e28fe/topic-locked-read.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
 		no-repeat left center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -2088,7 +2083,7 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/389bbc7113196df95709be3bd596676fca85e07a/topic-locked-unread.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -2101,7 +2096,7 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/fc1dfd040bf2eb024805eef4efb87fdd47c59cb3/topic-sticky-unread.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -2110,7 +2105,7 @@ img[src="static/common/symbols/Rank6.png"] {
 .forum-topic--is-unread-locked {
 	width: 32px;
 	height: 32px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/389bbc7113196df95709be3bd596676fca85e07a/topic-locked-unread.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
 		no-repeat center center;
 	background-size: contain;
 	-webkit-background-size: contain;
@@ -2128,8 +2123,8 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 15px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/f205147e33eb239781d6cf904355bf55e414896f/arrow-right.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-right.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 	margin-left: 5px;
@@ -2150,8 +2145,8 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/aa545b7eeeedce7ea9e87dc72989efda024a7ce4/view-post.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/view-post.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -2293,7 +2288,7 @@ img[src="static/common/symbols/Rank6.png"] {
 	position: absolute;
 	right: 3px;
 	top: 3px;
-	background-image: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/f7047f97645faaab5bbabc52fb8da26c50099940/seen.svg");
+	background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 20px;
@@ -2371,8 +2366,8 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 42px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/ca768efb7e088822364331a8dacd013af99589a4/imdb-logo.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -2389,15 +2384,14 @@ img[src="static/common/symbols/Rank6.png"] {
 }
 
 .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/ca768efb7e088822364331a8dacd013af99589a4/metacritic-logo.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 
 .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"] {
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/87fd95c6bd5c5be2accc9b43f3fda7abf457e27b/rt.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg") no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -2409,8 +2403,8 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 32px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/1aa24b3b11117a178ba3b62a848a68d5b0ab4f95/popcorn-colored.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -3656,7 +3650,7 @@ html.busy-cursor * {
 	position: absolute;
 	right: 3px;
 	top: 3px;
-	background-image: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/f7047f97645faaab5bbabc52fb8da26c50099940/seen.svg");
+	background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 20px;
@@ -4180,8 +4174,8 @@ img[src="static/common/stars/AwardRating.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/1aa24b3b11117a178ba3b62a848a68d5b0ab4f95/popcorn-colored.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4193,7 +4187,7 @@ img[src="static/common/stars/NoAwardRating.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/c37e0360daec945f19d20c436f8f21389ed48762/popcorn-uncolored.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-uncolored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -4206,8 +4200,8 @@ img[src="static/common/stars/AwardUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/dc4e12c929460df1c07b5bffce473fbbaf834183/arrow-up.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4219,8 +4213,8 @@ img[src="static/common/stars/AwardMetaUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/14113b72a234e989e86a53031d9ae1bddad675e8/arrow-up-met.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-met.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4232,7 +4226,7 @@ img[src="static/common/stars/NoAwardUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/6cded42f03ec1cb560baac3caffeb10b35488a1b/arrow-up-uncolored.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-uncolored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -4245,8 +4239,8 @@ img[src="static/common/stars/AwardDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/aeaf40cf9bf44d7969362d22cb65a2cc399866d2/arrow-down.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4258,8 +4252,8 @@ img[src="static/common/stars/AwardMetaDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/616f486f1310ab30f2e5f688e663ce668d3cae03/arrow-down-met.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-met.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4271,7 +4265,7 @@ img[src="static/common/stars/NoAwardDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/6cded42f03ec1cb560baac3caffeb10b35488a1b/arrow-down-uncolored.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-uncolored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -4284,8 +4278,8 @@ img[src="static/common/stars/AwardData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/becbd1fb62d65c6c5f4ff873829b73566a0e6f83/two-way-arrows.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4297,7 +4291,7 @@ img[src="static/common/stars/AwardMetaData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/f352c5f91333ccda0f478ec50800ab144c10d3ab/two-way-arrows-met.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-met.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -4310,7 +4304,7 @@ img[src="static/common/stars/NoAwardData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/17832faa0b10986aedfd046669bf632619db2c79/two-way-arrows-uncolored.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-uncolored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -4323,7 +4317,7 @@ img[src="static/common/stars/AwardRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/2d9232085d5bacf1dd7fd936535bd6dcf393f984/requests-meta-colored.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-colored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -4336,7 +4330,7 @@ img[src="static/common/stars/AwardMetaRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/46f6a185ecbda53ea182d3b0dbaee2a75e569523/requests-meta-met.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-met.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -4349,7 +4343,7 @@ img[src="static/common/stars/NoAwardRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/2d9232085d5bacf1dd7fd936535bd6dcf393f984/requests-meta-uncolored.svg")
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-uncolored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	background-size: contain;
@@ -4362,8 +4356,8 @@ img[src="static/common/stars/AwardChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/11a1b451a68116e30658cc601892fde729e95743/chat-colored.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-colored.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4375,8 +4369,8 @@ img[src="static/common/stars/AwardMetaChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/5d86295254bc0d57af94904f9cf5914b3298ba8d/chat-met.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-met.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4388,8 +4382,8 @@ img[src="static/common/stars/NoAwardChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/11a1b451a68116e30658cc601892fde729e95743/chat-uncolored.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-uncolored.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4401,8 +4395,8 @@ img[src="static/common/stars/NoAwardMeta Awards.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/fa1075bdeff04a25b5467bd7f81be4659c38038a/star-uncolored.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-uncolored.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -4414,8 +4408,8 @@ img[src="static/common/stars/AwardMetaMeta Awards1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gistcdn.githack.com/surrealfuse/a697e50d46825d1b20ee7782a77213d3/raw/9eb5ac025ab5903dab439b351e8e79671f328f50/star-colored.svg")
-		no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-colored.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
