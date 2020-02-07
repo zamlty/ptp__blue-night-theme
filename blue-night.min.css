@@ -1,1 +1,3888 @@
-/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden]{display:none}template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.75em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:none}svg:not(:root){overflow:hidden}figure{margin:1.5em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}input[type=checkbox],input[type=radio],select{background:#191d2a;border:1px solid #3e414c;color:#fff}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;font-family:"Open Sans",Tahoma,Helvetica,sans-serif;font-weight:700;background:#586279;color:#fff;border:none;padding:.4rem 1rem;margin:.1rem;-webkit-border-radius:5px;border-radius:5px;line-height:1;-webkit-transition:all .3s;-o-transition:all .3s;-moz-transition:all .3s;transition:all .3s}button,html input[type=button]:hover,input[type=reset]:hover,input[type=submit]:hover{background:#4281da;-webkit-box-shadow:0 0 40px #4281da;box-shadow:0 0 40px #4281da}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:none;padding:0}input,textarea{border:1px solid transparent;-webkit-border-radius:5px;border-radius:5px;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}input{line-height:normal;background:#171d2a;color:#fff;font-size:.75rem;padding-left:.4rem;height:28px}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0;margin:-7px 2px;vertical-align:inherit;background:red;vertical-align:text-top}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}input:focus,textarea:focus{outline:0;-webkit-box-shadow:0 0 40px #4281da;box-shadow:0 0 40px #4281da;border:1px solid #3463a7}input[type=submit]:focus{border:none}input[value="Search log"]{margin-top:.5rem}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:none;padding:0}textarea{overflow:auto;background:#191d2a;border:none;color:#fff;padding:.8rem}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}blockquote{margin:10px;padding:10px;border:1px dashed #4e556b;-webkit-border-radius:5px;border-radius:5px;background-color:#181c27}body{color:#fff;background-color:#191d2a;font-family:"Open Sans",Tahoma,Helvetica,Geneva,sans-serif;font-weight:400;font-size:1rem;margin:0 auto;max-width:1013px;word-wrap:break-word;-webkit-text-size-adjust:100%;-moz-font-variant-ligatures:none;font-variant-ligatures:none;-webkit-font-variant-ligatures:none;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:greyscale;-webkit-font-smoothing:antialiased}button,input,select,textarea{border:1px solid transparent;font-size:13px}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#b9becc}input:-moz-placeholder,textarea:-moz-placeholder{color:#b9becc}input::-moz-placeholder,textarea::-moz-placeholder{color:#b9becc}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#b9becc}input::-ms-input-placeholder,textarea::-ms-input-placeholder{color:#b9becc}input::placeholder,textarea::placeholder{color:#b9becc}a{text-decoration:none;color:#a0a6b7;border:none;-webkit-transition:all .3s;-o-transition:all .3s;-moz-transition:all .3s;transition:all .3s}a:hover{text-decoration:none;color:#fff;border:none}.list{margin:0 0 1em 0}.list:last-child{margin-bottom:0}.list--unstyled{list-style:none outside none;padding-left:0}.list--max-count9{padding-left:1em}.list--max-count99{padding-left:2em}.list--max-count999{padding-left:3em}.list--max-count9999{padding-left:4em}.list--bulleted{list-style-type:disc}.list--sublist{margin-bottom:0}.list--small-padding{padding-left:2em}.list--form-column{float:left;margin-top:0;margin-bottom:0;margin-right:1.5em}.list--inline{padding-left:0;list-style:none}.list--inline>li{display:inline-block;padding-right:5px;padding-left:5px}.list--inline>li:first-child{padding-left:0}.list--inline-full-width{display:table;width:100%;text-align:center}.list--inline-full-width>li{display:table-cell}.list>li{margin-top:2px}p:first-child{margin-top:0}p:last-child{margin-bottom:0}pre{margin:0}pre br{display:none;line-height:0}.preformatted-text--scrolled{white-space:pre;overflow-x:auto;word-wrap:normal}th{text-align:left}.table{width:100%;margin:0 0 1em 0}.table:last-child{margin-bottom:0}.table>tbody>tr,.table>thead>tr{background-color:#2f3546;font-size:.75rem}.table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th{border-top:solid thin #555;line-height:1.42857;padding:5px}.table thead:first-child tr:first-child th{border-top:0 none;padding-left:.4rem}.table--bordered{border:none}.table--bordered>tbody>tr>td,.table--bordered>tbody>tr>th,.table--bordered>tfoot>tr>td,.table--bordered>tfoot>tr>th,.table--bordered>thead>tr>td,.table--bordered>thead>tr>th{border:1px solid #191d2a;padding:.4rem}.table--centered th{text-align:center}.table--no-border{border:none}.table--no-border>tbody>tr>td,.table--no-border>tbody>tr>th,.table--no-border>tfoot>tr>td,.table--no-border>tfoot>tr>th,.table--no-border>thead>tr>td,.table--no-border>thead>tr>th{border:none}.table--no-margin{margin-bottom:0}.table--striped>tbody>tr:nth-child(odd)>td,.table--striped>tbody>tr:nth-child(odd)>th{background-color:#2f3547}.table--panel-like>thead>tr{background:#070b17}.table--panel-like>thead>tr,.table--panel-like>thead>tr a{color:#fff}.table--panel-like>thead>tr>th{padding:4px;font-size:.8rem}.table--panel-like>thead>tr>th{padding:7px}.table--panel-like>thead>tr>th:first-child{border:none;-webkit-border-top-left-radius:5px!important;border-top-left-radius:5px!important}.table--panel-like>thead>tr>th:last-child{border:none;-webkit-border-top-right-radius:5px!important;border-top-right-radius:5px!important}#messageformtable .username{margin-right:.3rem}.table__background-color--alternative{background-color:#2f3547!important}.table--inplace-sortable>thead>tr>th{cursor:pointer}.table--inplace-sortable:last-child{margin-bottom:1em}.alert{-webkit-border-radius:4px;border-radius:4px;margin-top:10px;margin-bottom:10px;padding:7px}.alert:first-child{margin-top:0}.alert:last-child{margin-bottom:0}.alert--warning{background-color:#eedc94;color:#404040}.alert--error{background-color:#ca2a43;color:#fff}.alert__link{color:#404040;font-weight:700}.alert__link:hover{color:#404040;text-decoration:underline}.alert--error .alert__link{color:#fff;font-weight:700}.alert--error .alert__link:hover{color:#fff;text-decoration:underline}.alert--centered-content{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}.alert-bar{width:400px;margin:5px auto;padding:.2em;font-weight:700;text-align:center;-webkit-border-radius:4px;border-radius:4px;background-color:#c8af4b;border:thin solid #ceb85f;font-size:.75rem}.alert-bar__link{color:#202020}img[title=Time]{width:14px;height:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:14px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/time.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[title=Snatches]{width:14px;height:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:14px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/snatched.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[title=Leechers]{width:14px;height:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:14px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-white.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[title=Seeders]{width:14px;height:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:14px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.basic-movie-list__torrent__action__link:hover{color:#4281da}.basic-movie-list__details-row{vertical-align:top}.table>tbody>tr.basic-movie-list__details-row{background-color:#1e2333;font-size:.75rem}.table>tbody>tr.compact-movie-list__details-row--odd{background-color:#1e2233}.basic-movie-list__movie__cover{width:116px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 .125rem .4rem rgba(0,0,0,.4);box-shadow:0 .125rem .4rem rgba(0,0,0,.4);-webkit-transition:all .3s;-o-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.basic-movie-list__movie__cover-link{position:relative;display:block}.basic-movie-list__movie__cover:hover{-webkit-transform:scale(1.04,1.04);-moz-transform:scale(1.04,1.04);-ms-transform:scale(1.04,1.04);-o-transform:scale(1.04,1.04);transform:scale(1.04,1.04);-webkit-box-shadow:0 0 40px #31517d;box-shadow:0 0 40px #31517d}.basic-movie-list__movie__cover-link--seen::after{content:"";position:absolute;right:3px;top:3px;background-image:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);-webkit-background-size:cover;background-size:cover;width:20px;height:20px}.basic-movie-list__movie__category-icon{width:28px;height:28px}.basic-movie-list__number{text-align:center;font-weight:700}.basic-movie-list__movie__title-row{font-weight:700}.basic-movie-list__movie__title{color:#fff}.basic-movie-list__movie__title:hover{color:#4281da}.basic-movie-list__movie__new{font-size:10px;font-weight:700;color:#4281da;padding-left:2px;text-transform:uppercase}.basic-movie-list__movie__bookmark{float:right}.basic-movie-list__movie__ratings-and-tags{padding-top:2px}.basic-movie-list__movie__rating-container{display:inline;padding:1px 4px;margin-right:4px;background-color:#2f3446}.basic-movie-list__movie__rating__title{font-weight:700}.basic-movie-list__movie__tags{padding:2px;font-style:italic}.basic-torrent-list__movie__torrent-opener-link{font-weight:700;font-style:normal;padding-left:5px}.basic-torrent-list__movie__additional-info{margin-top:15px}.basic-movie-list__torrent-row{height:1em}.basic-movie-list__torrent-edition__main{font-weight:700}.basic-movie-list__torrent__action{float:right}.torrent_table img[src="static/common/check.png"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg) no-repeat center center}.torrent_table img[src="static/common/x.png"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/not-approved.svg) no-repeat center center}img[src="static/common/Poppy1.png"]{width:70px;height:70px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:70px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/poppy.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain;margin-right:10px}.torrent_table img[src="static/common/check.png"],.torrent_table img[src="static/common/x.png"]{width:12px;height:12px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:12px;-webkit-background-size:cover;background-size:cover}#movie-ratings-table #imdb-title-link img{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg) no-repeat center center;width:64px!important;height:64px!important}#movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg) no-repeat center center;width:48px!important;height:48px!important}#movie-ratings-table img[src="static/common/ratings/x4_ptp.png"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat center center;width:48px!important;height:48px!important}#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center}#movie-ratings-table #imdb-title-link img,#movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"],#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],#movie-ratings-table img[src="static/common/ratings/x4_ptp.png"]{width:48px!important;height:48px!important;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:48px;-webkit-background-size:contain;background-size:contain}.forum-post__movie-vote img{width:20px;height:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:20px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.bbcode-size-1{font-size:.75em}.bbcode-size-2{font-size:1em}.bbcode-size-3{font-size:1.25em}.bbcode-size-4{font-size:1.5em}.bbcode-size-5{font-size:1.75em}.bbcode-size-6{font-size:2em}.bbcode-size-7{font-size:2.25em}.bbcode-size-8{font-size:2.5em}.bbcode-size-9{font-size:2.75em}.bbcode-size-10{font-size:3em}.bbcode__image{max-width:500px}.sidebar .bbcode__image{max-width:100%}.bbcode-text-preview{border:solid thin #555;padding:.5em}.bbcode-table-guard{display:table;width:100%;table-layout:fixed}.bbcode-toolbar__button{width:24px;height:24px;float:left;border:none;-webkit-box-shadow:none;box-shadow:none;margin-bottom:10px;opacity:.55;-webkit-transition:all .3s;-o-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.bbcode-toolbar__button:hover{opacity:1}.js-bbcode-toolbar__bold-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bold.svg) no-repeat}.js-bbcode-toolbar__italic-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/italic.svg) no-repeat}.js-bbcode-toolbar__underline-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/underline.svg) no-repeat}.js-bbcode-toolbar__strikethrough-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/strikethrough.svg) no-repeat}.js-bbcode-toolbar__link-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/link.svg) no-repeat}.js-bbcode-toolbar__image-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/image.svg) no-repeat}.js-bbcode-toolbar__hide-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/hide.svg) no-repeat}.js-bbcode-toolbar__spoiler-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/spoiler.svg) no-repeat}.js-bbcode-toolbar__quote-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/quote.svg) no-repeat}.js-bbcode-toolbar__size-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/font-size.svg) no-repeat}.js-bbcode-toolbar__color-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/color.svg) no-repeat}.js-bbcode-toolbar__youtube-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/vid-ut.svg) no-repeat}.js-bbcode-toolbar__mediainfo-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/mediainfo.svg) no-repeat}.js-bbcode-toolbar__align-center-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align.svg) no-repeat}.js-bbcode-toolbar__align-right-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align-right.svg) no-repeat}.js-bbcode-toolbar__code-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/code.svg) no-repeat}.js-bbcode-toolbar__list-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bullet-list.svg) no-repeat}.js-bbcode-toolbar__emoticon-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/emojis.svg) no-repeat}.js-bbcode-toolbar__comparison-button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/compare.svg) no-repeat}a[title="BBCode help"] .bbcode-toolbar__button{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/question.svg) no-repeat}.js-bbcode-toolbar__align-center-button,.js-bbcode-toolbar__align-right-button,.js-bbcode-toolbar__bold-button,.js-bbcode-toolbar__code-button,.js-bbcode-toolbar__color-button,.js-bbcode-toolbar__comparison-button,.js-bbcode-toolbar__emoticon-button,.js-bbcode-toolbar__hide-button,.js-bbcode-toolbar__image-button,.js-bbcode-toolbar__italic-button,.js-bbcode-toolbar__link-button,.js-bbcode-toolbar__list-button,.js-bbcode-toolbar__mediainfo-button,.js-bbcode-toolbar__quote-button,.js-bbcode-toolbar__size-button,.js-bbcode-toolbar__spoiler-button,.js-bbcode-toolbar__strikethrough-button,.js-bbcode-toolbar__underline-button,.js-bbcode-toolbar__youtube-button,a[title="BBCode help"] .bbcode-toolbar__button{-webkit-background-size:contain;background-size:contain;background-position:center center!important;width:12px!important;height:12px!important;cursor:pointer;margin-right:.5rem}.bbcode-toolbar__size-popup-row{cursor:pointer;padding:0 4px}.bbcode-toolbar__size-popup-row:hover{background:#2f3547}.bbcode-toolbar__color-popup-color{cursor:pointer;display:inline-block;width:16px;height:16px}.bbcode-toolbar__color-popup-color:hover{border:solid 2px #ff8040}.bbcode-toolbar__emoticon-popup-item{cursor:pointer;display:inline-block;border:none;padding:2px;margin:2px;-webkit-transition:all .3s;-o-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.bbcode-toolbar__emoticon-popup-item:hover{-webkit-transform:scale(1.2);-moz-transform:scale(1.2);-ms-transform:scale(1.2);-o-transform:scale(1.2);transform:scale(1.2)}img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],img[src="static/common/smileys/angry.gif"],img[src="static/common/smileys/biggrin.gif"],img[src="static/common/smileys/blank.gif"],img[src="static/common/smileys/blush.gif"],img[src="static/common/smileys/cool.gif"],img[src="static/common/smileys/creepy.gif"],img[src="static/common/smileys/crom.gif"],img[src="static/common/smileys/crying.gif"],img[src="static/common/smileys/eyesright.gif"],img[src="static/common/smileys/frown.gif"],img[src="static/common/smileys/heart.gif"],img[src="static/common/smileys/hmm.gif"],img[src="static/common/smileys/laughing.gif"],img[src="static/common/smileys/ninja.gif"],img[src="static/common/smileys/no.gif"],img[src="static/common/smileys/nod.gif"],img[src="static/common/smileys/ohnoes.gif"],img[src="static/common/smileys/ohshit.gif"],img[src="static/common/smileys/omg.gif"],img[src="static/common/smileys/paddle.gif"],img[src="static/common/smileys/sad.gif"],img[src="static/common/smileys/shifty.gif"],img[src="static/common/smileys/sick.gif"],img[src="static/common/smileys/smile.gif"],img[src="static/common/smileys/sorry.gif"],img[src="static/common/smileys/thanks.gif"],img[src="static/common/smileys/tongue.gif"],img[src="static/common/smileys/wave.gif"],img[src="static/common/smileys/wink.gif"],img[src="static/common/smileys/worried.gif"],img[src="static/common/smileys/wtf.gif"],img[src="static/common/smileys/wub.gif"]{width:16px!important;height:16px!important;-webkit-box-sizing:border-box!important;-moz-box-sizing:border-box!important;box-sizing:border-box!important;padding-left:20px!important;-webkit-background-size:contain!important;background-size:contain!important}img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],img[src="static/common/smileys/smile.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],img[src="static/common/smileys/sad.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],img[src="static/common/smileys/biggrin.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],img[src="static/common/smileys/ohshit.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],img[src="static/common/smileys/tongue.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],img[src="static/common/smileys/blank.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],img[src="static/common/smileys/angry.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],img[src="static/common/smileys/blush.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],img[src="static/common/smileys/cool.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],img[src="static/common/smileys/creepy.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],img[src="static/common/smileys/crying.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],img[src="static/common/smileys/eyesright.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],img[src="static/common/smileys/frown.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],img[src="static/common/smileys/hmm.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],img[src="static/common/smileys/laughing.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],img[src="static/common/smileys/ninja.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],img[src="static/common/smileys/no.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],img[src="static/common/smileys/nod.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],img[src="static/common/smileys/ohnoes.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],img[src="static/common/smileys/omg.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],img[src="static/common/smileys/shifty.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],img[src="static/common/smileys/sick.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],img[src="static/common/smileys/wink.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],img[src="static/common/smileys/worried.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],img[src="static/common/smileys/wtf.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],img[src="static/common/smileys/wub.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],img[src="static/common/smileys/paddle.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],img[src="static/common/smileys/wave.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],img[src="static/common/smileys/heart.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],img[src="static/common/smileys/thanks.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg) no-repeat center center}img[src="static/common/smileys/thanks.gif"]{width:48px!important;height:48px!important;-webkit-box-sizing:border-box!important;-moz-box-sizing:border-box!important;box-sizing:border-box!important;padding-left:48px!important}img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],img[src="static/common/smileys/crom.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg) no-repeat center center}img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],img[src="static/common/smileys/sorry.gif"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg) no-repeat center center}.bonus-point-history--received{color:#418b00}.bonus-point-history--sent{color:red}.cover-movie-list__container--centered{margin-left:8px}.cover-movie-list{display:inline-block;margin:0 0 -10px -20px}.cover-movie-list--narrow{margin:0 0 -10px -12px}.cover-movie-list__movie{position:relative;float:left;width:176px;margin:0 0 10px 20px;text-align:left}.cover-movie-list--narrow>.cover-movie-list__movie{width:168px;margin:0 0 10px 12px}.cover-movie-list__movie__cover-link{display:block;height:246px;width:176px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 .125rem .4rem rgba(0,0,0,.4);box-shadow:0 .125rem .4rem rgba(0,0,0,.4)}.cover-movie-list--narrow>.cover-movie-list__movie>.cover-movie-list__movie__cover-link{display:block;height:234px;width:168px}.cover-movie-list__movie__undercover{padding:.5rem;background:0 0;-webkit-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px}.cover-movie-list__movie__title{font-weight:700;color:#fff}.cover-movie-list__movie__title:cover{color:#4281da}.cover-movie-list__movie__new{font-size:10px;font-weight:700;color:#4281da;padding-left:2px;text-transform:uppercase}.cover-movie-list__movie__rating-and-tags{margin-top:5px;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap}.cover-movie-list__movie__rating{background-color:#2f3546;padding:1px 4px;margin-right:4px}.basic-movie-list__movie__cover-link--seen,.cover-movie-list__movie__cover-link--seen,.huge-movie-list__movie__cover__link--seen,.small-cover-movie-list__movie__link--seen{opacity:.65}.basic-movie-list__movie__cover-link--seen:hover,.cover-movie-list__movie__cover-link--seen:hover,.huge-movie-list__movie__cover__link--seen:hover,.small-cover-movie-list__movie__link--seen:hover{opacity:1}.cover-movie-list__movie__cover-link--seen::after{content:"";position:absolute;right:3px;top:3px;background-image:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);-webkit-background-size:cover;background-size:cover;width:20px;height:20px}.cover-movie-list__movie__title-row{white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}.encoding-history-status--finished{font-weight:700;color:green}.encoding-history-status--canceled{font-weight:700;color:orange}.encoding-history-status--expired{font-weight:700;color:red}.footer{text-align:center;margin:1rem;font-size:.7rem}.footer__load:before{content:"\1F37F"}.footer__disclaimer{display:inline-block;width:90%;margin-bottom:10px}.form__label{font-weight:700}.form--horizontal .form__label{float:right}.form__checkbox-label,.form__input,.form__radio-label{margin-right:.5em;margin-bottom:.5em}.form__checkbox-label,.form__radio-label{display:inline-block}.form__checkbox-label--with-note,.form__radio-label--with-note{margin-right:0;margin-bottom:0}.generic-form,.search-form{width:800px;margin-left:auto;margin-right:auto;margin-bottom:15px}.generic-form--narrow,.search-form--narrow{width:600px}.generic-form--full-width{width:100%}.search-form--toggleable{margin-bottom:0}.toggleable-search-form__toggler-container{text-align:center}.toggleable-search-form__search-form{margin-bottom:15px}.search-form__advanced-basic-toggler{text-align:center;padding-bottom:8px}.generic-form__footer,.search-form__footer{border-top:thin solid #555;padding-top:8px}.generic-form__footer--right-aligned,.search-form__footer--right-aligned{text-align:right}.generic-form__footer--no-border,.search-form__footer--no-border{border-top-style:none}.search-form__footer__results{float:left}#browse_settings{width:14px;height:14px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:14px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/settings.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain;-webkit-transition:-webkit-transform 2s ease-in-out;transition:-webkit-transform 2s ease-in-out;-o-transition:-o-transform 2s ease-in-out;-moz-transition:transform 2s ease-in-out,-moz-transform 2s ease-in-out;transition:transform 2s ease-in-out;transition:transform 2s ease-in-out,-webkit-transform 2s ease-in-out,-moz-transform 2s ease-in-out,-o-transform 2s ease-in-out;transition:transform 2s ease-in-out,-webkit-transform 2s ease-in-out,-moz-transform 2s ease-in-out,-o-transform 2s ease-in-out;transition:transform 2s ease-in-out,-webkit-transform 2s ease-in-out,-moz-transform 2s ease-in-out,-o-transform 2s ease-in-out;transition:transform 2s ease-in-out,-webkit-transform 2s ease-in-out,-moz-transform 2s ease-in-out,-o-transform 2s ease-in-out}#browse_settings:hover{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}.forum-post{background-color:#2f3546;border:none;-webkit-border-radius:5px;border-radius:5px;margin-bottom:10px}.forum-post--unread{border:1px solid #4281da}.forum-post--is-reply{margin-top:2rem}.forum-post__id--staff-post{color:#4281da}.forum-post--heading-only{margin-bottom:0}.forum-post__heading{background:#070b17;padding:7px;-webkit-border-top-left-radius:5px;border-top-left-radius:5px;-webkit-border-top-right-radius:5px;border-top-right-radius:5px}.forum-post__heading .l_movie,.forum-post__heading .username{color:#fff;margin-right:2px}.forum-post__heading .time{color:#949aac}.forum-post__heading img{margin:0 2px}img[src="static/common/symbols/donor.png"]{width:13px;height:13px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:13px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/donor.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/miner.png"]{width:13px;height:13px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:13px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/miner-alt.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/filmclub.png"]{width:20px;height:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:20px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/film-club-icon.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/encoder.png"]{width:12px;height:12px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:12px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/encoder.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/quality.gif"],img[src="static/common/symbols/encoder_gp.png"]{width:12px;height:12px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:12px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/badge_checker.png"]{width:13px;height:13px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:13px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/badge_gpchecker.png"]{width:13px;height:13px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:13px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge_gpchecker.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],img[src="static/common/symbols/disabled.png"]{width:11px;height:11px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:11px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/Rank1.png"]{width:10px;height:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:10px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-1.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/Rank2.png"]{width:10px;height:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:10px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-2.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/Rank3.png"]{width:10px;height:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:10px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-3.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/Rank4.png"]{width:10px;height:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:10px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-4.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/Rank5.png"]{width:10px;height:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:10px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-5.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/symbols/Rank6.png"]{width:10px;height:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:10px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-6.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.forum-post__avatar-and-body{display:table;width:100%;table-layout:fixed}.forum-post__avatar{display:table-cell;position:relative;border-right:1px solid #191d2a;padding:5px;width:161px}.forum-post__avatar__image{display:block;width:auto;max-width:150px;height:auto;max-height:400px}.forum-post__body{display:table-cell;vertical-align:top;padding:10px}.forum-post__edited{margin-top:20px;font-style:italic;color:#949aac}.forum-post__textarea{width:100%;resize:vertical}.forum-post--is-previewing .forum-post__preview{padding-bottom:20px}.forum-topic--is-read{width:30px;height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:30px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg) no-repeat left center;-webkit-background-size:contain;background-size:contain}.forum-topic--is-unread{width:30px;height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:30px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg) no-repeat left center;-webkit-background-size:contain;background-size:contain}.forum-topic--is-read-locked-sticky{width:30px;height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:30px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg) no-repeat left center;-webkit-background-size:contain;background-size:contain}.forum-topic--is-read-sticky{width:30px;height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:1rem;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.forum-topic--is-read-locked{width:30px;height:30px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg) no-repeat left center;-webkit-background-size:contain;background-size:contain}.forum-topic--is-unread-locked-sticky{width:30px;height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:30px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.forum-topic--is-unread-sticky{width:30px;height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:30px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.forum-topic--is-unread-locked{width:32px;height:32px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg) no-repeat center center;background-size:contain;-webkit-background-size:contain}.forum-topic__new{color:#4281da}.forum-topic__go-to-last-read{float:left;width:15px;height:15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:15px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-right.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain;margin-left:5px}.forum-topic__go-to-last-read:hover{-webkit-transform:translate(3px);-moz-transform:translate(3px);-ms-transform:translate(3px);-o-transform:translate(3px);transform:translate(3px)}.view_post{width:12px!important;height:12px!important;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:12px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/view-post.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.view_post:hover{-webkit-filter:invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);filter:invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5)}.grid{margin-left:-1em}.grid__item{float:left;padding-left:1em}.grid-u-1{width:100%}.grid-u-1-3{width:33.3%}.grid-u-1-10{width:10%}.grid-u-2-10{width:20%}.grid-u-3-10{width:30%}.grid-u-4-10{width:40%}.grid-u-5-10{width:50%}.grid-u-6-10{width:60%}.grid-u-7-10{width:70%}.grid-u-8-10{width:80%}.grid-u-9-10{width:90%}.grid-offset-u-1-10{margin-left:10%}.grid-offset-u-2-10{margin-left:20%}.grid-offset-u-3-10{margin-left:30%}.grid-offset-u-4-10{margin-left:40%}.grid-offset-u-5-10{margin-left:50%}.grid-offset-u-6-10{margin-left:60%}.grid-offset-u-7-10{margin-left:70%}.grid-offset-u-8-10{margin-left:80%}.grid-offset-u-9-10{margin-left:90%}.heading:first-child{margin-top:0}.heading--no-margin{margin:0}.heading--small-bottom-margin{margin-bottom:.25em}.huge-movie-list__movie{background-color:#2f3546;border:none;margin-bottom:30px}.huge-movie-list__movie:not(:first-child){margin-top:15px}.huge-movie-list__movie__cover{position:relative;float:left;width:256px}.huge-movie-list__movie__cover__link{display:block;height:360px;width:256px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 .125rem .4rem rgba(0,0,0,.4);box-shadow:0 .125rem .4rem rgba(0,0,0,.4)}.huge-movie-list__movie__cover__link--seen::after{content:"";position:absolute;right:3px;top:3px;background-image:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);-webkit-background-size:cover;background-size:cover;width:20px;height:20px}.huge-movie-list__movie__details{margin-left:256px;position:relative;padding:10px 10px 0 10px}.huge-movie-list__movie__title{font-size:1.5em;font-weight:700;color:#fff}.huge-movie-list__movie__title:hover{color:#4281da}.huge-movie-list__movie__year{font-size:1.4em}.huge-movie-list__movie__new{font-size:10px;font-weight:700;color:#4281da;padding-left:2px;text-transform:uppercase}.huge-movie-list__movie__tag-list{font-size:1em;font-style:italic;margin-top:2px}.huge-movie-list__movie__additional-info{margin-top:15px}.huge-movie-list__movie__director-list{font-size:1em}.huge-movie-list__movie__ratings-and-synopsis{margin-top:25px}.huge-movie-list__movie__ratings-and-synopsis>tbody>tr>td{background-color:#181c27;border:none}.huge-movie-list__movie__ratings{width:130px;margin:auto}.huge-movie-list__movie__ratings__icon-column{padding:1px 6px 1px 5px}.huge-movie-list__movie__ratings__votes-column{padding:1px 2px 1px 2px}.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x1_imdb.png"]{width:42px;height:42px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:42px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"],.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"],.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"]{width:32px;height:32px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:32px}.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"]{background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"]{width:32px;height:32px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:32px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}.huge-movie-list__movie__synopsis{padding:5px;font-size:1.2em}.huge-movie-list__movie__action-row{margin-top:10px;font-size:1.2em}.huge-movie-list__movie__torrent-summary{margin-top:25px}.table>tbody>tr.inbox-message--unread>td{background-color:#af2525}.input-group{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.input-group__field{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1}.bvalidator_errmsg{display:none;white-space:nowrap;color:#fff;font-size:11px;font-weight:700;padding:4px 10px;-webkit-box-shadow:2px 2px 2px #222;box-shadow:2px 2px 2px #222;position:relative;background:#d51111;border:3px solid #ddd}.bvalidator_errmsg:after,.bvalidator_errmsg:before{top:100%;border:solid transparent;content:"";height:0;width:0;position:absolute;pointer-events:none}.bvalidator_errmsg:after{border-top-color:#d51111;border-width:8px;left:14px;margin-left:-8px}.bvalidator_errmsg:before{border-top-color:#ddd;border-width:12px;left:14px;margin-left:-12px}.bvalidator_errmsg .bvalidator_close_icon{margin-left:5px;margin-top:-2px;font-family:Verdana,Geneva,sans-serif;font-weight:700er;color:#000;cursor:pointer;font-size:12px}.bvalidator_errmsg em{display:none}#simplemodal-overlay{background-color:#000;cursor:wait}#simplemodal-overlay-pointer{background-color:#000;cursor:pointer}#simplemodal-container a.modalCloseImg{background:url(/static/common/simplemodal_close.png) no-repeat;width:25px;height:29px;display:inline;z-index:3200;position:absolute;top:-8px;right:-8px;cursor:pointer}.last5-movies{padding:1em 0 1em 0;font-size:8pt}.last5-movies__table{margin:0;width:100%}.last5-movies__table>tbody>tr>td{padding:0 10px}.last5-movies__link{display:inline-block;width:106px;height:150px;margin-bottom:5px;background-position:center;background-repeat:no-repeat;-webkit-background-size:contain;background-size:contain;-webkit-border-radius:5px;border-radius:5px}.last5-movies__link:hover{-webkit-transform:scale(1.04,1.04);-moz-transform:scale(1.04,1.04);-ms-transform:scale(1.04,1.04);-o-transform:scale(1.04,1.04);transform:scale(1.04,1.04)}.last5-movies__show-all-row{text-align:right}.last5-movies__show-all-link{display:inline-block;margin-top:8px}.lightbox{position:fixed;text-align:center;top:5%;left:5%;width:90%;height:90%;padding:0;z-index:1002;overflow:auto;outline:0}.lightbox__shroud{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.8);z-index:1001}body.lightbox__scroll-lock{position:fixed;overflow:hidden;width:100%;height:100%;left:0;top:0;right:0;bottom:0}.light-youtube-embed{display:inline-block;position:relative;width:480px;height:360px}.light-youtube-embed__image{width:480px;height:360px}.light-youtube-embed::after,.light-youtube-embed:hover::after{content:"";position:absolute;width:80px;height:56px;left:0;right:0;top:0;bottom:0;margin:auto;pointer-events:none;background-image:url(/static/common/symbols/play-big.png)}.light-youtube-embed:hover::after{background-image:url(/static/common/symbols/play-big-hover.png)}.log__message--deleted{color:#ff3232}.log__message--edited{color:#949aac}.log__message--uploaded{color:#20b83e}.main-column{margin:0 255px 10px 0;width:715px;overflow:hidden}.main-menu{background-color:#060b17;width:750px;height:28px;margin:5px auto 10px auto;font-size:10pt;text-align:left;z-index:7;opacity:.75;-webkit-border-radius:5px;border-radius:5px}.main-menu__list{padding:5px 0 0 0;text-align:center}.main-menu__item{display:inline;padding:5px;margin:0;text-align:center;font-size:12px}.main-menu__link{padding:.5em;color:#949aac;position:relative}.main-menu__link:before{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background-color:#4281da;-webkit-transform-origin:bottom right;-moz-transform-origin:bottom right;-ms-transform-origin:bottom right;-o-transform-origin:bottom right;transform-origin:bottom right;-webkit-transform:scaleX(0);-moz-transform:scaleX(0);-ms-transform:scaleX(0);-o-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform .5s ease;transition:-webkit-transform .5s ease;-o-transition:-o-transform .5s ease;-moz-transition:transform .5s ease,-moz-transform .5s ease;transition:transform .5s ease;transition:transform .5s ease,-webkit-transform .5s ease,-moz-transform .5s ease,-o-transform .5s ease}.main-menu__link:hover:before{-webkit-transform-origin:bottom left;-moz-transform-origin:bottom left;-ms-transform-origin:bottom left;-o-transform-origin:bottom left;transform-origin:bottom left;-webkit-transform:scaleX(1);-moz-transform:scaleX(1);-ms-transform:scaleX(1);-o-transform:scaleX(1);transform:scaleX(1)}.mediainfo{margin:0;width:auto}.mediainfo>tbody>tr,.mediainfo__section>tbody>tr{background-color:#494848;vertical-align:top}.mediainfo>tbody>tr>td{border:1px solid #3d4356;padding:5px}.mediainfo__section{margin:0;width:100%;border-top:1px solid #4a4e5b;border-collapse:collapse}.mediainfo__section__caption{font-weight:700}.mediainfo__section>tbody>td{border:none;padding:2px}.mediainfo--in-release-description{width:100%}.mediainfo--in-release-description .mediainfo__section>tbody>tr,.mediainfo--in-release-description>tbody>tr{background-color:#242a3c;border-top:1px solid #3d4356}html.busy-cursor,html.busy-cursor *{cursor:wait!important}.label{font-weight:700;text-align:right}.linkbox{text-align:center;margin:5px 5px 10px 5px;font-size:.75rem}.linkbox__link--current{font-weight:700}.large-torrent-list-group-opener{background:url(images/show.png) no-repeat center center;width:28px;height:28px}.large-torrent-list-group-opener__link{display:block;width:28px;height:28px;border:none}.no-seeders{color:red}.release-description-preview{background-color:#494848;padding:10px}.film-club-discuss-link{text-align:center;font-size:1.25em;padding-top:.5em}.site-debug{margin-bottom:15px}.stylesheet-preview-container{margin-top:4px;margin-bottom:20px}.missing-torrent-status--exists{font-weight:700;color:#20b83e}.missing-torrent-status--trumpable{font-weight:700;color:orange}.missing-torrent-status--missing{font-weight:700;color:#ff3232}.movie-page__torrent__panel{background-color:#181c27;margin:10px;padding:10px;border:1px dashed #4a4e5b;-webkit-border-radius:5px;border-radius:5px}.table>tbody>tr.movie-page__torrent--highlighted{background-color:#2f3547}.movie-page__torrent-reports-title{font-weight:700}.movie-page__torrent-report-container{margin-top:8px;background-color:#1d2333}.movie-page__torrent-report-date-and-reason{padding:5px;border-bottom:1px dotted #666}.movie-page__torrent-report-description{padding:5px 1rem}.movie-page__torrent-report-staff-comment{padding:5px 1rem;border-top:1px dotted #666;background-color:#1e1e1e}.movie-page__trailer{margin-bottom:14px}.movie-page__actor-column{width:180px;text-align:right}.movie-tooltip__title-row{font-weight:700;font-size:13px}.movie-tooltip__title{color:#fff}.movie-tooltip__director-list{margin-top:3px}.movie-tooltip__ratings{margin:3px 0 3px 0}.movie-tooltip__rating-container{display:inline;padding:0 2px;margin-right:4px;background-color:#2f3446}.movie-tooltip__rating__title{font-weight:700}.movie-tooltip__rating__title>a,.movie-tooltip__tag{color:#c9c9c9;font-weight:400}.movie-tooltip__rating__title>a:hover,.movie-tooltip__tag:hover{text-decoration:underline;color:#fff}.movie-tooltip__additional-info{margin-top:10px}.movie-tooltip__trailer{position:relative;margin-top:10px;width:120px;height:90px;cursor:pointer}.movie-tooltip__trailer__image{border-color:#303030;border-style:solid;border-width:1px;cursor:pointer}.movie-tooltip__trailer__play{position:absolute;left:10px;bottom:10px;cursor:pointer}.movie-tooltip__synopsis{margin-top:10px;line-height:12px}.movie-tooltip__torrents{margin-top:10px}.movie-tooltip__action-row{margin-top:5px;padding-top:10px;padding-bottom:4px;font-weight:700;border-top:2px solid #303030}.page__title{text-align:center}.page__main-content{background-color:#1e2333;-webkit-border-bottom-left-radius:10px;border-bottom-left-radius:10px;-webkit-border-bottom-right-radius:10px;border-bottom-right-radius:10px;margin:0 auto;overflow:auto;padding:15px 19px 15px 19px;width:1013px;font-size:.75rem;-webkit-box-shadow:0 .5rem 2rem rgba(0,0,0,.4);box-shadow:0 .5rem 2rem rgba(0,0,0,.4)}.pagination{margin:5px;text-align:center}.pagination__current-page,.pagination__link{font-weight:700;font-size:.75rem}.pagination__current-page{color:#565963}.pagination__current-page:hover{cursor:not-allowed}.panel{background-color:#2f3547;border:none;-webkit-border-radius:5px;border-radius:5px;margin-bottom:1em;-webkit-box-shadow:0 .125rem .25rem rgba(0,0,0,.24);box-shadow:0 .125rem .25rem rgba(0,0,0,.24)}.panel--no-margin{margin-bottom:0}.panel__heading{background:#060b17;border:none;padding:7px}.panel__heading__title{font-weight:700}.panel__heading__toggler{float:right;font-size:.75em}.panel,.panel__heading{-webkit-border-top-left-radius:5px;border-top-left-radius:5px;-webkit-border-top-right-radius:5px;border-top-right-radius:5px}.panel__body{padding:.5rem 1rem}.poll__title{display:inline-block;margin-bottom:10px;font-weight:700}.poll__list{list-style:none outside none;padding-left:1.5em;margin-top:0}.poll__option--blank{margin-top:1em}.poll__bar{margin-bottom:.75em}.poll__bar--no-margin{margin-bottom:0}.poll__bar__left{float:left;width:2px;height:9px;background:url(images/bar_left.gif) center center no-repeat;margin:0;padding:0}.poll__bar__center{float:left;height:9px;background:url(images/bar.gif) repeat;margin:0;padding:0}.poll__bar__right{float:left;width:2px;height:9px;background:url(images/bar_right.gif) center center no-repeat;margin:0;padding:0}.qtip{position:absolute;left:-28000px;top:-28000px;display:none;max-width:280px;min-width:50px;font-size:10.5px;line-height:12px;border-width:1px;border-style:solid}.qtip-content{position:relative;padding:9px;overflow:hidden;text-align:left}.qtip-content label{display:block}.qtip-shadow{-webkit-box-shadow:1px 1px 3px 1px rgba(0,0,0,.15);box-shadow:1px 1px 3px 1px rgba(0,0,0,.15)}.qtip:not(.ie9haxors) div.qtip-content,.qtip:not(.ie9haxors) div.qtip-titlebar{-webkit-filter:none;filter:none;-ms-filter:none}.qtip .qtip-tip{margin:0 auto;overflow:hidden;z-index:10}.qtip .qtip-tip,.qtip .qtip-tip *{position:absolute;color:#123456;background:0 0;border:none dashed transparent}.qtip .qtip-tip canvas{top:0;left:0}.qtip-ptp{background:#070b16;background-color:rgba(7,11,22,.95);line-height:normal!important;max-width:none!important;color:#fff;border:1px solid transparent!important;-webkit-border-radius:5px;border-radius:5px;border-style:solid;border-width:1px!important}@supports ((-webkit-backdrop-filter:none) or (backdrop-filter:none)){.qtip-ptp{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);background-color:rgba(7,11,22,.65)}}.ratio-00{color:red}.ratio-01{color:#ff1300}.ratio-02{color:#ff1300}.ratio-03{color:#ff2600}.ratio-04{color:#ff4c00}.ratio-05{color:#ff5e00}.ratio-06{color:#ff5e00}.ratio-07{color:#ff7100}.ratio-08{color:#ff9700}.ratio-09{color:#fa0}.ratio-10{color:#74c42e}.ratio-20{color:#418b00}.ratio-50{color:#418b00}.ratio-infinite{color:#418b00}.table>tbody>tr.release-name-movie-list__details-row{background-color:#222}.release-name-movie-list__name{font-size:14px}.release-name-movie-list__movie__release-category{vertical-align:middle;text-align:center;background-color:#333}.release-name-movie-list__movie__release-category__link{white-space:nowrap;font-size:11px;font-weight:700;text-shadow:1px 1px 1px rgba(5,5,5,.5);margin-left:3px;margin-right:3px}.release-name-movie-list__movie__release-name{font-weight:700}.release-name-movie-list__movie__new{font-size:10px;font-weight:700;color:#4281da;padding-left:2px;text-transform:uppercase}.release-name-movie-list__movie__action-container{float:right}.release-name-movie-list__movie__ratings-and-tags{padding-top:2px}.release-name-movie-list__movie__rating-container{display:inline;padding:1px 4px;margin-right:4px;background-color:#2f3446}.release-name-movie-list__movie__rating__title{font-weight:700}.release-name-movie-list__movie__tags{padding:2px;font-style:italic}.screenshot-comparison__container{position:fixed;overflow:auto;top:0;left:0;width:100%;height:100%;background-color:#000;text-align:center}.screenshot-comparison__row{position:relative;left:0;top:0}.screenshot-comparison__image-container{display:inline-block;position:absolute;left:0;top:0;width:100%}.screenshot-comparison__image{border:4px solid #404}.screenshot-comparison__label{position:fixed;top:0;z-index:2000;color:#fff;font-size:18px;font-weight:700;text-shadow:0 0 4px #000,0 0 4px #000,0 0 4px #000,0 0 4px #000}.screenshot-comparison__old-school-toggler-container{margin:20px}.screenshot-comparison__help{display:inline-block;margin-bottom:20px;max-width:800px;color:#fff;text-align:left}.screenshot-comparison__old-school-image{width:20%}.search-bar{width:1013px;background:#060b17;font-size:.8rem;padding:.6em;margin-left:auto;margin-right:auto;margin-top:0;text-align:center;-webkit-border-top-right-radius:10px;border-top-right-radius:10px;-webkit-border-top-left-radius:10px;border-top-left-radius:10px}.search-bar__list{display:inline;margin:0 6px;padding:0}.search-bar__search-field{display:inline;margin:0;position:relative}.search-bar__search-field__form{display:inline}.search-bar__search-field__input{display:inline;position:relative;top:-1px;background-color:#191d2a;font-size:.8em;color:#b5b5b5;border:1px solid transparent;-webkit-border-radius:5px;border-radius:5px;padding:2px 3px;text-align:center;margin:.4rem}.search-bar__search-field__input::-moz-placeholder{color:#949aac;opacity:1}.search-bar__search-field__input:-ms-input-placeholder{color:#949aac}.search-bar__search-field__input::-webkit-input-placeholder{color:#949aac}.search-bar__search-field__input:-moz-placeholder{color:#949aac}.search-bar__search-field__input::-ms-input-placeholder{color:#949aac}.search-bar__search-field__input::placeholder{color:#949aac}.search-bar__results{display:block;position:absolute;left:0;width:232px;margin:0;padding:0;border:none;z-index:1000}.search-bar__results__list-item{display:block;background:#2f3547;margin:0;padding:0;text-align:center;line-height:15px;border-bottom:1px solid #1d212b}.search-bar__results__list-item--is-highlighted{background:#42495d}.search-bar__results__link{display:block;padding:5px 8px}.search-bar__results__link,.search-bar__results__link:hover{color:#949aac}.search-bar__results__list-item--is-highlighted>.search-bar__results__link,.search-bar__results__list-item--is-highlighted>.search-bar__results__link:hover{color:#fff}.sidebar{float:right;width:250px}.sidebar-cover-image{display:block;max-width:100%;margin-left:auto;margin-right:auto;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 .125rem .4rem rgba(0,0,0,.4);box-shadow:0 .125rem .4rem rgba(0,0,0,.4);-webkit-transition:all .3s;-o-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.sidebar-cover-image:hover{-webkit-transform:scale(1.04,1.04);-moz-transform:scale(1.04,1.04);-ms-transform:scale(1.04,1.04);-o-transform:scale(1.04,1.04);transform:scale(1.04,1.04);-webkit-box-shadow:0 0 40px #31517d;box-shadow:0 0 40px #31517d}.simple-tabs__link--active{color:#fff}.site-logo{position:relative;top:0;background:0 0;width:100%;height:auto;margin:0 auto -1.4rem auto}.site-logo__link:after{font-family:"Bebas Neue",Tahoma,Helvetica,Geneva,sans-serif;content:"PassThePopCorn";font-size:6rem;display:block;margin:0 auto;text-align:center!important;background-color:#4281da;background-image:-webkit-linear-gradient(90deg,#e22735 4%,#f52c2a 19%,#e2d956 39%,#62e080 60%,#e646dd 80%,#e646dd 100%);background-image:-moz-linear-gradient(90deg,#e22735 4%,#f52c2a 19%,#e2d956 39%,#62e080 60%,#e646dd 80%,#e646dd 100%);background-image:-o-linear-gradient(90deg,#e22735 4%,#f52c2a 19%,#e2d956 39%,#62e080 60%,#e646dd 80%,#e646dd 100%);background-image:-webkit-gradient(linear,left top,right top,color-stop(4%,#e22735),color-stop(19%,#f52c2a),color-stop(39%,#e2d956),color-stop(60%,#62e080),color-stop(80%,#e646dd),to(#e646dd));background-image:-webkit-linear-gradient(left,#e22735 4%,#f52c2a 19%,#e2d956 39%,#62e080 60%,#e646dd 80%,#e646dd 100%);background-image:-moz-linear-gradient(left,#e22735 4%,#f52c2a 19%,#e2d956 39%,#62e080 60%,#e646dd 80%,#e646dd 100%);background-image:-o-linear-gradient(left,#e22735 4%,#f52c2a 19%,#e2d956 39%,#62e080 60%,#e646dd 80%,#e646dd 100%);background-image:-webkit-gradient(linear,left top,right top,color-stop(4%,#e22735),color-stop(19%,#f52c2a),color-stop(39%,#e2d956),color-stop(60%,#62e080),color-stop(80%,#e646dd),to(#e646dd));background-image:-webkit-gradient(linear,left top,right top,color-stop(4%,#e22735),color-stop(19%,#f52c2a),color-stop(39%,#e2d956),color-stop(60%,#62e080),color-stop(80%,#e646dd),to(#e646dd));background-image:-webkit-gradient(linear,left top,right top,color-stop(4%,#e22735),color-stop(19%,#f52c2a),color-stop(39%,#e2d956),color-stop(60%,#62e080),color-stop(80%,#e646dd),to(#e646dd));background-image:linear-gradient(90deg,#e22735 4%,#f52c2a 19%,#e2d956 39%,#62e080 60%,#e646dd 80%,#e646dd 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}.site-logo__link{display:block;width:100%;height:auto;margin-top:2.5rem;border:none}.site-logo,.site-logo__link,.site-logo__link:after{word-wrap:normal;white-space:nowrap}.small-cover-movie-list__movie{position:relative;float:left;margin:.4rem}.small-cover-movie-list__movie__link{width:140px;height:196px;display:block}.small-cover-movie-list__movie__link--smaller{width:123px;height:193px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 .125rem .4rem rgba(0,0,0,.4);box-shadow:0 .125rem .4rem rgba(0,0,0,.4)}.small-cover-movie-list__movie__link--seen::after{content:"";position:absolute;right:3px;top:3px;background-image:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);-webkit-background-size:cover;background-size:cover;width:20px;height:20px}.cover-movie-list__movie__cover-link:hover,.huge-movie-list__movie__cover__link:hover,.small-cover-movie-list__movie__link--smaller:hover{-webkit-transform:scale(1.04,1.04);-moz-transform:scale(1.04,1.04);-ms-transform:scale(1.04,1.04);-o-transform:scale(1.04,1.04);transform:scale(1.04,1.04);-webkit-box-shadow:0 0 40px #31517d;box-shadow:0 0 40px #31517d}.small-cover-movie-list__movie__title{text-align:center;margin-top:5px;margin-bottom:15px}.snatchlist-status--not-hnr,.snatchlist-status--seeding{color:#418b00}.snatchlist-status--hnr,.snatchlist-status--not-seeding{color:red}.snatchlist-status--removed-hnr{color:#ff5e00}.staff-toolbar{display:table;margin-left:auto;margin-right:auto;margin-bottom:5px;padding:6px;text-align:center;font-weight:700;background-color:#2f3547}.staff-toolbar__link{padding:2px}.staff-toolbar__link--important{display:inline-block;-webkit-border-radius:4px;border-radius:4px;padding:4px;background-color:#ca2a43;color:#fff}.star-rating-container{display:inline-block;padding-right:5px;cursor:pointer}.star-rating{display:inline-block;width:170px;height:20px;margin:0;padding:0;list-style:none;background:url(https://static.passthepopcorn.me/static/common/stars/stars.png) repeat-x;cursor:pointer}.star-rating--popup-starter:hover{-webkit-transform:scale(1.02);-moz-transform:scale(1.02);-ms-transform:scale(1.02);-o-transform:scale(1.02);transform:scale(1.02)}.star-rating--with-inline-rating-display{vertical-align:middle}.star-rating--voting-disabled{cursor:default}.star-rating__current-user,.star-rating__site{display:block;position:absolute;float:left;width:170px;height:20px;padding:0;margin:0;text-decoration:none;text-indent:-9000px;font-size:1px;z-index:20}.star-rating__current-user{background:url(https://static.passthepopcorn.me/static/common/stars/stars.png) left 125px;z-index:19}.star-rating__site{background:url(https://static.passthepopcorn.me/static/common/stars/stars.png) left 100px;z-index:18}.star-rating__inline-rating-display{margin-left:10px}.star-rating--big{width:300px;height:40px;background:url(https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png) repeat-x}.star-rating__current-user--big{width:300px;height:40px}.star-rating__current-user--big{background:url(https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png) left 220px}.star-rating-container--big{padding:4px;cursor:pointer}.tabs__bar__list{display:block;margin-top:0;margin-bottom:14px;border-bottom:1px solid #3e414c;padding:0;list-style:none}.tabs__bar__list--centered{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}.tabs__bar__item{display:block;float:left;margin-right:4px}.tabs__bar__item:first-child{margin-left:10px}.tabs__bar__link,.tabs__bar__link:active,.tabs__bar__link:focus,.tabs__bar__link:hover{display:block;margin-top:6px;border:1px solid transparent;-webkit-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;padding:8px;background-color:#2f3447;outline:0}.tabs__bar__link--page-title-like{font-size:1.5em;font-weight:700}.tabs__bar__item--active>.tabs__bar__link,.tabs__bar__item--active>.tabs__bar__link:active,.tabs__bar__item--active>.tabs__bar__link:focus,.tabs__bar__item--active>.tabs__bar__link:hover{margin-top:0;margin-bottom:-2px;border:none;padding-top:14px;padding-bottom:10px;background-color:#060b17;color:#fff}.tabs__bar__link:hover{background-color:#444a63}.tabs__panel{display:none}.tabs__panel--active{display:block}.torrent-info-link--user-seeding{font-weight:700;color:#ffa10c}.torrent-info-link--user-leeching{font-weight:700;color:#ff3232}.torrent-info-link--user-uploaded{font-weight:700;color:#f432c9}.torrent-info-link--user-snatched{font-weight:700;color:#2a8aed}.torrent-info-link--user-downloaded{font-weight:700;color:#20b83e}.torrent-info__download-modifier--free,.torrent-info__download-modifier--half,.torrent-info__download-modifier--neutral{font-weight:700}.torrent-info__trumpable{font-weight:700;color:orange}.torrent-info__reported{font-weight:700;color:red}.user-info-bar{position:absolute;top:0;left:0;width:100%;height:auto;background:#060b17;padding:.5rem 0;margin:0 auto;text-align:center;color:#fff;z-index:20;font-size:.75rem}.user-info-bar__text--hnr{color:#ff2600}.user-info-bar__link{text-decoration:none;color:#949aac}.user-info-bar__link:hover{text-decoration:none;color:#fff}.user-info-bar__link--important{font-weight:700}@keyframes flickerAnimation{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@-o-keyframes flickerAnimation{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@-moz-keyframes flickerAnimation{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@-webkit-keyframes flickerAnimation{0%{opacity:1}50%{opacity:0}100%{opacity:1}}.user-info-bar__link--highlighted{color:#fff;font-weight:700}.user-info-bar__link--highlighted::after{content:" \2022";color:#96c72c;text-shadow:0 0 4px #79f725,0 0 10px #25ef61,0 0 20px #5dec32,0 0 30px #32ec40,0 0 40px #5dec32,0 0 55px #5dec32,0 0 75px #5dec32;-webkit-animation:flickerAnimation 3s infinite;-moz-animation:flickerAnimation 3s infinite;-o-animation:flickerAnimation 3s infinite;animation:flickerAnimation 3s infinite}.user-info-bar__link--donations-behind{color:#ff2600}.user-info-bar__list{display:inline;margin:0 6px;padding:0}.user-info-bar__item{position:relative;display:inline;vertical-align:middle;margin:0 1px;padding:0;line-height:20px}.user-info-bar__drop-down-menu{visibility:hidden;position:absolute;z-index:10;left:auto;right:0;padding:10px 10px 10px 10px;margin:-10px -10px -10px -10px}.user-info-bar__drop-down-menu__item{display:block;float:none;background:#2f3547}.user-info-bar__item--drop-down-menu-opener:hover>.user-info-bar__drop-down-menu{visibility:visible;top:100%}.user-info-bar__item--drop-down-menu-opener a{color:#949aac;-webkit-transition:all 0s;-o-transition:all 0s;-moz-transition:all 0s;transition:all 0s}.user-info-bar__drop-down-menu__link{text-align:left;text-decoration:none;padding:.4em 1.5em;display:block;position:relative;white-space:nowrap}.user-info-bar__drop-down-menu__link:hover{text-decoration:none;background-color:#42495d;color:#fff}.user-recommendation{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start}.user-recommendation:not(:first-child){margin-top:10px}.user-recommendation__image-container{margin-right:10px}.user-recommendation__image{max-width:64px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 .125rem .4rem rgba(0,0,0,.4);box-shadow:0 .125rem .4rem rgba(0,0,0,.4);-webkit-transition:all .3s;-o-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.user-recommendation__image:hover{-webkit-transform:scale(1.04,1.04);-moz-transform:scale(1.04,1.04);-ms-transform:scale(1.04,1.04);-o-transform:scale(1.04,1.04);transform:scale(1.04,1.04);-webkit-box-shadow:0 0 40px #31517d;box-shadow:0 0 40px #31517d}.user-recommendation__body{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1}.wiki__diff--added{color:green;background:#dfd;text-decoration:none}.wiki__diff--deleted{color:red;background:#fdd;text-decoration:none}.hidden{display:none}.nobr{white-space:nowrap}.clearfix:after,.forum-post__heading:after,.grid:after,.huge-movie-list__movie:after,.poll__bar:after,.sidebar:after,.tabs__bar__list:after{content:"";display:table;clear:both}.text--left{background:#191d2a;border:1px solid #3e414c;color:#fff;text-align:left!important}.text--center{text-align:center!important}.text--right{text-align:right!important}img[src="static/common/stars/AwardRating.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/NoAwardRating.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-uncolored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardUploads.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardMetaUploads.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-met.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/NoAwardUploads.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-uncolored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardDownloads.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardMetaDownloads.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-met.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/NoAwardDownloads.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-uncolored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardData Transfer.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardMetaData Transfer.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-met.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/NoAwardData Transfer.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-uncolored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardRequests.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-colored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardMetaRequests.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-met.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/NoAwardRequests.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-uncolored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardChat.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-colored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardMetaChat.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-met.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/NoAwardChat.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-uncolored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/NoAwardMeta Awards.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-uncolored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}img[src="static/common/stars/AwardMetaMeta Awards1.png"]{width:17px;height:17px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding-left:17px;background:url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-colored.svg) no-repeat center center;-webkit-background-size:contain;background-size:contain}
+/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+[hidden] {
+	display: none;
+}
+template {
+	display: none;
+}
+a {
+	background-color: transparent;
+}
+a:active,
+a:hover {
+	outline: 0;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b,
+strong {
+	font-weight: 700;
+}
+dfn {
+	font-style: italic;
+}
+h1 {
+	font-size: 2em;
+	margin: .75em 0;
+}
+mark {
+	background: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -.5em;
+}
+sub {
+	bottom: -.25em;
+}
+img {
+	border: none;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 1.5em 40px;
+}
+hr {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+pre {
+	overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	font: inherit;
+	margin: 0;
+}
+button {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+input[type=checkbox],
+input[type=radio],
+select {
+	background: #191d2a;
+	border: 1px solid #3e414c;
+	color: #fff;
+}
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	font-family: "Open Sans", Tahoma, Helvetica, sans-serif;
+	font-weight: 700;
+	background: #586279;
+	color: #fff;
+	border: none;
+	padding: .4rem 1rem;
+	margin: .1rem;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 1;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+button,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+	background: #4281da;
+	-webkit-box-shadow: 0 0 40px #4281da;
+	box-shadow: 0 0 40px #4281da;
+}
+button:focus,
+input[type=button]:focus,
+input[type=reset]:focus,
+input[type=submit]:focus {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	outline: 0;
+}
+button[disabled],
+input[disabled] {
+	cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+input[value=Delete] {
+	background: #9c4e4e;
+}
+input[value=Delete]:hover {
+	background: #da4242;
+	-webkit-box-shadow: 0 0 40px #da4242;
+	box-shadow: 0 0 40px #da4242;
+}
+input,
+textarea {
+	border: 1px solid transparent;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+input {
+	line-height: normal;
+	background: #171d2a;
+	color: #fff;
+	font-size: .75rem;
+	padding-left: .4rem;
+	height: 28px;
+}
+input[type=checkbox],
+input[type=radio] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: -7px 2px;
+	vertical-align: inherit;
+	vertical-align: text-top;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	height: auto;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+input[type=text]:focus,
+textarea:focus {
+	outline: 0;
+	-webkit-box-shadow: 0 0 40px #4281da;
+	box-shadow: 0 0 40px #4281da;
+	border: 1px solid #3463a7;
+}
+input[value="Search log"] {
+	margin-top: .5rem;
+}
+fieldset {
+	border: 1px solid silver;
+	margin: 0 2px;
+	padding: .35em .625em .75em;
+}
+legend {
+	border: none;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+	background: #191d2a;
+	border: none;
+	color: #fff;
+	padding: .8rem;
+}
+optgroup {
+	font-weight: 700;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td,
+th {
+	padding: 0;
+}
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+blockquote {
+	margin: 10px;
+	padding: 10px;
+	border: 1px dashed #4e556b;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #181c27;
+}
+body {
+	color: #fff;
+	background-color: #191d2a;
+	font-family: "Open Sans", Tahoma, Helvetica, Geneva, sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	margin: 0 auto;
+	max-width: 1013px;
+	word-wrap: break-word;
+	-webkit-text-size-adjust: 100%;
+	-moz-font-variant-ligatures: none;
+	font-variant-ligatures: none;
+	-webkit-font-variant-ligatures: none;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: greyscale;
+	-webkit-font-smoothing: antialiased;
+}
+input,
+select,
+textarea {
+	border: 1px solid #3a4056;
+	padding: .2rem .4rem;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 13px;
+}
+select:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	outline: 0;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #b9becc;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #b9becc;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #b9becc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #b9becc;
+}
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: #b9becc;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #b9becc;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #b9becc;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #b9becc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #b9becc;
+}
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: #b9becc;
+}
+input::placeholder,
+textarea::placeholder {
+	color: #b9becc;
+}
+a {
+	text-decoration: none;
+	color: #a0a6b7;
+	border: none;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+	border: none;
+}
+.list {
+	margin: 0 0 1em 0;
+}
+.list:last-child {
+	margin-bottom: 0;
+}
+.list--unstyled {
+	list-style: none outside none;
+	padding-left: 0;
+}
+.list--max-count9 {
+	padding-left: 1em;
+}
+.list--max-count99 {
+	padding-left: 2em;
+}
+.list--max-count999 {
+	padding-left: 3em;
+}
+.list--max-count9999 {
+	padding-left: 4em;
+}
+.list--bulleted {
+	list-style-type: disc;
+}
+.list--sublist {
+	margin-bottom: 0;
+}
+.list--small-padding {
+	padding-left: 2em;
+}
+.list--form-column {
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 1.5em;
+}
+.list--inline {
+	padding-left: 0;
+	list-style: none;
+}
+.list--inline > li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.list--inline > li:first-child {
+	padding-left: 0;
+}
+.list--inline-full-width {
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+.list--inline-full-width > li {
+	display: table-cell;
+}
+.list > li {
+	margin-top: 2px;
+}
+p:first-child {
+	margin-top: 0;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+pre {
+	margin: 0;
+}
+pre br {
+	display: none;
+	line-height: 0;
+}
+.preformatted-text--scrolled {
+	white-space: pre;
+	overflow-x: auto;
+	word-wrap: normal;
+}
+th {
+	text-align: left;
+}
+.table {
+	width: 100%;
+	margin: 0 0 1em 0;
+}
+.table:last-child {
+	margin-bottom: 0;
+}
+.table > tbody > tr,
+.table > thead > tr {
+	background-color: #2f3546;
+	font-size: .75rem;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+	border-top: solid thin #555;
+	line-height: 1.42857;
+	padding: 5px;
+}
+.table thead:first-child tr:first-child th {
+	border-top: 0 none;
+	padding-left: .4rem;
+}
+.table--bordered {
+	border: none;
+}
+.table--bordered > tbody > tr > td,
+.table--bordered > tbody > tr > th,
+.table--bordered > tfoot > tr > td,
+.table--bordered > tfoot > tr > th,
+.table--bordered > thead > tr > td,
+.table--bordered > thead > tr > th {
+	border: 1px solid #191d2a;
+	padding: .4rem;
+}
+.table--centered th {
+	text-align: center;
+}
+.table--no-border {
+	border: none;
+}
+.table--no-border > tbody > tr > td,
+.table--no-border > tbody > tr > th,
+.table--no-border > tfoot > tr > td,
+.table--no-border > tfoot > tr > th,
+.table--no-border > thead > tr > td,
+.table--no-border > thead > tr > th {
+	border: none;
+}
+.table--no-margin {
+	margin-bottom: 0;
+}
+.table--striped > tbody > tr:nth-child(odd) > td,
+.table--striped > tbody > tr:nth-child(odd) > th {
+	background-color: #2f3547;
+}
+.table--panel-like > thead > tr {
+	background: #070b17;
+}
+.table--panel-like > thead > tr,
+.table--panel-like > thead > tr a {
+	color: #fff;
+}
+.table--panel-like > thead > tr > th {
+	padding: 4px;
+	font-size: .8rem;
+}
+.table--panel-like > thead > tr > th {
+	padding: 7px;
+}
+.table--panel-like > thead > tr > th:first-child {
+	border: none;
+	-webkit-border-top-left-radius: 5px !important;
+	border-top-left-radius: 5px !important;
+}
+.table--panel-like > thead > tr > th:last-child {
+	border: none;
+	-webkit-border-top-right-radius: 5px !important;
+	border-top-right-radius: 5px !important;
+}
+#messageformtable .username {
+	margin-right: .3rem;
+}
+.table__background-color--alternative {
+	background-color: #2f3547 !important;
+}
+.table--inplace-sortable > thead > tr > th {
+	cursor: pointer;
+}
+.table--inplace-sortable:last-child {
+	margin-bottom: 1em;
+}
+.alert {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 7px;
+}
+.alert:first-child {
+	margin-top: 0;
+}
+.alert:last-child {
+	margin-bottom: 0;
+}
+.alert--warning {
+	background-color: #eedc94;
+	color: #404040;
+}
+.alert--error {
+	background-color: #ca2a43;
+	color: #fff;
+}
+.alert__link {
+	color: #404040;
+	font-weight: 700;
+}
+.alert__link:hover {
+	color: #404040;
+	text-decoration: underline;
+}
+.alert--error .alert__link {
+	color: #fff;
+	font-weight: 700;
+}
+.alert--error .alert__link:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.alert--centered-content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.alert-bar {
+	width: 400px;
+	margin: 5px auto;
+	padding: .2em;
+	font-weight: 700;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #c8af4b;
+	border: thin solid #ceb85f;
+	font-size: .75rem;
+}
+.alert-bar__link {
+	color: #202020;
+}
+img[title=Time] {
+	width: 14px;
+	height: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 14px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/time.svg) no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[title=Snatches] {
+	width: 14px;
+	height: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 14px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/snatched.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[title=Leechers] {
+	width: 14px;
+	height: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 14px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-white.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[title=Seeders] {
+	width: 14px;
+	height: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 14px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.basic-movie-list__torrent__action__link:hover {
+	color: #4281da;
+}
+.basic-movie-list__details-row {
+	vertical-align: top;
+}
+.table > tbody > tr.basic-movie-list__details-row {
+	background-color: #1e2333;
+	font-size: .75rem;
+}
+.table > tbody > tr.compact-movie-list__details-row--odd {
+	background-color: #1e2233;
+}
+.basic-movie-list__movie__cover {
+	width: 116px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+.basic-movie-list__movie__cover-link {
+	position: relative;
+	display: block;
+}
+.basic-movie-list__movie__cover:hover {
+	-webkit-transform: scale(1.04, 1.04);
+	-moz-transform: scale(1.04, 1.04);
+	-ms-transform: scale(1.04, 1.04);
+	-o-transform: scale(1.04, 1.04);
+	transform: scale(1.04, 1.04);
+	-webkit-box-shadow: 0 0 40px #31517d;
+	box-shadow: 0 0 40px #31517d;
+}
+.basic-movie-list__movie__cover-link--seen::after {
+	content: "";
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	background-image: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
+.basic-movie-list__movie__category-icon {
+	width: 28px;
+	height: 28px;
+}
+.basic-movie-list__number {
+	text-align: center;
+	font-weight: 700;
+}
+.basic-movie-list__movie__title-row {
+	font-weight: 700;
+}
+.basic-movie-list__movie__title {
+	color: #fff;
+}
+.basic-movie-list__movie__title:hover {
+	color: #4281da;
+}
+.basic-movie-list__movie__new {
+	font-size: 10px;
+	font-weight: 700;
+	color: #4281da;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+.basic-movie-list__movie__bookmark {
+	float: right;
+}
+.basic-movie-list__movie__ratings-and-tags {
+	padding-top: 2px;
+}
+.basic-movie-list__movie__rating-container {
+	display: inline;
+	padding: 1px 4px;
+	margin-right: 4px;
+	background-color: #2f3446;
+}
+.basic-movie-list__movie__rating__title {
+	font-weight: 700;
+}
+.basic-movie-list__movie__tags {
+	padding: 2px;
+	font-style: italic;
+}
+.basic-torrent-list__movie__torrent-opener-link {
+	font-weight: 700;
+	font-style: normal;
+	padding-left: 5px;
+}
+.basic-torrent-list__movie__additional-info {
+	margin-top: 15px;
+}
+.basic-movie-list__torrent-row {
+	height: 1em;
+}
+.basic-movie-list__torrent-edition__main {
+	font-weight: 700;
+}
+.basic-movie-list__torrent__action {
+	float: right;
+}
+.torrent_table img[src="static/common/check.png"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg) no-repeat
+		center center;
+}
+.torrent_table img[src="static/common/x.png"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/not-approved.svg) no-repeat
+		center center;
+}
+img[src="static/common/Poppy1.png"] {
+	width: 70px;
+	height: 70px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 70px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/poppy.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	margin-right: 10px;
+}
+.torrent_table img[src="static/common/check.png"],
+.torrent_table img[src="static/common/x.png"] {
+	width: 12px;
+	height: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 12px;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#movie-ratings-table #imdb-title-link img {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg) no-repeat center
+		center;
+	width: 64px !important;
+	height: 64px !important;
+}
+#movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg) no-repeat
+		center center;
+	width: 48px !important;
+	height: 48px !important;
+}
+#movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
+		center center;
+	width: 48px !important;
+	height: 48px !important;
+}
+#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center;
+}
+#movie-ratings-table #imdb-title-link img,
+#movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"],
+#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
+#movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
+	width: 48px !important;
+	height: 48px !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 48px;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-post__movie-vote img {
+	width: 20px;
+	height: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 20px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.bbcode-size-1 {
+	font-size: .75em;
+}
+.bbcode-size-2 {
+	font-size: 1em;
+}
+.bbcode-size-3 {
+	font-size: 1.25em;
+}
+.bbcode-size-4 {
+	font-size: 1.5em;
+}
+.bbcode-size-5 {
+	font-size: 1.75em;
+}
+.bbcode-size-6 {
+	font-size: 2em;
+}
+.bbcode-size-7 {
+	font-size: 2.25em;
+}
+.bbcode-size-8 {
+	font-size: 2.5em;
+}
+.bbcode-size-9 {
+	font-size: 2.75em;
+}
+.bbcode-size-10 {
+	font-size: 3em;
+}
+.bbcode__image {
+	max-width: 500px;
+}
+.sidebar .bbcode__image {
+	max-width: 100%;
+}
+.bbcode-text-preview {
+	border: solid thin #555;
+	padding: .5em;
+}
+.bbcode-table-guard {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.bbcode-toolbar__button {
+	width: 24px;
+	height: 24px;
+	float: left;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin-bottom: 10px;
+	opacity: .55;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+.bbcode-toolbar__button:hover {
+	opacity: 1;
+}
+.js-bbcode-toolbar__bold-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bold.svg) no-repeat;
+}
+.js-bbcode-toolbar__italic-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/italic.svg) no-repeat;
+}
+.js-bbcode-toolbar__underline-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/underline.svg) no-repeat;
+}
+.js-bbcode-toolbar__strikethrough-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/strikethrough.svg)
+		no-repeat;
+}
+.js-bbcode-toolbar__link-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/link.svg) no-repeat;
+}
+.js-bbcode-toolbar__image-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/image.svg) no-repeat;
+}
+.js-bbcode-toolbar__hide-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/hide.svg) no-repeat;
+}
+.js-bbcode-toolbar__spoiler-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/spoiler.svg) no-repeat;
+}
+.js-bbcode-toolbar__quote-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/quote.svg) no-repeat;
+}
+.js-bbcode-toolbar__size-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/font-size.svg) no-repeat;
+}
+.js-bbcode-toolbar__color-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/color.svg) no-repeat;
+}
+.js-bbcode-toolbar__youtube-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/vid-ut.svg) no-repeat;
+}
+.js-bbcode-toolbar__mediainfo-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/mediainfo.svg) no-repeat;
+}
+.js-bbcode-toolbar__align-center-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align.svg) no-repeat;
+}
+.js-bbcode-toolbar__align-right-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align-right.svg)
+		no-repeat;
+}
+.js-bbcode-toolbar__code-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/code.svg) no-repeat;
+}
+.js-bbcode-toolbar__list-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bullet-list.svg)
+		no-repeat;
+}
+.js-bbcode-toolbar__emoticon-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/emojis.svg) no-repeat;
+}
+.js-bbcode-toolbar__comparison-button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/compare.svg) no-repeat;
+}
+a[title="BBCode help"] .bbcode-toolbar__button {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/question.svg) no-repeat;
+}
+.js-bbcode-toolbar__align-center-button,
+.js-bbcode-toolbar__align-right-button,
+.js-bbcode-toolbar__bold-button,
+.js-bbcode-toolbar__code-button,
+.js-bbcode-toolbar__color-button,
+.js-bbcode-toolbar__comparison-button,
+.js-bbcode-toolbar__emoticon-button,
+.js-bbcode-toolbar__hide-button,
+.js-bbcode-toolbar__image-button,
+.js-bbcode-toolbar__italic-button,
+.js-bbcode-toolbar__link-button,
+.js-bbcode-toolbar__list-button,
+.js-bbcode-toolbar__mediainfo-button,
+.js-bbcode-toolbar__quote-button,
+.js-bbcode-toolbar__size-button,
+.js-bbcode-toolbar__spoiler-button,
+.js-bbcode-toolbar__strikethrough-button,
+.js-bbcode-toolbar__underline-button,
+.js-bbcode-toolbar__youtube-button,
+a[title="BBCode help"] .bbcode-toolbar__button {
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-position: center center !important;
+	width: 12px !important;
+	height: 12px !important;
+	cursor: pointer;
+	margin-right: .5rem;
+}
+.bbcode-toolbar__size-popup-row {
+	cursor: pointer;
+	padding: 0 4px;
+}
+.bbcode-toolbar__size-popup-row:hover {
+	background: #2f3547;
+}
+.bbcode-toolbar__color-popup-color {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.bbcode-toolbar__color-popup-color:hover {
+	border: solid 2px #ff8040;
+}
+.bbcode-toolbar__emoticon-popup-item {
+	cursor: pointer;
+	display: inline-block;
+	border: none;
+	padding: 2px;
+	margin: 2px;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+.bbcode-toolbar__emoticon-popup-item:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
+img[src="static/common/smileys/angry.gif"],
+img[src="static/common/smileys/biggrin.gif"],
+img[src="static/common/smileys/blank.gif"],
+img[src="static/common/smileys/blush.gif"],
+img[src="static/common/smileys/cool.gif"],
+img[src="static/common/smileys/creepy.gif"],
+img[src="static/common/smileys/crom.gif"],
+img[src="static/common/smileys/crying.gif"],
+img[src="static/common/smileys/eyesright.gif"],
+img[src="static/common/smileys/frown.gif"],
+img[src="static/common/smileys/heart.gif"],
+img[src="static/common/smileys/hmm.gif"],
+img[src="static/common/smileys/laughing.gif"],
+img[src="static/common/smileys/ninja.gif"],
+img[src="static/common/smileys/no.gif"],
+img[src="static/common/smileys/nod.gif"],
+img[src="static/common/smileys/ohnoes.gif"],
+img[src="static/common/smileys/ohshit.gif"],
+img[src="static/common/smileys/omg.gif"],
+img[src="static/common/smileys/paddle.gif"],
+img[src="static/common/smileys/sad.gif"],
+img[src="static/common/smileys/shifty.gif"],
+img[src="static/common/smileys/sick.gif"],
+img[src="static/common/smileys/smile.gif"],
+img[src="static/common/smileys/sorry.gif"],
+img[src="static/common/smileys/thanks.gif"],
+img[src="static/common/smileys/tongue.gif"],
+img[src="static/common/smileys/wave.gif"],
+img[src="static/common/smileys/wink.gif"],
+img[src="static/common/smileys/worried.gif"],
+img[src="static/common/smileys/wtf.gif"],
+img[src="static/common/smileys/wub.gif"] {
+	width: 16px !important;
+	height: 16px !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+	padding-left: 20px !important;
+	-webkit-background-size: contain !important;
+	-o-background-size: contain !important;
+	background-size: contain !important;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
+img[src="static/common/smileys/smile.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
+img[src="static/common/smileys/sad.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg) no-repeat center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
+img[src="static/common/smileys/biggrin.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
+img[src="static/common/smileys/ohshit.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
+img[src="static/common/smileys/tongue.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
+img[src="static/common/smileys/blank.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg)
+		no-repeat center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],
+img[src="static/common/smileys/angry.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
+img[src="static/common/smileys/blush.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
+img[src="static/common/smileys/cool.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
+img[src="static/common/smileys/creepy.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
+img[src="static/common/smileys/crying.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
+img[src="static/common/smileys/eyesright.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
+img[src="static/common/smileys/frown.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
+img[src="static/common/smileys/hmm.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg) no-repeat center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
+img[src="static/common/smileys/laughing.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
+img[src="static/common/smileys/ninja.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
+img[src="static/common/smileys/no.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg) no-repeat center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
+img[src="static/common/smileys/nod.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg) no-repeat center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
+img[src="static/common/smileys/ohnoes.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
+img[src="static/common/smileys/omg.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg) no-repeat center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
+img[src="static/common/smileys/shifty.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
+img[src="static/common/smileys/sick.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
+img[src="static/common/smileys/wink.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
+img[src="static/common/smileys/worried.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
+img[src="static/common/smileys/wtf.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg) no-repeat center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
+img[src="static/common/smileys/wub.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg) no-repeat center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
+img[src="static/common/smileys/paddle.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
+img[src="static/common/smileys/wave.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
+img[src="static/common/smileys/heart.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg) no-repeat center
+		center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
+img[src="static/common/smileys/thanks.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg) no-repeat center
+		center;
+}
+img[src="static/common/smileys/thanks.gif"] {
+	width: 48px !important;
+	height: 48px !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+	padding-left: 48px !important;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
+img[src="static/common/smileys/crom.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg) no-repeat
+		center center;
+}
+img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
+img[src="static/common/smileys/sorry.gif"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg) no-repeat center
+		center;
+}
+.bonus-point-history--received {
+	color: #418b00;
+}
+.bonus-point-history--sent {
+	color: #f44336;
+}
+.cover-movie-list__container--centered {
+	margin-left: 8px;
+}
+.cover-movie-list {
+	display: inline-block;
+	margin: 0 0 -10px -20px;
+}
+.cover-movie-list--narrow {
+	margin: 0 0 -10px -12px;
+}
+.cover-movie-list__movie {
+	position: relative;
+	float: left;
+	width: 176px;
+	margin: 0 0 10px 20px;
+	text-align: left;
+}
+.cover-movie-list--narrow > .cover-movie-list__movie {
+	width: 168px;
+	margin: 0 0 10px 12px;
+}
+.cover-movie-list__movie__cover-link {
+	display: block;
+	height: 246px;
+	width: 176px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+}
+.cover-movie-list--narrow > .cover-movie-list__movie > .cover-movie-list__movie__cover-link {
+	display: block;
+	height: 234px;
+	width: 168px;
+}
+.cover-movie-list__movie__undercover {
+	padding: .5rem;
+	background: 0 0;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}
+.cover-movie-list__movie__title {
+	font-weight: 700;
+	color: #fff;
+}
+.cover-movie-list__movie__title:cover {
+	color: #4281da;
+}
+.cover-movie-list__movie__new {
+	font-size: 10px;
+	font-weight: 700;
+	color: #4281da;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+.cover-movie-list__movie__rating-and-tags {
+	margin-top: 5px;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.cover-movie-list__movie__rating {
+	background-color: #2f3546;
+	padding: 1px 4px;
+	margin-right: 4px;
+}
+.basic-movie-list__movie__cover-link--seen,
+.cover-movie-list__movie__cover-link--seen,
+.huge-movie-list__movie__cover__link--seen,
+.small-cover-movie-list__movie__link--seen {
+	opacity: .65;
+}
+.basic-movie-list__movie__cover-link--seen:hover,
+.cover-movie-list__movie__cover-link--seen:hover,
+.huge-movie-list__movie__cover__link--seen:hover,
+.small-cover-movie-list__movie__link--seen:hover {
+	opacity: 1;
+}
+.cover-movie-list__movie__cover-link--seen::after {
+	content: "";
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	background-image: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
+.cover-movie-list__movie__title-row {
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.encoding-history-status--finished {
+	font-weight: 700;
+	color: green;
+}
+.encoding-history-status--canceled {
+	font-weight: 700;
+	color: orange;
+}
+.encoding-history-status--expired {
+	font-weight: 700;
+	color: #f44336;
+}
+.footer {
+	text-align: center;
+	margin: 1rem;
+	font-size: .7rem;
+}
+.footer__load:before {
+	content: "\1F37F";
+}
+.footer__disclaimer {
+	display: inline-block;
+	width: 90%;
+	margin-bottom: 10px;
+}
+.form__label {
+	font-weight: 700;
+}
+.form--horizontal .form__label {
+	float: right;
+}
+.form__checkbox-label,
+.form__input,
+.form__radio-label {
+	margin-right: .5em;
+	margin-bottom: .5em;
+	font-size: .75rem;
+}
+.form__checkbox-label,
+.form__radio-label {
+	display: inline-block;
+}
+.form__checkbox-label--with-note,
+.form__radio-label--with-note {
+	margin-right: 0;
+	margin-bottom: 0;
+}
+.generic-form,
+.search-form {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+.generic-form--narrow,
+.search-form--narrow {
+	width: 684px;
+}
+.generic-form--full-width {
+	width: 100%;
+}
+.search-form--toggleable {
+	margin-bottom: 0;
+}
+.toggleable-search-form__toggler-container {
+	text-align: center;
+}
+.toggleable-search-form__search-form {
+	margin-bottom: 15px;
+}
+.search-form__advanced-basic-toggler {
+	text-align: center;
+	padding-bottom: 8px;
+}
+.generic-form__footer,
+.search-form__footer {
+	border-top: thin solid #555;
+	padding-top: 8px;
+}
+.generic-form__footer--right-aligned,
+.search-form__footer--right-aligned {
+	text-align: right;
+}
+.generic-form__footer--no-border,
+.search-form__footer--no-border {
+	border-top-style: none;
+}
+.search-form__footer__results {
+	float: left;
+}
+#browse_settings {
+	width: 14px;
+	height: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 14px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/settings.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	-webkit-transition: -webkit-transform 2s ease-in-out;
+	transition: -webkit-transform 2s ease-in-out;
+	-o-transition: -o-transform 2s ease-in-out;
+	-moz-transition: transform 2s ease-in-out, -moz-transform 2s ease-in-out;
+	-moz-transition: transform 2s ease-in-out, -moz-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out;
+	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
+		-o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
+		-o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
+		-o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
+		-o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
+		-o-transform 2s ease-in-out;
+}
+#browse_settings:hover {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+.forum-post {
+	background-color: #2f3546;
+	border: none;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.forum-post--unread {
+	border: 1px solid #4281da;
+}
+.forum-post--is-reply {
+	margin-top: 2rem;
+}
+.forum-post__id--staff-post {
+	color: #4281da;
+}
+.forum-post--heading-only {
+	margin-bottom: 0;
+}
+.forum-post__heading {
+	background: #070b17;
+	padding: 7px;
+	-webkit-border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.forum-post__heading .l_movie,
+.forum-post__heading .username {
+	color: #fff;
+	margin-right: 2px;
+}
+.forum-post__heading .time {
+	color: #949aac;
+}
+.forum-post__heading img {
+	margin: 0 2.5px;
+}
+img[src="static/common/symbols/donor.png"] {
+	width: 13px;
+	height: 13px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 13px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/donor.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/miner.png"] {
+	width: 13px;
+	height: 13px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 13px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/miner-alt.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/filmclub.png"] {
+	width: 20px;
+	height: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 20px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/film-club-icon.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/encoder.png"] {
+	width: 12px;
+	height: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 12px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/encoder.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/quality.gif"],
+img[src="static/common/symbols/encoder_gp.png"] {
+	width: 12px;
+	height: 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 12px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg)
+		no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/badge_checker.png"] {
+	width: 13px;
+	height: 13px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 13px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/badge_gpchecker.png"] {
+	width: 13px;
+	height: 13px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 13px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge_gpchecker.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],
+img[src="static/common/symbols/disabled.png"] {
+	width: 11px;
+	height: 11px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 11px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/Rank1.png"] {
+	width: 10px;
+	height: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-1.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/Rank2.png"] {
+	width: 10px;
+	height: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-2.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/Rank3.png"] {
+	width: 10px;
+	height: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-3.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/Rank4.png"] {
+	width: 10px;
+	height: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-4.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/Rank5.png"] {
+	width: 10px;
+	height: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-5.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/symbols/Rank6.png"] {
+	width: 10px;
+	height: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-6.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-post__avatar-and-body {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.forum-post__avatar {
+	display: table-cell;
+	position: relative;
+	border-right: 1px solid #191d2a;
+	padding: 5px;
+	width: 161px;
+}
+.forum-post__avatar__image {
+	display: block;
+	width: auto;
+	max-width: 150px;
+	height: auto;
+	max-height: 400px;
+}
+.forum-post__body {
+	display: table-cell;
+	vertical-align: top;
+	padding: 10px;
+}
+.forum-post__edited {
+	margin-top: 20px;
+	font-style: italic;
+	color: #949aac;
+}
+.forum-post__textarea {
+	width: 100%;
+	resize: vertical;
+}
+.forum-post--is-previewing .forum-post__preview {
+	padding-bottom: 20px;
+}
+.forum-topic--is-read {
+	width: 30px;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg) no-repeat
+		left center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-topic--is-unread {
+	width: 30px;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg) no-repeat
+		left center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-topic--is-read-locked-sticky {
+	width: 30px;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg) no-repeat
+		left center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-topic--is-read-sticky {
+	width: 30px;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 1rem;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-topic--is-read-locked {
+	width: 30px;
+	height: 30px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg) no-repeat
+		left center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-topic--is-unread-locked-sticky {
+	width: 30px;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg)
+		no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-topic--is-unread-sticky {
+	width: 30px;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg)
+		no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.forum-topic--is-unread-locked {
+	width: 32px;
+	height: 32px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg)
+		no-repeat center center;
+	-o-background-size: contain;
+	background-size: contain;
+	-webkit-background-size: contain;
+}
+.forum-topic__new {
+	color: #4281da;
+}
+.forum-topic__go-to-last-read {
+	float: left;
+	width: 15px;
+	height: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 15px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-right.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	margin-left: 5px;
+}
+.forum-topic__go-to-last-read:hover {
+	-webkit-transform: translate(3px);
+	-moz-transform: translate(3px);
+	-ms-transform: translate(3px);
+	-o-transform: translate(3px);
+	transform: translate(3px);
+}
+.view_post {
+	width: 12px !important;
+	height: 12px !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 12px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/view-post.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.view_post:hover {
+	-webkit-filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
+	filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
+}
+.grid {
+	margin-left: -1em;
+}
+.grid__item {
+	float: left;
+	padding-left: 1em;
+}
+.grid-u-1 {
+	width: 100%;
+}
+.grid-u-1-3 {
+	width: 33.3%;
+}
+.grid-u-1-10 {
+	width: 10%;
+}
+.grid-u-2-10 {
+	width: 20%;
+}
+.grid-u-3-10 {
+	width: 30%;
+}
+.grid-u-4-10 {
+	width: 40%;
+}
+.grid-u-5-10 {
+	width: 50%;
+}
+.grid-u-6-10 {
+	width: 60%;
+}
+.grid-u-7-10 {
+	width: 70%;
+}
+.grid-u-8-10 {
+	width: 80%;
+}
+.grid-u-9-10 {
+	width: 90%;
+}
+.grid-offset-u-1-10 {
+	margin-left: 10%;
+}
+.grid-offset-u-2-10 {
+	margin-left: 20%;
+}
+.grid-offset-u-3-10 {
+	margin-left: 30%;
+}
+.grid-offset-u-4-10 {
+	margin-left: 40%;
+}
+.grid-offset-u-5-10 {
+	margin-left: 50%;
+}
+.grid-offset-u-6-10 {
+	margin-left: 60%;
+}
+.grid-offset-u-7-10 {
+	margin-left: 70%;
+}
+.grid-offset-u-8-10 {
+	margin-left: 80%;
+}
+.grid-offset-u-9-10 {
+	margin-left: 90%;
+}
+.heading:first-child {
+	margin-top: 0;
+}
+.heading--no-margin {
+	margin: 0;
+}
+.heading--small-bottom-margin {
+	margin-bottom: .25em;
+}
+.huge-movie-list__movie {
+	background-color: #2f3546;
+	border: none;
+	margin-bottom: 30px;
+}
+.huge-movie-list__movie:not(:first-child) {
+	margin-top: 15px;
+}
+.huge-movie-list__movie__cover {
+	position: relative;
+	float: left;
+	width: 256px;
+}
+.huge-movie-list__movie__cover__link {
+	display: block;
+	height: 360px;
+	width: 256px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+}
+.huge-movie-list__movie__cover__link--seen::after {
+	content: "";
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	background-image: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
+.huge-movie-list__movie__details {
+	margin-left: 256px;
+	position: relative;
+	padding: 10px 10px 0 10px;
+}
+.huge-movie-list__movie__title {
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #fff;
+}
+.huge-movie-list__movie__title:hover {
+	color: #4281da;
+}
+.huge-movie-list__movie__year {
+	font-size: 1.4em;
+}
+.huge-movie-list__movie__new {
+	font-size: 10px;
+	font-weight: 700;
+	color: #4281da;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+.huge-movie-list__movie__tag-list {
+	font-size: 1em;
+	font-style: italic;
+	margin-top: 2px;
+}
+.huge-movie-list__movie__additional-info {
+	margin-top: 15px;
+}
+.huge-movie-list__movie__director-list {
+	font-size: 1em;
+}
+.huge-movie-list__movie__ratings-and-synopsis {
+	margin-top: 25px;
+}
+.huge-movie-list__movie__ratings-and-synopsis > tbody > tr > td {
+	background-color: #181c27;
+	border: none;
+}
+.huge-movie-list__movie__ratings {
+	width: 130px;
+	margin: auto;
+}
+.huge-movie-list__movie__ratings__icon-column {
+	padding: 1px 6px 1px 5px;
+}
+.huge-movie-list__movie__ratings__votes-column {
+	padding: 1px 2px 1px 2px;
+}
+.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x1_imdb.png"] {
+	width: 42px;
+	height: 42px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 42px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"],
+.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"],
+.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"] {
+	width: 32px;
+	height: 32px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 32px;
+}
+.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"] {
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"] {
+	width: 32px;
+	height: 32px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 32px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.huge-movie-list__movie__synopsis {
+	padding: 5px;
+	font-size: 1.2em;
+}
+.huge-movie-list__movie__action-row {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+.huge-movie-list__movie__torrent-summary {
+	margin-top: 25px;
+}
+.table > tbody > tr.inbox-message--unread > td {
+	background-color: #af2525;
+}
+.input-group {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.input-group__field {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.bvalidator_errmsg {
+	display: none;
+	white-space: nowrap;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 700;
+	padding: 4px 10px;
+	-webkit-box-shadow: 2px 2px 2px #222;
+	box-shadow: 2px 2px 2px #222;
+	position: relative;
+	background: #d51111;
+	border: 3px solid #ddd;
+}
+.bvalidator_errmsg:after,
+.bvalidator_errmsg:before {
+	top: 100%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.bvalidator_errmsg:after {
+	border-top-color: #d51111;
+	border-width: 8px;
+	left: 14px;
+	margin-left: -8px;
+}
+.bvalidator_errmsg:before {
+	border-top-color: #ddd;
+	border-width: 12px;
+	left: 14px;
+	margin-left: -12px;
+}
+.bvalidator_errmsg .bvalidator_close_icon {
+	margin-left: 5px;
+	margin-top: -2px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: 700er;
+	color: #000;
+	cursor: pointer;
+	font-size: 12px;
+}
+.bvalidator_errmsg em {
+	display: none;
+}
+#simplemodal-overlay {
+	background-color: #000;
+	cursor: wait;
+}
+#simplemodal-overlay-pointer {
+	background-color: #000;
+	cursor: pointer;
+}
+#simplemodal-container a.modalCloseImg {
+	background: url(/static/common/simplemodal_close.png) no-repeat;
+	width: 25px;
+	height: 29px;
+	display: inline;
+	z-index: 3200;
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	cursor: pointer;
+}
+.last5-movies {
+	padding: 1em 0 1em 0;
+	font-size: 8pt;
+}
+.last5-movies__table {
+	margin: 0;
+	width: 100%;
+}
+.last5-movies__table > tbody > tr > td {
+	padding: 0 10px;
+}
+.last5-movies__link {
+	display: inline-block;
+	width: 106px;
+	height: 150px;
+	margin-bottom: 5px;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.last5-movies__link:hover {
+	-webkit-transform: scale(1.04, 1.04);
+	-moz-transform: scale(1.04, 1.04);
+	-ms-transform: scale(1.04, 1.04);
+	-o-transform: scale(1.04, 1.04);
+	transform: scale(1.04, 1.04);
+}
+.last5-movies__show-all-row {
+	text-align: right;
+}
+.last5-movies__show-all-link {
+	display: inline-block;
+	margin-top: 8px;
+}
+.lightbox {
+	position: fixed;
+	text-align: center;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	padding: 0;
+	z-index: 1002;
+	overflow: auto;
+	outline: 0;
+}
+.lightbox__shroud {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 1001;
+}
+body.lightbox__scroll-lock {
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.light-youtube-embed {
+	display: inline-block;
+	position: relative;
+	width: 480px;
+	height: 360px;
+}
+.light-youtube-embed__image {
+	width: 480px;
+	height: 360px;
+}
+.light-youtube-embed::after,
+.light-youtube-embed:hover::after {
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 56px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	pointer-events: none;
+	background-image: url(/static/common/symbols/play-big.png);
+}
+.light-youtube-embed:hover::after {
+	background-image: url(/static/common/symbols/play-big-hover.png);
+}
+.log__message--deleted {
+	color: #ff3232;
+}
+.log__message--edited {
+	color: #949aac;
+}
+.log__message--uploaded {
+	color: #20b83e;
+}
+.main-column {
+	margin: 0 255px 10px 0;
+	width: 715px;
+	overflow: hidden;
+}
+.main-menu {
+	background-color: #060b17;
+	width: 750px;
+	height: 28px;
+	margin: 5px auto 10px auto;
+	font-size: 10pt;
+	text-align: left;
+	z-index: 7;
+	opacity: .75;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.main-menu__list {
+	padding: 5px 0 0 0;
+	text-align: center;
+}
+.main-menu__item {
+	display: inline;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+	font-size: 12px;
+}
+.main-menu__link {
+	padding: .5em;
+	color: #949aac;
+	position: relative;
+}
+.main-menu__link:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: #4281da;
+	-webkit-transform-origin: bottom right;
+	-moz-transform-origin: bottom right;
+	-ms-transform-origin: bottom right;
+	-o-transform-origin: bottom right;
+	transform-origin: bottom right;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: -webkit-transform .5s ease;
+	transition: -webkit-transform .5s ease;
+	-o-transition: -o-transform .5s ease;
+	-moz-transition: transform .5s ease, -moz-transform .5s ease;
+	-moz-transition: transform .5s ease, -moz-transform .5s ease;
+	transition: transform .5s ease;
+	transition: transform .5s ease, -webkit-transform .5s ease, -moz-transform .5s ease, -o-transform .5s ease;
+	transition: transform .5s ease, -webkit-transform .5s ease, -moz-transform .5s ease, -o-transform .5s ease;
+}
+.main-menu__link:hover:before {
+	-webkit-transform-origin: bottom left;
+	-moz-transform-origin: bottom left;
+	-ms-transform-origin: bottom left;
+	-o-transform-origin: bottom left;
+	transform-origin: bottom left;
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	-o-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.mediainfo {
+	margin: 0;
+	width: auto;
+}
+.mediainfo > tbody > tr,
+.mediainfo__section > tbody > tr {
+	background-color: #494848;
+	vertical-align: top;
+}
+.mediainfo > tbody > tr > td {
+	border: 1px solid #3d4356;
+	padding: 5px;
+}
+.mediainfo__section {
+	margin: 0;
+	width: 100%;
+	border-top: 1px solid #4a4e5b;
+	border-collapse: collapse;
+}
+.mediainfo__section__caption {
+	font-weight: 700;
+}
+.mediainfo__section > tbody > td {
+	border: none;
+	padding: 2px;
+}
+.mediainfo--in-release-description {
+	width: 100%;
+}
+.mediainfo--in-release-description .mediainfo__section > tbody > tr,
+.mediainfo--in-release-description > tbody > tr {
+	background-color: #242a3c;
+	border-top: 1px solid #3d4356;
+}
+html.busy-cursor,
+html.busy-cursor * {
+	cursor: wait !important;
+}
+.label {
+	font-weight: 700;
+	text-align: right;
+}
+.linkbox {
+	text-align: center;
+	margin: 5px 5px 10px 5px;
+	font-size: .75rem;
+}
+.linkbox__link--current {
+	font-weight: 700;
+}
+.large-torrent-list-group-opener {
+	background: url(images/show.png) no-repeat center center;
+	width: 28px;
+	height: 28px;
+}
+.large-torrent-list-group-opener__link {
+	display: block;
+	width: 28px;
+	height: 28px;
+	border: none;
+}
+.no-seeders {
+	color: #f44336;
+}
+.release-description-preview {
+	background-color: #494848;
+	padding: 10px;
+}
+.film-club-discuss-link {
+	text-align: center;
+	font-size: 1.25em;
+	padding-top: .5em;
+}
+.site-debug {
+	margin-bottom: 15px;
+}
+.stylesheet-preview-container {
+	margin-top: 4px;
+	margin-bottom: 20px;
+}
+.missing-torrent-status--exists {
+	font-weight: 700;
+	color: #20b83e;
+}
+.missing-torrent-status--trumpable {
+	font-weight: 700;
+	color: orange;
+}
+.missing-torrent-status--missing {
+	font-weight: 700;
+	color: #ff3232;
+}
+.movie-page__torrent__panel {
+	background-color: #181c27;
+	margin: 10px;
+	padding: 10px;
+	border: 1px dashed #4a4e5b;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.table > tbody > tr.movie-page__torrent--highlighted {
+	background-color: #2f3547;
+}
+.movie-page__torrent-reports-title {
+	font-weight: 700;
+}
+.movie-page__torrent-report-container {
+	margin-top: 8px;
+	background-color: #1d2333;
+}
+.movie-page__torrent-report-date-and-reason {
+	padding: 5px;
+	border-bottom: 1px dotted #666;
+}
+.movie-page__torrent-report-description {
+	padding: 5px 1rem;
+}
+.movie-page__torrent-report-staff-comment {
+	padding: 5px 1rem;
+	border-top: 1px dotted #666;
+	background-color: #1e1e1e;
+}
+.movie-page__trailer {
+	margin-bottom: 14px;
+}
+.movie-page__actor-column {
+	width: 180px;
+	text-align: right;
+}
+.movie-tooltip__title-row {
+	font-weight: 700;
+	font-size: 13px;
+}
+.movie-tooltip__title {
+	color: #fff;
+}
+.movie-tooltip__director-list {
+	margin-top: 3px;
+}
+.movie-tooltip__ratings {
+	margin: 3px 0 3px 0;
+}
+.movie-tooltip__rating-container {
+	display: inline;
+	padding: 0 2px;
+	margin-right: 4px;
+	background-color: #2f3446;
+}
+.movie-tooltip__rating__title {
+	font-weight: 700;
+}
+.movie-tooltip__rating__title > a,
+.movie-tooltip__tag {
+	color: #c9c9c9;
+	font-weight: 400;
+}
+.movie-tooltip__rating__title > a:hover,
+.movie-tooltip__tag:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+.movie-tooltip__additional-info {
+	margin-top: 10px;
+}
+.movie-tooltip__trailer {
+	position: relative;
+	margin-top: 10px;
+	width: 120px;
+	height: 90px;
+	cursor: pointer;
+}
+.movie-tooltip__trailer__image {
+	border-color: #303030;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+}
+.movie-tooltip__trailer__play {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	cursor: pointer;
+}
+.movie-tooltip__synopsis {
+	margin-top: 10px;
+	line-height: 12px;
+}
+.movie-tooltip__torrents {
+	margin-top: 10px;
+}
+.movie-tooltip__action-row {
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 4px;
+	font-weight: 700;
+	border-top: 2px solid #303030;
+}
+.page__title {
+	text-align: center;
+}
+.page__main-content {
+	background-color: #1e2333;
+	-webkit-border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 15px 19px 15px 19px;
+	width: 1013px;
+	font-size: .75rem;
+	-webkit-box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .4);
+}
+.pagination {
+	margin: 5px;
+	text-align: center;
+}
+.pagination__current-page,
+.pagination__link {
+	font-weight: 700;
+	font-size: .75rem;
+}
+.pagination__current-page {
+	color: #565963;
+}
+.pagination__current-page:hover {
+	cursor: not-allowed;
+}
+.panel {
+	background-color: #2f3547;
+	border: none;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	-webkit-box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .24);
+	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .24);
+}
+.panel--no-margin {
+	margin-bottom: 0;
+}
+.panel__heading {
+	background: #060b17;
+	border: none;
+	padding: 7px;
+}
+.panel__heading__title {
+	font-weight: 700;
+}
+.panel__heading img {
+	margin: 0 2.5px;
+}
+.panel__heading__toggler {
+	float: right;
+	font-size: .75em;
+}
+.panel,
+.panel__heading {
+	-webkit-border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.panel__body {
+	padding: .5rem 1rem;
+}
+.poll__title {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.poll__list {
+	list-style: none outside none;
+	padding-left: 1.5em;
+	margin-top: 0;
+}
+.poll__option--blank {
+	margin-top: 1em;
+}
+.poll__bar {
+	margin-bottom: .75em;
+}
+.poll__bar--no-margin {
+	margin-bottom: 0;
+}
+.poll__bar__left {
+	float: left;
+	width: 2px;
+	height: 9px;
+	background: url(images/bar_left.gif) center center no-repeat;
+	margin: 0;
+	padding: 0;
+}
+.poll__bar__center {
+	float: left;
+	height: 9px;
+	background: url(images/bar.gif) repeat;
+	margin: 0;
+	padding: 0;
+}
+.poll__bar__right {
+	float: left;
+	width: 2px;
+	height: 9px;
+	background: url(images/bar_right.gif) center center no-repeat;
+	margin: 0;
+	padding: 0;
+}
+.qtip {
+	position: absolute;
+	left: -28000px;
+	top: -28000px;
+	display: none;
+	max-width: 280px;
+	min-width: 50px;
+	font-size: 10.5px;
+	line-height: 12px;
+	border-width: 1px;
+	border-style: solid;
+}
+.qtip-content {
+	position: relative;
+	padding: 9px;
+	overflow: hidden;
+	text-align: left;
+}
+.qtip-content label {
+	display: block;
+}
+.qtip-shadow {
+	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .15);
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .15);
+}
+.qtip:not(.ie9haxors) div.qtip-content,
+.qtip:not(.ie9haxors) div.qtip-titlebar {
+	-webkit-filter: none;
+	filter: none;
+	-ms-filter: none;
+}
+.qtip .qtip-tip {
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 10;
+}
+.qtip .qtip-tip,
+.qtip .qtip-tip * {
+	position: absolute;
+	color: #123456;
+	background: 0 0;
+	border: none dashed transparent;
+}
+.qtip .qtip-tip canvas {
+	top: 0;
+	left: 0;
+}
+.qtip-ptp {
+	background: #070b16;
+	background-color: rgba(7, 11, 22, .95);
+	line-height: normal !important;
+	max-width: none !important;
+	color: #fff;
+	border: 1px solid transparent !important;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px !important;
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter:none)) {
+	.qtip-ptp {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background-color: rgba(7, 11, 22, .65);
+	}
+}
+.ratio-00 {
+	color: #f44336;
+}
+.ratio-01 {
+	color: #ff1300;
+}
+.ratio-02 {
+	color: #ff1300;
+}
+.ratio-03 {
+	color: #ff2600;
+}
+.ratio-04 {
+	color: #ff4c00;
+}
+.ratio-05 {
+	color: #ff5e00;
+}
+.ratio-06 {
+	color: #ff5e00;
+}
+.ratio-07 {
+	color: #ff7100;
+}
+.ratio-08 {
+	color: #ff9700;
+}
+.ratio-09 {
+	color: #fa0;
+}
+.ratio-10 {
+	color: #74c42e;
+}
+.ratio-20 {
+	color: #418b00;
+}
+.ratio-50 {
+	color: #418b00;
+}
+.ratio-infinite {
+	color: #418b00;
+}
+.table > tbody > tr.release-name-movie-list__details-row {
+	background-color: #222;
+}
+.release-name-movie-list__name {
+	font-size: 14px;
+}
+.release-name-movie-list__movie__release-category {
+	vertical-align: middle;
+	text-align: center;
+	background-color: #333;
+}
+.release-name-movie-list__movie__release-category__link {
+	white-space: nowrap;
+	font-size: 11px;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(5, 5, 5, .5);
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.release-name-movie-list__movie__release-name {
+	font-weight: 700;
+}
+.release-name-movie-list__movie__new {
+	font-size: 10px;
+	font-weight: 700;
+	color: #4281da;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+.release-name-movie-list__movie__action-container {
+	float: right;
+}
+.release-name-movie-list__movie__ratings-and-tags {
+	padding-top: 2px;
+}
+.release-name-movie-list__movie__rating-container {
+	display: inline;
+	padding: 1px 4px;
+	margin-right: 4px;
+	background-color: #2f3446;
+}
+.release-name-movie-list__movie__rating__title {
+	font-weight: 700;
+}
+.release-name-movie-list__movie__tags {
+	padding: 2px;
+	font-style: italic;
+}
+.screenshot-comparison__container {
+	position: fixed;
+	overflow: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	text-align: center;
+}
+.screenshot-comparison__row {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.screenshot-comparison__image-container {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.screenshot-comparison__image {
+	border: 4px solid #404;
+}
+.screenshot-comparison__label {
+	position: fixed;
+	top: 0;
+	z-index: 2000;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000;
+}
+.screenshot-comparison__old-school-toggler-container {
+	margin: 20px;
+}
+.screenshot-comparison__help {
+	display: inline-block;
+	margin-bottom: 20px;
+	max-width: 800px;
+	color: #fff;
+	text-align: left;
+}
+.screenshot-comparison__old-school-image {
+	width: 20%;
+}
+.search-bar {
+	width: 1013px;
+	background: #2f3447;
+	font-size: .8rem;
+	padding: .6em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	text-align: center;
+	-webkit-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom: 1px solid #3a4056;
+}
+.search-bar__list {
+	display: inline;
+	margin: 0 6px;
+	padding: 0;
+}
+.search-bar__search-field {
+	display: inline;
+	margin: 0;
+	position: relative;
+}
+.search-bar__search-field__form {
+	display: inline;
+}
+.search-bar__search-field__input {
+	display: inline;
+	position: relative;
+	top: -1px;
+	background-color: #171c2a;
+	font-size: .8em;
+	color: #b5b5b5;
+	border: 1px solid #3a4056;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 2px 3px;
+	text-align: center;
+	margin: .4rem;
+}
+.search-bar__search-field__input::-moz-placeholder {
+	color: #949aac;
+	opacity: 1;
+}
+.search-bar__search-field__input:-ms-input-placeholder {
+	color: #949aac;
+}
+.search-bar__search-field__input::-webkit-input-placeholder {
+	color: #949aac;
+}
+.search-bar__search-field__input:-moz-placeholder {
+	color: #949aac;
+}
+.search-bar__search-field__input::-ms-input-placeholder {
+	color: #949aac;
+}
+.search-bar__search-field__input::placeholder {
+	color: #949aac;
+}
+.search-bar__results {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 232px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	z-index: 1000;
+}
+.search-bar__results__list-item {
+	display: block;
+	background: #2f3547;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: .9em;
+	line-height: 15px;
+	border-bottom: 1px solid #1d212b;
+}
+.search-bar__results__list-item--is-highlighted {
+	background: #42495d;
+}
+.search-bar__results__link {
+	display: block;
+	padding: 5px 8px;
+}
+.search-bar__results__link,
+.search-bar__results__link:hover {
+	color: #949aac;
+}
+.search-bar__results__list-item--is-highlighted > .search-bar__results__link,
+.search-bar__results__list-item--is-highlighted > .search-bar__results__link:hover {
+	color: #fff;
+}
+.sidebar {
+	float: right;
+	width: 250px;
+}
+.sidebar-cover-image {
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+.sidebar-cover-image:hover {
+	-webkit-transform: scale(1.04, 1.04);
+	-moz-transform: scale(1.04, 1.04);
+	-ms-transform: scale(1.04, 1.04);
+	-o-transform: scale(1.04, 1.04);
+	transform: scale(1.04, 1.04);
+	-webkit-box-shadow: 0 0 40px #31517d;
+	box-shadow: 0 0 40px #31517d;
+}
+.simple-tabs__link--active {
+	color: #fff;
+}
+.site-logo {
+	position: relative;
+	top: 0;
+	background: 0 0;
+	width: 100%;
+	height: auto;
+	margin: 0 auto -1.4rem auto;
+}
+.site-logo__link:after {
+	font-family: "Bebas Neue", Tahoma, Helvetica, Geneva, sans-serif;
+	content: "PassThePopCorn";
+	font-size: 6rem;
+	display: block;
+	margin: 0 auto;
+	text-align: center !important;
+	background-color: #4281da;
+	background-image: -webkit-linear-gradient(
+		90deg,
+		#e22735 4%,
+		#f52c2a 19%,
+		#e2d956 39%,
+		#62e080 60%,
+		#e646dd 80%,
+		#e646dd 100%
+	);
+	background-image: -moz-linear-gradient(
+		90deg,
+		#e22735 4%,
+		#f52c2a 19%,
+		#e2d956 39%,
+		#62e080 60%,
+		#e646dd 80%,
+		#e646dd 100%
+	);
+	background-image: -o-linear-gradient(
+		90deg,
+		#e22735 4%,
+		#f52c2a 19%,
+		#e2d956 39%,
+		#62e080 60%,
+		#e646dd 80%,
+		#e646dd 100%
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(4%, #e22735),
+		color-stop(19%, #f52c2a),
+		color-stop(39%, #e2d956),
+		color-stop(60%, #62e080),
+		color-stop(80%, #e646dd),
+		to(#e646dd)
+	);
+	background-image: -webkit-linear-gradient(
+		left,
+		#e22735 4%,
+		#f52c2a 19%,
+		#e2d956 39%,
+		#62e080 60%,
+		#e646dd 80%,
+		#e646dd 100%
+	);
+	background-image: -moz-linear-gradient(
+		left,
+		#e22735 4%,
+		#f52c2a 19%,
+		#e2d956 39%,
+		#62e080 60%,
+		#e646dd 80%,
+		#e646dd 100%
+	);
+	background-image: -o-linear-gradient(
+		left,
+		#e22735 4%,
+		#f52c2a 19%,
+		#e2d956 39%,
+		#62e080 60%,
+		#e646dd 80%,
+		#e646dd 100%
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(4%, #e22735),
+		color-stop(19%, #f52c2a),
+		color-stop(39%, #e2d956),
+		color-stop(60%, #62e080),
+		color-stop(80%, #e646dd),
+		to(#e646dd)
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(4%, #e22735),
+		color-stop(19%, #f52c2a),
+		color-stop(39%, #e2d956),
+		color-stop(60%, #62e080),
+		color-stop(80%, #e646dd),
+		to(#e646dd)
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(4%, #e22735),
+		color-stop(19%, #f52c2a),
+		color-stop(39%, #e2d956),
+		color-stop(60%, #62e080),
+		color-stop(80%, #e646dd),
+		to(#e646dd)
+	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(4%, #e22735),
+		color-stop(19%, #f52c2a),
+		color-stop(39%, #e2d956),
+		color-stop(60%, #62e080),
+		color-stop(80%, #e646dd),
+		to(#e646dd)
+	);
+	background-image: linear-gradient(
+		90deg,
+		#e22735 4%,
+		#f52c2a 19%,
+		#e2d956 39%,
+		#62e080 60%,
+		#e646dd 80%,
+		#e646dd 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.site-logo__link {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: 2.5rem;
+	border: none;
+}
+.site-logo,
+.site-logo__link,
+.site-logo__link:after {
+	word-wrap: normal;
+	white-space: nowrap;
+}
+.small-cover-movie-list__movie {
+	position: relative;
+	float: left;
+	margin: .4rem;
+}
+.small-cover-movie-list__movie__link {
+	width: 140px;
+	height: 196px;
+	display: block;
+}
+.small-cover-movie-list__movie__link--smaller {
+	width: 123px;
+	height: 193px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+}
+.small-cover-movie-list__movie__link--seen::after {
+	content: "";
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	background-image: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
+.cover-movie-list__movie__cover-link:hover,
+.huge-movie-list__movie__cover__link:hover,
+.small-cover-movie-list__movie__link--smaller:hover {
+	-webkit-transform: scale(1.04, 1.04);
+	-moz-transform: scale(1.04, 1.04);
+	-ms-transform: scale(1.04, 1.04);
+	-o-transform: scale(1.04, 1.04);
+	transform: scale(1.04, 1.04);
+	-webkit-box-shadow: 0 0 40px #31517d;
+	box-shadow: 0 0 40px #31517d;
+}
+.small-cover-movie-list__movie__title {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.snatchlist-status--not-hnr,
+.snatchlist-status--seeding {
+	color: #418b00;
+}
+.snatchlist-status--hnr,
+.snatchlist-status--not-seeding {
+	color: #f44336;
+}
+.snatchlist-status--removed-hnr {
+	color: #ff5e00;
+}
+.staff-toolbar {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	padding: 6px;
+	text-align: center;
+	font-weight: 700;
+	background-color: #2f3547;
+}
+.staff-toolbar__link {
+	padding: 2px;
+}
+.staff-toolbar__link--important {
+	display: inline-block;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 4px;
+	background-color: #ca2a43;
+	color: #fff;
+}
+.star-rating-container {
+	display: inline-block;
+	padding-right: 5px;
+	cursor: pointer;
+}
+.star-rating {
+	display: inline-block;
+	width: 170px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) repeat-x;
+	cursor: pointer;
+}
+.star-rating--popup-starter:hover {
+	-webkit-transform: scale(1.02);
+	-moz-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	-o-transform: scale(1.02);
+	transform: scale(1.02);
+}
+.star-rating--with-inline-rating-display {
+	vertical-align: middle;
+}
+.star-rating--voting-disabled {
+	cursor: default;
+}
+.star-rating__current-user,
+.star-rating__site {
+	display: block;
+	position: absolute;
+	float: left;
+	width: 170px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	text-indent: -9000px;
+	font-size: 1px;
+	z-index: 20;
+}
+.star-rating__current-user {
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) left 125px;
+	z-index: 19;
+}
+.star-rating__site {
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) left 100px;
+	z-index: 18;
+}
+.star-rating__inline-rating-display {
+	margin-left: 10px;
+}
+.star-rating--big {
+	width: 300px;
+	height: 40px;
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png) repeat-x;
+}
+.star-rating__current-user--big {
+	width: 300px;
+	height: 40px;
+}
+.star-rating__current-user--big {
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png) left 220px;
+}
+.star-rating-container--big {
+	padding: 4px;
+	cursor: pointer;
+}
+.tabs__bar__list {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 14px;
+	border-bottom: 1px solid #3e414c;
+	padding: 0;
+	list-style: none;
+}
+.tabs__bar__list--centered {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.tabs__bar__item {
+	display: block;
+	float: left;
+	margin-right: 4px;
+}
+.tabs__bar__item:first-child {
+	margin-left: 10px;
+}
+.tabs__bar__link,
+.tabs__bar__link:active,
+.tabs__bar__link:focus,
+.tabs__bar__link:hover {
+	display: block;
+	margin-top: 6px;
+	border: 1px solid transparent;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	padding: 8px;
+	background-color: #2f3447;
+	outline: 0;
+}
+.tabs__bar__link--page-title-like {
+	font-size: 1em;
+	font-weight: 700;
+}
+.tabs__bar__item--active > .tabs__bar__link,
+.tabs__bar__item--active > .tabs__bar__link:active,
+.tabs__bar__item--active > .tabs__bar__link:focus,
+.tabs__bar__item--active > .tabs__bar__link:hover {
+	margin-top: 0;
+	margin-bottom: -2px;
+	border: none;
+	padding-top: 14px;
+	padding-bottom: 10px;
+	background-color: #060b17;
+	color: #fff;
+}
+.tabs__bar__link:hover {
+	background-color: #444a63;
+}
+.tabs__panel {
+	display: none;
+}
+.tabs__panel--active {
+	display: block;
+}
+.torrent-info-link--user-seeding {
+	font-weight: 700;
+	color: #ffa10c;
+}
+.torrent-info-link--user-leeching {
+	font-weight: 700;
+	color: #ff3232;
+}
+.torrent-info-link--user-uploaded {
+	font-weight: 700;
+	color: #f432c9;
+}
+.torrent-info-link--user-snatched {
+	font-weight: 700;
+	color: #2a8aed;
+}
+.torrent-info-link--user-downloaded {
+	font-weight: 700;
+	color: #20b83e;
+}
+.torrent-info__download-modifier--free,
+.torrent-info__download-modifier--half,
+.torrent-info__download-modifier--neutral {
+	font-weight: 700;
+}
+.torrent-info__trumpable {
+	font-weight: 700;
+	color: #e2893b;
+}
+.torrent-info__reported {
+	font-weight: 700;
+	color: #f44336;
+}
+.user-info-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background: #060b17;
+	padding: .5rem 0;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	z-index: 20;
+	font-size: .75rem;
+}
+.user-info-bar__text--hnr {
+	color: #ff2600;
+}
+.user-info-bar__link {
+	text-decoration: none;
+	color: #949aac;
+}
+.user-info-bar__link:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.user-info-bar__link--important {
+	font-weight: 700;
+}
+@keyframes flickerAnimation {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-o-keyframes flickerAnimation {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes flickerAnimation {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes flickerAnimation {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.user-info-bar__link--highlighted {
+	color: #fff;
+	font-weight: 700;
+}
+.user-info-bar__link--highlighted::after {
+	content: " \2022";
+	color: #96c72c;
+	text-shadow: 0 0 4px #79f725, 0 0 10px #25ef61, 0 0 20px #5dec32, 0 0 30px #32ec40, 0 0 40px #5dec32,
+		0 0 55px #5dec32, 0 0 75px #5dec32;
+	-webkit-animation: flickerAnimation 3s infinite;
+	-moz-animation: flickerAnimation 3s infinite;
+	-o-animation: flickerAnimation 3s infinite;
+	animation: flickerAnimation 3s infinite;
+}
+.user-info-bar__link--donations-behind {
+	color: #ff2600;
+}
+.user-info-bar__list {
+	display: inline;
+	margin: 0 6px;
+	padding: 0;
+}
+.user-info-bar__item {
+	position: relative;
+	display: inline;
+	vertical-align: middle;
+	margin: 0 1px;
+	padding: 0;
+	line-height: 20px;
+}
+.user-info-bar__drop-down-menu {
+	visibility: hidden;
+	position: absolute;
+	z-index: 10;
+	left: auto;
+	right: 0;
+	padding: 10px 10px 10px 10px;
+	margin: -10px -10px -10px -10px;
+}
+.user-info-bar__drop-down-menu__item {
+	display: block;
+	float: none;
+	background: #0b0f1b;
+}
+.user-info-bar__item--drop-down-menu-opener:hover > .user-info-bar__drop-down-menu {
+	visibility: visible;
+	top: 100%;
+}
+.user-info-bar__item--drop-down-menu-opener a {
+	color: #949aac;
+	-webkit-transition: all 0s;
+	-o-transition: all 0s;
+	-moz-transition: all 0s;
+	transition: all 0s;
+}
+.user-info-bar__drop-down-menu__link {
+	text-align: left;
+	text-decoration: none;
+	padding: .4em 1.5em;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+}
+.user-info-bar__drop-down-menu__link:hover {
+	text-decoration: none;
+	background-color: #2f3347;
+	color: #fff;
+}
+.user-recommendation {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-moz-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.user-recommendation:not(:first-child) {
+	margin-top: 10px;
+}
+.user-recommendation__image-container {
+	margin-right: 10px;
+}
+.user-recommendation__image {
+	max-width: 64px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+.user-recommendation__image:hover {
+	-webkit-transform: scale(1.04, 1.04);
+	-moz-transform: scale(1.04, 1.04);
+	-ms-transform: scale(1.04, 1.04);
+	-o-transform: scale(1.04, 1.04);
+	transform: scale(1.04, 1.04);
+	-webkit-box-shadow: 0 0 40px #31517d;
+	box-shadow: 0 0 40px #31517d;
+}
+.user-recommendation__body {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.wiki__diff--added {
+	color: green;
+	background: #dfd;
+	text-decoration: none;
+}
+.wiki__diff--deleted {
+	color: #f44336;
+	background: #fdd;
+	text-decoration: none;
+}
+.hidden {
+	display: none;
+}
+.nobr {
+	white-space: nowrap;
+}
+.clearfix:after,
+.forum-post__heading:after,
+.grid:after,
+.huge-movie-list__movie:after,
+.poll__bar:after,
+.sidebar:after,
+.tabs__bar__list:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.text--left {
+	background: #191d2a;
+	border: 1px solid #3e414c;
+	color: #fff;
+	text-align: left !important;
+}
+.text--center {
+	text-align: center !important;
+}
+.text--right {
+	text-align: right !important;
+}
+img[src="static/common/stars/AwardRating.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/NoAwardRating.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-uncolored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardUploads.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardMetaUploads.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-met.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/NoAwardUploads.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-uncolored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardDownloads.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardMetaDownloads.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-met.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/NoAwardDownloads.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-uncolored.svg)
+		no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardData Transfer.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardMetaData Transfer.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-met.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/NoAwardData Transfer.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-uncolored.svg)
+		no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardRequests.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-colored.svg)
+		no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardMetaRequests.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-met.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/NoAwardRequests.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-uncolored.svg)
+		no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardChat.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-colored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardMetaChat.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-met.svg) no-repeat center
+		center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/NoAwardChat.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-uncolored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/NoAwardMeta Awards.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-uncolored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+img[src="static/common/stars/AwardMetaMeta Awards1.png"] {
+	width: 17px;
+	height: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-colored.svg) no-repeat
+		center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
