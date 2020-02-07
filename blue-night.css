@@ -91,11 +91,11 @@ sup {
 }
 
 sup {
-	top: -0.5em;
+	top: -.5em;
 }
 
 sub {
-	bottom: -0.25em;
+	bottom: -.25em;
 }
 
 img {
@@ -147,24 +147,24 @@ select {
 	text-transform: none;
 }
 
-select,
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio],
+select {
 	background: #191d2a;
 	border: 1px solid #3e414c;
-	color: #ffffff;
+	color: #fff;
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type=button],
+input[type=reset],
+input[type=submit] {
 	-webkit-appearance: button;
 	cursor: pointer;
 	font-family: "Open Sans", Tahoma, Helvetica, sans-serif;
 	font-weight: 700;
 	background: #586279;
-	color: #ffffff;
+	color: #fff;
 	border: none;
 	padding: .4rem 1rem;
 	margin: .1rem;
@@ -178,16 +178,26 @@ input[type="submit"] {
 }
 
 button,
-html input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
 	background: #4281da;
 	-webkit-box-shadow: 0 0 40px #4281da;
 	box-shadow: 0 0 40px #4281da;
 }
 
+button:focus,
+input[type=button]:focus,
+input[type=reset]:focus,
+input[type=submit]:focus {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	outline: 0;
+}
+
 button[disabled],
-html input[disabled] {
+input[disabled] {
 	cursor: default;
 }
 
@@ -197,65 +207,70 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
+input[value="Delete"] {
+	background: #9c4e4e;
+}
+
+input[value="Delete"]:hover {
+	background: #da4242;
+	-webkit-box-shadow: 0 0 40px #da4242;
+	box-shadow: 0 0 40px #da4242;
+}
+
 input,
 textarea {
 	border: 1px solid transparent;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
-	transition: all 0.30s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 input {
 	line-height: normal;
 	background: #171d2a;
-	color: #ffffff;
+	color: #fff;
 	font-size: .75rem;
 	padding-left: .4rem;
 	height: 28px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 	margin: -7px 2px;
 	vertical-align: inherit;
-	background: red;
 	vertical-align: text-top;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
 	height: auto;
 }
 
-input[type="search"] {
+input[type=search] {
 	-webkit-appearance: textfield;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
-input:focus,
+input[type="text"]:focus,
 textarea:focus {
-	outline: none;
+	outline: 0;
 	-webkit-box-shadow: 0 0 40px #4281da;
 	box-shadow: 0 0 40px #4281da;
 	border: 1px solid #3463a7;
-}
-
-input[type="submit"]:focus {
-	border: none;
 }
 
 input[value="Search log"] {
@@ -263,9 +278,9 @@ input[value="Search log"] {
 }
 
 fieldset {
-	border: 1px solid #c0c0c0;
+	border: 1px solid silver;
 	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+	padding: .35em .625em .75em;
 }
 
 legend {
@@ -277,7 +292,7 @@ textarea {
 	overflow: auto;
 	background: #191d2a;
 	border: none;
-	color: #ffffff;
+	color: #fff;
 	padding: .8rem;
 }
 
@@ -296,8 +311,8 @@ th {
 }
 
 *,
-*:before,
-*:after {
+:after,
+:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -330,12 +345,45 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-button,
 input,
 select,
 textarea {
-	border: 1px solid transparent;
+	border: 1px solid #3a4056;
+	padding: .2rem .4rem;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 	font-size: 13px;
+}
+
+select:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	outline: 0;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #b9becc;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #b9becc;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #b9becc;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #b9becc;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: #b9becc;
 }
 
 input::-webkit-input-placeholder,
@@ -380,7 +428,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #ffffff;
+	color: #fff;
 	border: none;
 }
 
@@ -497,18 +545,18 @@ th {
 	margin-bottom: 0;
 }
 
-.table > thead > tr,
-.table > tbody > tr {
+.table > tbody > tr,
+.table > thead > tr {
 	background-color: #2f3546;
 	font-size: .75rem;
 }
 
-.table > thead > tr > th,
+.table > tbody > tr > td,
 .table > tbody > tr > th,
+.table > tfoot > tr > td,
 .table > tfoot > tr > th,
 .table > thead > tr > td,
-.table > tbody > tr > td,
-.table > tfoot > tr > td {
+.table > thead > tr > th {
 	border-top: solid thin #555;
 	line-height: 1.42857;
 	padding: 5px;
@@ -523,17 +571,16 @@ th {
 	border: none;
 }
 
-.table--bordered > thead > tr > th,
+.table--bordered > tbody > tr > td,
 .table--bordered > tbody > tr > th,
+.table--bordered > tfoot > tr > td,
 .table--bordered > tfoot > tr > th,
 .table--bordered > thead > tr > td,
-.table--bordered > tbody > tr > td,
-.table--bordered > tfoot > tr > td {
+.table--bordered > thead > tr > th {
 	border: 1px solid #191d2a;
-	padding: 0.4rem;
+	padding: .4rem;
 }
 
-.table--centered th,
 .table--centered th {
 	text-align: center;
 }
@@ -542,12 +589,12 @@ th {
 	border: none;
 }
 
-.table--no-border > thead > tr > th,
+.table--no-border > tbody > tr > td,
 .table--no-border > tbody > tr > th,
+.table--no-border > tfoot > tr > td,
 .table--no-border > tfoot > tr > th,
 .table--no-border > thead > tr > td,
-.table--no-border > tbody > tr > td,
-.table--no-border > tfoot > tr > td {
+.table--no-border > thead > tr > th {
 	border: none;
 }
 
@@ -566,7 +613,7 @@ th {
 
 .table--panel-like > thead > tr,
 .table--panel-like > thead > tr a {
-	color: #ffffff;
+	color: #fff;
 }
 
 .table--panel-like > thead > tr > th {
@@ -673,7 +720,7 @@ th {
 .alert-bar {
 	width: 400px;
 	margin: 5px auto;
-	padding: 0.2em;
+	padding: .2em;
 	font-weight: 700;
 	text-align: center;
 	-webkit-border-radius: 4px;
@@ -687,57 +734,58 @@ th {
 	color: #202020;
 }
 
-/* Torrent Table Icons */
-
-img[title="Time"] {
+img[title=Time] {
 	width: 14px;
 	height: 14px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/time.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/time.svg) no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+img[title=Snatches] {
+	width: 14px;
+	height: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 14px;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/snatched.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
-img[title="Snatches"] {
+img[title=Leechers] {
 	width: 14px;
 	height: 14px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/snatched.svg") no-repeat center
-		center;
-	-webkit-background-size: contain;
-	background-size: contain;
-}
-
-img[title="Leechers"] {
-	width: 14px;
-	height: 14px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding-left: 14px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-white.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-white.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
-img[title="Seeders"] {
+img[title=Seeders] {
 	width: 14px;
 	height: 14px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -762,8 +810,8 @@ img[title="Seeders"] {
 	width: 116px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
-	box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
 	-moz-transition: all .3s;
@@ -790,8 +838,9 @@ img[title="Seeders"] {
 	position: absolute;
 	right: 3px;
 	top: 3px;
-	background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
+	background-image: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);
 	-webkit-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	width: 20px;
 	height: 20px;
@@ -812,7 +861,7 @@ img[title="Seeders"] {
 }
 
 .basic-movie-list__movie__title {
-	color: #ffffff;
+	color: #fff;
 }
 
 .basic-movie-list__movie__title:hover {
@@ -874,12 +923,12 @@ img[title="Seeders"] {
 }
 
 .torrent_table img[src="static/common/check.png"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg) no-repeat
 		center center;
 }
 
 .torrent_table img[src="static/common/x.png"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/not-approved.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/not-approved.svg) no-repeat
 		center center;
 }
 
@@ -890,9 +939,10 @@ img[src="static/common/Poppy1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 70px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/poppy.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/poppy.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 	margin-right: 10px;
 }
@@ -906,38 +956,39 @@ img[src="static/common/Poppy1.png"] {
 	box-sizing: border-box;
 	padding-left: 12px;
 	-webkit-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
 
 #movie-ratings-table #imdb-title-link img {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg) no-repeat center
 		center;
 	width: 64px !important;
 	height: 64px !important;
 }
 
 #movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg) no-repeat
 		center center;
 	width: 48px !important;
 	height: 48px !important;
 }
 
 #movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
 		center center;
 	width: 48px !important;
 	height: 48px !important;
 }
 
 #movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg") no-repeat center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center;
 }
 
 #movie-ratings-table #imdb-title-link img,
 #movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"],
-#movie-ratings-table img[src="static/common/ratings/x4_ptp.png"],
-#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"] {
+#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
+#movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
 	width: 48px !important;
 	height: 48px !important;
 	-webkit-box-sizing: border-box;
@@ -945,6 +996,7 @@ img[src="static/common/Poppy1.png"] {
 	box-sizing: border-box;
 	padding-left: 48px;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -955,14 +1007,15 @@ img[src="static/common/Poppy1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 20px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
 .bbcode-size-1 {
-	font-size: 0.75em;
+	font-size: .75em;
 }
 
 .bbcode-size-2 {
@@ -1011,7 +1064,7 @@ img[src="static/common/Poppy1.png"] {
 
 .bbcode-text-preview {
 	border: solid thin #555;
-	padding: 0.5em;
+	padding: .5em;
 }
 
 .bbcode-table-guard {
@@ -1019,8 +1072,6 @@ img[src="static/common/Poppy1.png"] {
 	width: 100%;
 	table-layout: fixed;
 }
-
-/* Textarea UI Elements  */
 
 .bbcode-toolbar__button {
 	width: 24px;
@@ -1042,112 +1093,110 @@ img[src="static/common/Poppy1.png"] {
 }
 
 .js-bbcode-toolbar__bold-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bold.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bold.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__italic-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/italic.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/italic.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__underline-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/underline.svg")
-		no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/underline.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__strikethrough-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/strikethrough.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/strikethrough.svg)
 		no-repeat;
 }
 
 .js-bbcode-toolbar__link-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/link.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/link.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__image-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/image.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/image.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__hide-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/hide.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/hide.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__spoiler-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/spoiler.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/spoiler.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__quote-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/quote.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/quote.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__size-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/font-size.svg")
-		no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/font-size.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__color-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/color.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/color.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__youtube-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/vid-ut.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/vid-ut.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__mediainfo-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/mediainfo.svg")
-		no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/mediainfo.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__align-center-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__align-right-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align-right.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align-right.svg)
 		no-repeat;
 }
 
 .js-bbcode-toolbar__code-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/code.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/code.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__list-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bullet-list.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bullet-list.svg)
 		no-repeat;
 }
 
 .js-bbcode-toolbar__emoticon-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/emojis.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/emojis.svg) no-repeat;
 }
 
 .js-bbcode-toolbar__comparison-button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/compare.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/compare.svg) no-repeat;
 }
 
 a[title="BBCode help"] .bbcode-toolbar__button {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/question.svg") no-repeat;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/question.svg) no-repeat;
 }
 
-.js-bbcode-toolbar__bold-button,
-.js-bbcode-toolbar__italic-button,
-.js-bbcode-toolbar__underline-button,
-.js-bbcode-toolbar__strikethrough-button,
-.js-bbcode-toolbar__link-button,
-.js-bbcode-toolbar__image-button,
-.js-bbcode-toolbar__hide-button,
-.js-bbcode-toolbar__spoiler-button,
-.js-bbcode-toolbar__quote-button,
-.js-bbcode-toolbar__size-button,
-.js-bbcode-toolbar__color-button,
-.js-bbcode-toolbar__youtube-button,
-.js-bbcode-toolbar__mediainfo-button,
 .js-bbcode-toolbar__align-center-button,
 .js-bbcode-toolbar__align-right-button,
+.js-bbcode-toolbar__bold-button,
 .js-bbcode-toolbar__code-button,
-.js-bbcode-toolbar__list-button,
-.js-bbcode-toolbar__emoticon-button,
+.js-bbcode-toolbar__color-button,
 .js-bbcode-toolbar__comparison-button,
+.js-bbcode-toolbar__emoticon-button,
+.js-bbcode-toolbar__hide-button,
+.js-bbcode-toolbar__image-button,
+.js-bbcode-toolbar__italic-button,
+.js-bbcode-toolbar__link-button,
+.js-bbcode-toolbar__list-button,
+.js-bbcode-toolbar__mediainfo-button,
+.js-bbcode-toolbar__quote-button,
+.js-bbcode-toolbar__size-button,
+.js-bbcode-toolbar__spoiler-button,
+.js-bbcode-toolbar__strikethrough-button,
+.js-bbcode-toolbar__underline-button,
+.js-bbcode-toolbar__youtube-button,
 a[title="BBCode help"] .bbcode-toolbar__button {
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 	background-position: center center !important;
 	width: 12px !important;
@@ -1196,72 +1245,70 @@ a[title="BBCode help"] .bbcode-toolbar__button {
 	transform: scale(1.2);
 }
 
-/* New Emojis */
-
-img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
-img[src="static/common/smileys/smile.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
-img[src="static/common/smileys/sad.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
-img[src="static/common/smileys/biggrin.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
-img[src="static/common/smileys/ohshit.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
-img[src="static/common/smileys/tongue.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
-img[src="static/common/smileys/blank.gif"],
 img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],
-img[src="static/common/smileys/angry.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
 img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
-img[src="static/common/smileys/blush.gif"],
 img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
-img[src="static/common/smileys/cool.gif"],
 img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
-img[src="static/common/smileys/creepy.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
-img[src="static/common/smileys/crying.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
-img[src="static/common/smileys/eyesright.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
-img[src="static/common/smileys/frown.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
-img[src="static/common/smileys/hmm.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
-img[src="static/common/smileys/laughing.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
-img[src="static/common/smileys/ninja.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
-img[src="static/common/smileys/no.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
-img[src="static/common/smileys/nod.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
-img[src="static/common/smileys/ohnoes.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
-img[src="static/common/smileys/omg.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
-img[src="static/common/smileys/shifty.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
-img[src="static/common/smileys/sick.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
-img[src="static/common/smileys/wink.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
-img[src="static/common/smileys/worried.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
-img[src="static/common/smileys/wtf.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
-img[src="static/common/smileys/wub.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
-img[src="static/common/smileys/paddle.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
-img[src="static/common/smileys/wave.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
-img[src="static/common/smileys/heart.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
-img[src="static/common/smileys/thanks.gif"],
 img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
-img[src="static/common/smileys/crom.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
 img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
-img[src="static/common/smileys/sorry.gif"] {
+img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
+img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
+img[src="static/common/smileys/angry.gif"],
+img[src="static/common/smileys/biggrin.gif"],
+img[src="static/common/smileys/blank.gif"],
+img[src="static/common/smileys/blush.gif"],
+img[src="static/common/smileys/cool.gif"],
+img[src="static/common/smileys/creepy.gif"],
+img[src="static/common/smileys/crom.gif"],
+img[src="static/common/smileys/crying.gif"],
+img[src="static/common/smileys/eyesright.gif"],
+img[src="static/common/smileys/frown.gif"],
+img[src="static/common/smileys/heart.gif"],
+img[src="static/common/smileys/hmm.gif"],
+img[src="static/common/smileys/laughing.gif"],
+img[src="static/common/smileys/ninja.gif"],
+img[src="static/common/smileys/no.gif"],
+img[src="static/common/smileys/nod.gif"],
+img[src="static/common/smileys/ohnoes.gif"],
+img[src="static/common/smileys/ohshit.gif"],
+img[src="static/common/smileys/omg.gif"],
+img[src="static/common/smileys/paddle.gif"],
+img[src="static/common/smileys/sad.gif"],
+img[src="static/common/smileys/shifty.gif"],
+img[src="static/common/smileys/sick.gif"],
+img[src="static/common/smileys/smile.gif"],
+img[src="static/common/smileys/sorry.gif"],
+img[src="static/common/smileys/thanks.gif"],
+img[src="static/common/smileys/tongue.gif"],
+img[src="static/common/smileys/wave.gif"],
+img[src="static/common/smileys/wink.gif"],
+img[src="static/common/smileys/worried.gif"],
+img[src="static/common/smileys/wtf.gif"],
+img[src="static/common/smileys/wub.gif"] {
 	width: 16px !important;
 	height: 16px !important;
 	-webkit-box-sizing: border-box !important;
@@ -1269,186 +1316,180 @@ img[src="static/common/smileys/sorry.gif"] {
 	box-sizing: border-box !important;
 	padding-left: 20px !important;
 	-webkit-background-size: contain !important;
+	-o-background-size: contain !important;
 	background-size: contain !important;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
 img[src="static/common/smileys/smile.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
 img[src="static/common/smileys/sad.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg") no-repeat center
-		center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg) no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
 img[src="static/common/smileys/biggrin.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
 img[src="static/common/smileys/ohshit.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
 img[src="static/common/smileys/tongue.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
 img[src="static/common/smileys/blank.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg)
 		no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],
 img[src="static/common/smileys/angry.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
 img[src="static/common/smileys/blush.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
 img[src="static/common/smileys/cool.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
 img[src="static/common/smileys/creepy.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
 img[src="static/common/smileys/crying.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
 img[src="static/common/smileys/eyesright.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg") no-repeat
-		center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg) no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
 img[src="static/common/smileys/frown.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
 img[src="static/common/smileys/hmm.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg") no-repeat center
-		center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg) no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
 img[src="static/common/smileys/laughing.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
 img[src="static/common/smileys/ninja.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
 img[src="static/common/smileys/no.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg") no-repeat center
-		center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg) no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
 img[src="static/common/smileys/nod.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg") no-repeat center
-		center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg) no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
 img[src="static/common/smileys/ohnoes.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
 img[src="static/common/smileys/omg.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg") no-repeat center
-		center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg) no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
 img[src="static/common/smileys/shifty.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
 img[src="static/common/smileys/sick.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
 img[src="static/common/smileys/wink.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
 img[src="static/common/smileys/worried.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
 img[src="static/common/smileys/wtf.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg") no-repeat center
-		center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg) no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
 img[src="static/common/smileys/wub.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg") no-repeat center
-		center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg) no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
 img[src="static/common/smileys/paddle.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg") no-repeat
-		center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg) no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
 img[src="static/common/smileys/wave.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
 img[src="static/common/smileys/heart.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg) no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
 img[src="static/common/smileys/thanks.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg) no-repeat center
 		center;
 }
 
@@ -1463,13 +1504,13 @@ img[src="static/common/smileys/thanks.gif"] {
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
 img[src="static/common/smileys/crom.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg) no-repeat
 		center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
 img[src="static/common/smileys/sorry.gif"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg) no-repeat center
 		center;
 }
 
@@ -1478,7 +1519,7 @@ img[src="static/common/smileys/sorry.gif"] {
 }
 
 .bonus-point-history--sent {
-	color: red;
+	color: #f44336;
 }
 
 .cover-movie-list__container--centered {
@@ -1513,8 +1554,8 @@ img[src="static/common/smileys/sorry.gif"] {
 	width: 176px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
-	box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
 }
 
 .cover-movie-list--narrow > .cover-movie-list__movie > .cover-movie-list__movie__cover-link {
@@ -1525,9 +1566,9 @@ img[src="static/common/smileys/sorry.gif"] {
 
 .cover-movie-list__movie__undercover {
 	padding: .5rem;
-	background: transparent;
-	-webkit-border-radius: 0px 0px 6px 6px;
-	border-radius: 0px 0px 6px 6px;
+	background: 0 0;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
 }
 
 .cover-movie-list__movie__title {
@@ -1580,8 +1621,9 @@ img[src="static/common/smileys/sorry.gif"] {
 	position: absolute;
 	right: 3px;
 	top: 3px;
-	background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
+	background-image: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);
 	-webkit-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	width: 20px;
 	height: 20px;
@@ -1606,7 +1648,7 @@ img[src="static/common/smileys/sorry.gif"] {
 
 .encoding-history-status--expired {
 	font-weight: 700;
-	color: red;
+	color: #f44336;
 }
 
 .footer {
@@ -1633,11 +1675,12 @@ img[src="static/common/smileys/sorry.gif"] {
 	float: right;
 }
 
-.form__input,
 .form__checkbox-label,
+.form__input,
 .form__radio-label {
-	margin-right: 0.5em;
-	margin-bottom: 0.5em;
+	margin-right: .5em;
+	margin-bottom: .5em;
+	font-size: .75rem;
 }
 
 .form__checkbox-label,
@@ -1661,7 +1704,7 @@ img[src="static/common/smileys/sorry.gif"] {
 
 .generic-form--narrow,
 .search-form--narrow {
-	width: 600px;
+	width: 684px;
 }
 
 .generic-form--full-width {
@@ -1712,15 +1755,19 @@ img[src="static/common/smileys/sorry.gif"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/settings.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/settings.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 	-webkit-transition: -webkit-transform 2s ease-in-out;
 	transition: -webkit-transform 2s ease-in-out;
 	-o-transition: -o-transform 2s ease-in-out;
 	-moz-transition: transform 2s ease-in-out, -moz-transform 2s ease-in-out;
+	-moz-transition: transform 2s ease-in-out, -moz-transform 2s ease-in-out;
 	transition: transform 2s ease-in-out;
+	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
+		-o-transform 2s ease-in-out;
 	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
 		-o-transform 2s ease-in-out;
 	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
@@ -1760,7 +1807,7 @@ img[src="static/common/smileys/sorry.gif"] {
 }
 
 .forum-post--heading-only {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .forum-post__heading {
@@ -1772,9 +1819,9 @@ img[src="static/common/smileys/sorry.gif"] {
 	border-top-right-radius: 5px;
 }
 
-.forum-post__heading .username,
-.forum-post__heading .l_movie {
-	color: #ffffff;
+.forum-post__heading .l_movie,
+.forum-post__heading .username {
+	color: #fff;
 	margin-right: 2px;
 }
 
@@ -1782,10 +1829,8 @@ img[src="static/common/smileys/sorry.gif"] {
 	color: #949aac;
 }
 
-/* Forum Post Heading Icons */
-
 .forum-post__heading img {
-	margin: 0 2px;
+	margin: 0 2.5px;
 }
 
 img[src="static/common/symbols/donor.png"] {
@@ -1795,9 +1840,10 @@ img[src="static/common/symbols/donor.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/donor.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/donor.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1808,9 +1854,10 @@ img[src="static/common/symbols/miner.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/miner-alt.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/miner-alt.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1821,9 +1868,10 @@ img[src="static/common/symbols/filmclub.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 20px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/film-club-icon.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/film-club-icon.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1834,23 +1882,25 @@ img[src="static/common/symbols/encoder.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/encoder.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/encoder.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
-img[src="static/common/symbols/encoder_gp.png"],
-img[src="static/common/quality.gif"] {
+img[src="static/common/quality.gif"],
+img[src="static/common/symbols/encoder_gp.png"] {
 	width: 12px;
 	height: 12px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg)
 		no-repeat center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1861,9 +1911,10 @@ img[src="static/common/symbols/badge_checker.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1874,23 +1925,25 @@ img[src="static/common/symbols/badge_gpchecker.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge_gpchecker.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge_gpchecker.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
-img[src="static/common/symbols/disabled.png"],
-img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"] {
+img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],
+img[src="static/common/symbols/disabled.png"] {
 	width: 11px;
 	height: 11px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 11px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1901,9 +1954,10 @@ img[src="static/common/symbols/Rank1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-1.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-1.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1914,9 +1968,10 @@ img[src="static/common/symbols/Rank2.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-2.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-2.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1927,9 +1982,10 @@ img[src="static/common/symbols/Rank3.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-3.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-3.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1940,9 +1996,10 @@ img[src="static/common/symbols/Rank4.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-4.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-4.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1953,9 +2010,10 @@ img[src="static/common/symbols/Rank5.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-5.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-5.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -1966,9 +2024,10 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-6.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-6.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2022,9 +2081,10 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg) no-repeat
 		left center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2035,9 +2095,10 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg")
-		no-repeat left center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg) no-repeat
+		left center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2048,9 +2109,10 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
-		no-repeat left center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg) no-repeat
+		left center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2061,18 +2123,20 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 1rem;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg")
-		no-repeat center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg) no-repeat
+		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
 .forum-topic--is-read-locked {
 	width: 30px;
 	height: 30px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
-		no-repeat left center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg) no-repeat
+		left center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2083,9 +2147,10 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg)
 		no-repeat center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2096,17 +2161,19 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg)
 		no-repeat center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
 .forum-topic--is-unread-locked {
 	width: 32px;
 	height: 32px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg)
 		no-repeat center center;
+	-o-background-size: contain;
 	background-size: contain;
 	-webkit-background-size: contain;
 }
@@ -2123,9 +2190,10 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 15px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-right.svg") no-repeat
-		center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-right.svg) no-repeat center
+		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 	margin-left: 5px;
 }
@@ -2145,15 +2213,16 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/view-post.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/view-post.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
 .view_post:hover {
-	-webkit-filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(5);
-	filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(5);
+	-webkit-filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
+	filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
 }
 
 .grid {
@@ -2254,7 +2323,7 @@ img[src="static/common/symbols/Rank6.png"] {
 }
 
 .heading--small-bottom-margin {
-	margin-bottom: 0.25em;
+	margin-bottom: .25em;
 }
 
 .huge-movie-list__movie {
@@ -2279,8 +2348,8 @@ img[src="static/common/symbols/Rank6.png"] {
 	width: 256px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
-	box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
 }
 
 .huge-movie-list__movie__cover__link--seen::after {
@@ -2288,8 +2357,9 @@ img[src="static/common/symbols/Rank6.png"] {
 	position: absolute;
 	right: 3px;
 	top: 3px;
-	background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
+	background-image: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);
 	-webkit-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	width: 20px;
 	height: 20px;
@@ -2304,7 +2374,7 @@ img[src="static/common/symbols/Rank6.png"] {
 .huge-movie-list__movie__title {
 	font-size: 1.5em;
 	font-weight: 700;
-	color: #ffffff;
+	color: #fff;
 }
 
 .huge-movie-list__movie__title:hover {
@@ -2366,9 +2436,10 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 42px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2384,15 +2455,17 @@ img[src="static/common/symbols/Rank6.png"] {
 }
 
 .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
 .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg") no-repeat center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2403,9 +2476,10 @@ img[src="static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 32px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -2507,7 +2581,7 @@ img[src="static/common/symbols/Rank6.png"] {
 }
 
 #simplemodal-container a.modalCloseImg {
-	background: url("/static/common/simplemodal_close.png") no-repeat;
+	background: url(/static/common/simplemodal_close.png) no-repeat;
 	width: 25px;
 	height: 29px;
 	display: inline;
@@ -2540,6 +2614,7 @@ img[src="static/common/symbols/Rank6.png"] {
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -2569,7 +2644,7 @@ img[src="static/common/symbols/Rank6.png"] {
 	left: 5%;
 	width: 90%;
 	height: 90%;
-	padding: 0px;
+	padding: 0;
 	z-index: 1002;
 	overflow: auto;
 	outline: 0;
@@ -2577,11 +2652,11 @@ img[src="static/common/symbols/Rank6.png"] {
 
 .lightbox__shroud {
 	position: fixed;
-	top: 0%;
-	left: 0%;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, .8);
 	z-index: 1001;
 }
 
@@ -2620,11 +2695,11 @@ body.lightbox__scroll-lock {
 	bottom: 0;
 	margin: auto;
 	pointer-events: none;
-	background-image: url("/static/common/symbols/play-big.png");
+	background-image: url(/static/common/symbols/play-big.png);
 }
 
 .light-youtube-embed:hover::after {
-	background-image: url("/static/common/symbols/play-big-hover.png");
+	background-image: url(/static/common/symbols/play-big-hover.png);
 }
 
 .log__message--deleted {
@@ -2653,7 +2728,7 @@ body.lightbox__scroll-lock {
 	font-size: 10pt;
 	text-align: left;
 	z-index: 7;
-	opacity: 0.75;
+	opacity: .75;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
@@ -2666,7 +2741,7 @@ body.lightbox__scroll-lock {
 .main-menu__item {
 	display: inline;
 	padding: 5px;
-	margin: 0px;
+	margin: 0;
 	text-align: center;
 	font-size: 12px;
 }
@@ -2695,12 +2770,14 @@ body.lightbox__scroll-lock {
 	-ms-transform: scaleX(0);
 	-o-transform: scaleX(0);
 	transform: scaleX(0);
-	-webkit-transition: -webkit-transform 0.5s ease;
-	transition: -webkit-transform 0.5s ease;
-	-o-transition: -o-transform 0.5s ease;
-	-moz-transition: transform 0.5s ease, -moz-transform 0.5s ease;
-	transition: transform 0.5s ease;
-	transition: transform 0.5s ease, -webkit-transform 0.5s ease, -moz-transform 0.5s ease, -o-transform 0.5s ease;
+	-webkit-transition: -webkit-transform .5s ease;
+	transition: -webkit-transform .5s ease;
+	-o-transition: -o-transform .5s ease;
+	-moz-transition: transform .5s ease, -moz-transform .5s ease;
+	-moz-transition: transform .5s ease, -moz-transform .5s ease;
+	transition: transform .5s ease;
+	transition: transform .5s ease, -webkit-transform .5s ease, -moz-transform .5s ease, -o-transform .5s ease;
+	transition: transform .5s ease, -webkit-transform .5s ease, -moz-transform .5s ease, -o-transform .5s ease;
 }
 
 .main-menu__link:hover:before {
@@ -2752,8 +2829,8 @@ body.lightbox__scroll-lock {
 	width: 100%;
 }
 
-.mediainfo--in-release-description > tbody > tr,
-.mediainfo--in-release-description .mediainfo__section > tbody > tr {
+.mediainfo--in-release-description .mediainfo__section > tbody > tr,
+.mediainfo--in-release-description > tbody > tr {
 	background-color: #242a3c;
 	border-top: 1px solid #3d4356;
 }
@@ -2779,7 +2856,7 @@ html.busy-cursor * {
 }
 
 .large-torrent-list-group-opener {
-	background: url("images/show.png") no-repeat center center;
+	background: url(images/show.png) no-repeat center center;
 	width: 28px;
 	height: 28px;
 }
@@ -2792,7 +2869,7 @@ html.busy-cursor * {
 }
 
 .no-seeders {
-	color: red;
+	color: #f44336;
 }
 
 .release-description-preview {
@@ -2803,7 +2880,7 @@ html.busy-cursor * {
 .film-club-discuss-link {
 	text-align: center;
 	font-size: 1.25em;
-	padding-top: 0.5em;
+	padding-top: .5em;
 }
 
 .site-debug {
@@ -2895,7 +2972,7 @@ html.busy-cursor * {
 
 .movie-tooltip__rating-container {
 	display: inline;
-	padding: 0px 2px;
+	padding: 0 2px;
 	margin-right: 4px;
 	background-color: #2f3446;
 }
@@ -2904,14 +2981,14 @@ html.busy-cursor * {
 	font-weight: 700;
 }
 
-.movie-tooltip__tag,
-.movie-tooltip__rating__title > a {
+.movie-tooltip__rating__title > a,
+.movie-tooltip__tag {
 	color: #c9c9c9;
-	font-weight: normal;
+	font-weight: 400;
 }
 
-.movie-tooltip__tag:hover,
-.movie-tooltip__rating__title > a:hover {
+.movie-tooltip__rating__title > a:hover,
+.movie-tooltip__tag:hover {
 	text-decoration: underline;
 	color: #fff;
 }
@@ -2983,8 +3060,8 @@ html.busy-cursor * {
 	text-align: center;
 }
 
-.pagination__link,
-.pagination__current-page {
+.pagination__current-page,
+.pagination__link {
 	font-weight: 700;
 	font-size: .75rem;
 }
@@ -3003,8 +3080,8 @@ html.busy-cursor * {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	margin-bottom: 1em;
-	-webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .24);
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .24);
+	-webkit-box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .24);
+	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .24);
 }
 
 .panel--no-margin {
@@ -3021,9 +3098,13 @@ html.busy-cursor * {
 	font-weight: 700;
 }
 
+.panel__heading img {
+	margin: 0 2.5px;
+}
+
 .panel__heading__toggler {
 	float: right;
-	font-size: 0.75em;
+	font-size: .75em;
 }
 
 .panel,
@@ -3055,7 +3136,7 @@ html.busy-cursor * {
 }
 
 .poll__bar {
-	margin-bottom: 0.75em;
+	margin-bottom: .75em;
 }
 
 .poll__bar--no-margin {
@@ -3066,29 +3147,28 @@ html.busy-cursor * {
 	float: left;
 	width: 2px;
 	height: 9px;
-	background: url("images/bar_left.gif") center center no-repeat;
-	margin: 0px;
-	padding: 0px;
+	background: url(images/bar_left.gif) center center no-repeat;
+	margin: 0;
+	padding: 0;
 }
 
 .poll__bar__center {
 	float: left;
 	height: 9px;
-	background: url("images/bar.gif") repeat;
-	margin: 0px;
-	padding: 0px;
+	background: url(images/bar.gif) repeat;
+	margin: 0;
+	padding: 0;
 }
 
 .poll__bar__right {
 	float: left;
 	width: 2px;
 	height: 9px;
-	background: url("images/bar_right.gif") center center no-repeat;
-	margin: 0px;
-	padding: 0px;
+	background: url(images/bar_right.gif) center center no-repeat;
+	margin: 0;
+	padding: 0;
 }
 
-.qtip,
 .qtip {
 	position: absolute;
 	left: -28000px;
@@ -3114,8 +3194,8 @@ html.busy-cursor * {
 }
 
 .qtip-shadow {
-	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
-	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .15);
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .15);
 }
 
 .qtip:not(.ie9haxors) div.qtip-content,
@@ -3135,7 +3215,7 @@ html.busy-cursor * {
 .qtip .qtip-tip * {
 	position: absolute;
 	color: #123456;
-	background: transparent;
+	background: 0 0;
 	border: none dashed transparent;
 }
 
@@ -3166,7 +3246,7 @@ html.busy-cursor * {
 }
 
 .ratio-00 {
-	color: red;
+	color: #f44336;
 }
 
 .ratio-01 {
@@ -3239,7 +3319,7 @@ html.busy-cursor * {
 	white-space: nowrap;
 	font-size: 11px;
 	font-weight: 700;
-	text-shadow: 1px 1px 1px rgba(5, 5, 5, 0.5);
+	text-shadow: 1px 1px 1px rgba(5, 5, 5, .5);
 	margin-left: 3px;
 	margin-right: 3px;
 }
@@ -3316,7 +3396,7 @@ html.busy-cursor * {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 700;
-	text-shadow: 0px 0px 4px #000, 0px 0px 4px #000, 0px 0px 4px #000, 0px 0px 4px #000;
+	text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 4px #000, 0 0 4px #000;
 }
 
 .screenshot-comparison__old-school-toggler-container {
@@ -3337,17 +3417,18 @@ html.busy-cursor * {
 
 .search-bar {
 	width: 1013px;
-	background: #060b17;
+	background: #2f3447;
 	font-size: .8rem;
-	padding: 0.6em;
+	padding: .6em;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 0px;
+	margin-top: 0;
 	text-align: center;
 	-webkit-border-top-right-radius: 10px;
 	border-top-right-radius: 10px;
 	-webkit-border-top-left-radius: 10px;
 	border-top-left-radius: 10px;
+	border-bottom: 1px solid #3a4056;
 }
 
 .search-bar__list {
@@ -3370,10 +3451,10 @@ html.busy-cursor * {
 	display: inline;
 	position: relative;
 	top: -1px;
-	background-color: #191d2a;
-	font-size: 0.8em;
+	background-color: #171c2a;
+	font-size: .8em;
 	color: #b5b5b5;
-	border: 1px solid transparent;
+	border: 1px solid #3a4056;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	padding: 2px 3px;
@@ -3423,6 +3504,7 @@ html.busy-cursor * {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	font-size: .9em;
 	line-height: 15px;
 	border-bottom: 1px solid #1d212b;
 }
@@ -3458,8 +3540,8 @@ html.busy-cursor * {
 	margin-right: auto;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
-	box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
 	-moz-transition: all .3s;
@@ -3483,7 +3565,7 @@ html.busy-cursor * {
 .site-logo {
 	position: relative;
 	top: 0;
-	background: transparent;
+	background: 0 0;
 	width: 100%;
 	height: auto;
 	margin: 0 auto -1.4rem auto;
@@ -3595,6 +3677,17 @@ html.busy-cursor * {
 		color-stop(80%, #e646dd),
 		to(#e646dd)
 	);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(4%, #e22735),
+		color-stop(19%, #f52c2a),
+		color-stop(39%, #e2d956),
+		color-stop(60%, #62e080),
+		color-stop(80%, #e646dd),
+		to(#e646dd)
+	);
 	background-image: linear-gradient(
 		90deg,
 		#e22735 4%,
@@ -3641,8 +3734,8 @@ html.busy-cursor * {
 	height: 193px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
-	box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
 }
 
 .small-cover-movie-list__movie__link--seen::after {
@@ -3650,15 +3743,16 @@ html.busy-cursor * {
 	position: absolute;
 	right: 3px;
 	top: 3px;
-	background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
+	background-image: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg);
 	-webkit-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	width: 20px;
 	height: 20px;
 }
 
-.huge-movie-list__movie__cover__link:hover,
 .cover-movie-list__movie__cover-link:hover,
+.huge-movie-list__movie__cover__link:hover,
 .small-cover-movie-list__movie__link--smaller:hover {
 	-webkit-transform: scale(1.04, 1.04);
 	-moz-transform: scale(1.04, 1.04);
@@ -3675,14 +3769,14 @@ html.busy-cursor * {
 	margin-bottom: 15px;
 }
 
-.snatchlist-status--seeding,
-.snatchlist-status--not-hnr {
+.snatchlist-status--not-hnr,
+.snatchlist-status--seeding {
 	color: #418b00;
 }
 
-.snatchlist-status--not-seeding,
-.snatchlist-status--hnr {
-	color: red;
+.snatchlist-status--hnr,
+.snatchlist-status--not-seeding {
+	color: #f44336;
 }
 
 .snatchlist-status--removed-hnr {
@@ -3726,7 +3820,7 @@ html.busy-cursor * {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background: url("https://static.passthepopcorn.me/static/common/stars/stars.png") repeat-x;
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) repeat-x;
 	cursor: pointer;
 }
 
@@ -3762,12 +3856,12 @@ html.busy-cursor * {
 }
 
 .star-rating__current-user {
-	background: url("https://static.passthepopcorn.me/static/common/stars/stars.png") left 125px;
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) left 125px;
 	z-index: 19;
 }
 
 .star-rating__site {
-	background: url("https://static.passthepopcorn.me/static/common/stars/stars.png") left 100px;
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) left 100px;
 	z-index: 18;
 }
 
@@ -3778,7 +3872,7 @@ html.busy-cursor * {
 .star-rating--big {
 	width: 300px;
 	height: 40px;
-	background: url("https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png") repeat-x;
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png) repeat-x;
 }
 
 .star-rating__current-user--big {
@@ -3787,7 +3881,7 @@ html.busy-cursor * {
 }
 
 .star-rating__current-user--big {
-	background: url("https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png") left 220px;
+	background: url(https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png) left 220px;
 }
 
 .star-rating-container--big {
@@ -3797,7 +3891,7 @@ html.busy-cursor * {
 
 .tabs__bar__list {
 	display: block;
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 14px;
 	border-bottom: 1px solid #3e414c;
 	padding: 0;
@@ -3828,9 +3922,9 @@ html.busy-cursor * {
 }
 
 .tabs__bar__link,
-.tabs__bar__link:hover,
 .tabs__bar__link:active,
-.tabs__bar__link:focus {
+.tabs__bar__link:focus,
+.tabs__bar__link:hover {
 	display: block;
 	margin-top: 6px;
 	border: 1px solid transparent;
@@ -3842,15 +3936,15 @@ html.busy-cursor * {
 }
 
 .tabs__bar__link--page-title-like {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 700;
 }
 
 .tabs__bar__item--active > .tabs__bar__link,
-.tabs__bar__item--active > .tabs__bar__link:hover,
 .tabs__bar__item--active > .tabs__bar__link:active,
-.tabs__bar__item--active > .tabs__bar__link:focus {
-	margin-top: 0px;
+.tabs__bar__item--active > .tabs__bar__link:focus,
+.tabs__bar__item--active > .tabs__bar__link:hover {
+	margin-top: 0;
 	margin-bottom: -2px;
 	border: none;
 	padding-top: 14px;
@@ -3904,12 +3998,12 @@ html.busy-cursor * {
 
 .torrent-info__trumpable {
 	font-weight: 700;
-	color: orange;
+	color: #e2893b;
 }
 
 .torrent-info__reported {
 	font-weight: 700;
-	color: red;
+	color: #f44336;
 }
 
 .user-info-bar {
@@ -3938,7 +4032,7 @@ html.busy-cursor * {
 
 .user-info-bar__link:hover {
 	text-decoration: none;
-	color: #ffffff;
+	color: #fff;
 }
 
 .user-info-bar__link--important {
@@ -3949,42 +4043,53 @@ html.busy-cursor * {
 	0% {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
+
 @-o-keyframes flickerAnimation {
 	0% {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
+
 @-moz-keyframes flickerAnimation {
 	0% {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
+
 @-webkit-keyframes flickerAnimation {
 	0% {
 		opacity: 1;
 	}
+
 	50% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -4012,7 +4117,7 @@ html.busy-cursor * {
 
 .user-info-bar__list {
 	display: inline;
-	margin: 0px 6px;
+	margin: 0 6px;
 	padding: 0;
 }
 
@@ -4021,7 +4126,7 @@ html.busy-cursor * {
 	display: inline;
 	vertical-align: middle;
 	margin: 0 1px;
-	padding: 0px;
+	padding: 0;
 	line-height: 20px;
 }
 
@@ -4038,7 +4143,7 @@ html.busy-cursor * {
 .user-info-bar__drop-down-menu__item {
 	display: block;
 	float: none;
-	background: #2f3547;
+	background: #0b0f1b;
 }
 
 .user-info-bar__item--drop-down-menu-opener:hover > .user-info-bar__drop-down-menu {
@@ -4065,8 +4170,8 @@ html.busy-cursor * {
 
 .user-info-bar__drop-down-menu__link:hover {
 	text-decoration: none;
-	background-color: #42495d;
-	color: #ffffff;
+	background-color: #2f3347;
+	color: #fff;
 }
 
 .user-recommendation {
@@ -4094,8 +4199,8 @@ html.busy-cursor * {
 	max-width: 64px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
-	box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
+	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
 	-moz-transition: all .3s;
@@ -4111,6 +4216,7 @@ html.busy-cursor * {
 	-webkit-box-shadow: 0 0 40px #31517d;
 	box-shadow: 0 0 40px #31517d;
 }
+
 .user-recommendation__body {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
@@ -4126,7 +4232,7 @@ html.busy-cursor * {
 }
 
 .wiki__diff--deleted {
-	color: red;
+	color: #f44336;
 	background: #fdd;
 	text-decoration: none;
 }
@@ -4154,7 +4260,7 @@ html.busy-cursor * {
 .text--left {
 	background: #191d2a;
 	border: 1px solid #3e414c;
-	color: #ffffff;
+	color: #fff;
 	text-align: left !important;
 }
 
@@ -4166,7 +4272,6 @@ html.busy-cursor * {
 	text-align: right !important;
 }
 
-/* Awards */
 img[src="static/common/stars/AwardRating.png"] {
 	width: 17px;
 	height: 17px;
@@ -4174,9 +4279,10 @@ img[src="static/common/stars/AwardRating.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4187,9 +4293,10 @@ img[src="static/common/stars/NoAwardRating.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-uncolored.svg")
-		no-repeat center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-uncolored.svg) no-repeat
+		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4200,9 +4307,10 @@ img[src="static/common/stars/AwardUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4213,9 +4321,10 @@ img[src="static/common/stars/AwardMetaUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-met.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-met.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4226,9 +4335,10 @@ img[src="static/common/stars/NoAwardUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-uncolored.svg")
-		no-repeat center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-uncolored.svg) no-repeat
+		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4239,9 +4349,10 @@ img[src="static/common/stars/AwardDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down.svg") no-repeat
-		center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down.svg) no-repeat center
+		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4252,9 +4363,10 @@ img[src="static/common/stars/AwardMetaDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-met.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-met.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4265,9 +4377,10 @@ img[src="static/common/stars/NoAwardDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-uncolored.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-uncolored.svg)
 		no-repeat center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4278,9 +4391,10 @@ img[src="static/common/stars/AwardData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4291,9 +4405,10 @@ img[src="static/common/stars/AwardMetaData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-met.svg")
-		no-repeat center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-met.svg) no-repeat
+		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4304,9 +4419,10 @@ img[src="static/common/stars/NoAwardData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-uncolored.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-uncolored.svg)
 		no-repeat center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4317,9 +4433,10 @@ img[src="static/common/stars/AwardRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-colored.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-colored.svg)
 		no-repeat center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4330,9 +4447,10 @@ img[src="static/common/stars/AwardMetaRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-met.svg")
-		no-repeat center center;
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-met.svg) no-repeat
+		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4343,9 +4461,10 @@ img[src="static/common/stars/NoAwardRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-uncolored.svg")
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-uncolored.svg)
 		no-repeat center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4356,9 +4475,10 @@ img[src="static/common/stars/AwardChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-colored.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-colored.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4369,9 +4489,10 @@ img[src="static/common/stars/AwardMetaChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-met.svg") no-repeat center
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-met.svg) no-repeat center
 		center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4382,9 +4503,10 @@ img[src="static/common/stars/NoAwardChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-uncolored.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-uncolored.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4395,9 +4517,10 @@ img[src="static/common/stars/NoAwardMeta Awards.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-uncolored.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-uncolored.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
 
@@ -4408,8 +4531,9 @@ img[src="static/common/stars/AwardMetaMeta Awards1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-colored.svg") no-repeat
+	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-colored.svg) no-repeat
 		center center;
 	-webkit-background-size: contain;
+	-o-background-size: contain;
 	background-size: contain;
 }
