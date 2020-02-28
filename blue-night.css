@@ -436,6 +436,31 @@ textarea::-ms-input-placeholder {
 	color: #b9becc;
 }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #b9becc;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #b9becc;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #b9becc;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #b9becc;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: #b9becc;
+}
+
 input::placeholder,
 textarea::placeholder {
 	color: #b9becc;
@@ -1006,13 +1031,15 @@ img[src="static/common/Poppy1.png"] {
 	height: 48px !important;
 }
 
-#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"] {
+#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
+img[title="Rotten Tomatoes"] {
 	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center;
 }
 
 #movie-ratings-table #imdb-title-link img,
 #movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"],
 #movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
+img[title="Rotten Tomatoes"],
 #movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
 	width: 48px !important;
 	height: 48px !important;
@@ -1118,7 +1145,8 @@ img[src="static/common/Poppy1.png"] {
 }
 
 .js-bbcode-toolbar__bold-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bold.svg) no-repeat;
+	background: url(https://gitcdn.xyz/cdn/datFunc/ptp__blue-night-theme/c4c75fbf7eb1027bab58f3d25eeac86589c3e42d/icons/toolbar/bold_alt.svg)
+		no-repeat;
 }
 
 .js-bbcode-toolbar__italic-button {
@@ -1803,6 +1831,8 @@ img[src="static/common/smileys/sorry.gif"] {
 		-o-transform 2s ease-in-out;
 	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
 		-o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out, -moz-transform 2s ease-in-out,
+		-o-transform 2s ease-in-out;
 }
 
 #browse_settings:hover {
@@ -2044,7 +2074,8 @@ img[src="static/common/symbols/Rank5.png"] {
 	background-size: contain;
 }
 
-img[src="static/common/symbols/Rank6.png"] {
+img[src="static/common/symbols/Rank6.png"],
+img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	width: 10px;
 	height: 10px;
 	-webkit-box-sizing: border-box;
@@ -2619,6 +2650,20 @@ img[src="static/common/symbols/Rank6.png"] {
 	cursor: pointer;
 }
 
+a[title="Close"] {
+	width: 26px !important;
+	height: 26px !important;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+	padding-left: 26px !important;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/close.svg") no-repeat center
+		center !important;
+	-webkit-background-size: contain !important;
+	-o-background-size: contain !important;
+	background-size: contain !important;
+}
+
 .last5-movies {
 	padding: 1em 0 1em 0;
 	font-size: 8pt;
@@ -2827,7 +2872,7 @@ body.lightbox__scroll-lock {
 
 .mediainfo > tbody > tr,
 .mediainfo__section > tbody > tr {
-	background-color: #494848;
+	background-color: #242a3c;
 	vertical-align: top;
 }
 
@@ -2839,7 +2884,7 @@ body.lightbox__scroll-lock {
 .mediainfo__section {
 	margin: 0;
 	width: 100%;
-	border-top: 1px solid #4a4e5b;
+	border-top: 1px solid #3d4356;
 	border-collapse: collapse;
 }
 
@@ -2900,8 +2945,9 @@ html.busy-cursor * {
 }
 
 .release-description-preview {
-	background-color: #494848;
+	background-color: #242a3c;
 	padding: 10px;
+	border: 1px solid #3d4356;
 }
 
 .film-club-discuss-link {
@@ -3478,7 +3524,7 @@ html.busy-cursor * {
 	display: inline;
 	position: relative;
 	top: -1px;
-	background-color: #171c2a;
+	background-color: #0b0e1a;
 	font-size: .8em;
 	color: #b5b5b5;
 	border: 1px solid #3a4056;
@@ -3527,7 +3573,7 @@ html.busy-cursor * {
 
 .search-bar__results__list-item {
 	display: block;
-	background: #171b2a;
+	background: #0b0e1a;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -3537,7 +3583,7 @@ html.busy-cursor * {
 }
 
 .search-bar__results__list-item--is-highlighted {
-	background: #070b16;
+	background: #1e2233;
 }
 
 .search-bar__results__link {
@@ -3567,6 +3613,7 @@ html.busy-cursor * {
 	margin-right: auto;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	cursor: pointer;
 	-webkit-box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
 	box-shadow: 0 .125rem .4rem rgba(0, 0, 0, .4);
 	-webkit-transition: all .3s;
@@ -3594,6 +3641,9 @@ html.busy-cursor * {
 	top: 0;
 	background: 0 0;
 	width: 100%;
+	max-width: -webkit-fit-content;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
 	height: auto;
 	margin: 0 auto -1.4rem auto;
 }
@@ -3606,133 +3656,51 @@ html.busy-cursor * {
 	margin: 0 auto;
 	text-align: center !important;
 	background-color: #4281da;
-	background-image: -webkit-linear-gradient(
-		90deg,
-		#e22735 4%,
-		#f52c2a 19%,
-		#e2d956 39%,
-		#62e080 60%,
-		#e646dd 80%,
-		#e646dd 100%
-	);
-	background-image: -moz-linear-gradient(
-		90deg,
-		#e22735 4%,
-		#f52c2a 19%,
-		#e2d956 39%,
-		#62e080 60%,
-		#e646dd 80%,
-		#e646dd 100%
-	);
-	background-image: -o-linear-gradient(
-		90deg,
-		#e22735 4%,
-		#f52c2a 19%,
-		#e2d956 39%,
-		#62e080 60%,
-		#e646dd 80%,
-		#e646dd 100%
-	);
 	background-image: -webkit-gradient(
 		linear,
 		left top,
 		right top,
-		color-stop(4%, #e22735),
-		color-stop(19%, #f52c2a),
+		color-stop(4%, #e66534),
+		color-stop(19%, #e69734),
 		color-stop(39%, #e2d956),
 		color-stop(60%, #62e080),
-		color-stop(80%, #e646dd),
+		color-stop(80%, #d195cb),
 		to(#e646dd)
 	);
 	background-image: -webkit-linear-gradient(
 		left,
-		#e22735 4%,
-		#f52c2a 19%,
+		#e66534 4%,
+		#e69734 19%,
 		#e2d956 39%,
 		#62e080 60%,
-		#e646dd 80%,
+		#d195cb 80%,
 		#e646dd 100%
 	);
 	background-image: -moz-linear-gradient(
 		left,
-		#e22735 4%,
-		#f52c2a 19%,
+		#e66534 4%,
+		#e69734 19%,
 		#e2d956 39%,
 		#62e080 60%,
-		#e646dd 80%,
+		#d195cb 80%,
 		#e646dd 100%
 	);
 	background-image: -o-linear-gradient(
 		left,
-		#e22735 4%,
-		#f52c2a 19%,
+		#e66534 4%,
+		#e69734 19%,
 		#e2d956 39%,
 		#62e080 60%,
-		#e646dd 80%,
+		#d195cb 80%,
 		#e646dd 100%
-	);
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		color-stop(4%, #e22735),
-		color-stop(19%, #f52c2a),
-		color-stop(39%, #e2d956),
-		color-stop(60%, #62e080),
-		color-stop(80%, #e646dd),
-		to(#e646dd)
-	);
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		color-stop(4%, #e22735),
-		color-stop(19%, #f52c2a),
-		color-stop(39%, #e2d956),
-		color-stop(60%, #62e080),
-		color-stop(80%, #e646dd),
-		to(#e646dd)
-	);
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		color-stop(4%, #e22735),
-		color-stop(19%, #f52c2a),
-		color-stop(39%, #e2d956),
-		color-stop(60%, #62e080),
-		color-stop(80%, #e646dd),
-		to(#e646dd)
-	);
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		color-stop(4%, #e22735),
-		color-stop(19%, #f52c2a),
-		color-stop(39%, #e2d956),
-		color-stop(60%, #62e080),
-		color-stop(80%, #e646dd),
-		to(#e646dd)
-	);
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		color-stop(4%, #e22735),
-		color-stop(19%, #f52c2a),
-		color-stop(39%, #e2d956),
-		color-stop(60%, #62e080),
-		color-stop(80%, #e646dd),
-		to(#e646dd)
 	);
 	background-image: linear-gradient(
 		90deg,
-		#e22735 4%,
-		#f52c2a 19%,
+		#e66534 4%,
+		#e69734 19%,
 		#e2d956 39%,
 		#62e080 60%,
-		#e646dd 80%,
+		#d195cb 80%,
 		#e646dd 100%
 	);
 	-webkit-background-clip: text;
@@ -4844,4 +4812,8 @@ img[src="static/common/flags/ukraine.png"] {
 img[src="static/common/flags/vietnam.gif"] {
 	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/flags/vietnam.svg") no-repeat
 		center center;
+}
+
+#uploadtoken {
+	font-size: .65rem;
 }
