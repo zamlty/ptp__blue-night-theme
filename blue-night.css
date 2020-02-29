@@ -981,8 +981,8 @@ img[title=Seeders] {
 }
 
 .torrent_table img[src="static/common/x.png"] {
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/not-approved.svg") no-repeat
-		center center;
+	background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/d8703bd28f5fe0a0b7fed208f792721e7d989501/icons/not-approved_alt.svg")
+		no-repeat center center;
 	margin-right: 1px;
 }
 
