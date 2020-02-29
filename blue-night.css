@@ -3930,21 +3930,24 @@ html.busy-cursor * {
 	margin-left: 10px;
 }
 
-.star-rating--big {
+.star-rating--big,
+.star-rating__current-user--big {
 	width: 300px;
-	height: 40px;
-	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-rating.svg");
+	height: 30px;
+}
+
+.star-rating--big {
+	background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/7319d87c79c9809cccd73517e85603d298667732/icons/star-rating-big.svg");
 	background-size: contain;
 	background-position: left center;
+	background-repeat: repeat-x;
 }
 
 .star-rating__current-user--big {
-	width: 300px;
-	height: 40px;
-}
-
-.star-rating__current-user--big {
-	background: url("https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png") left 220px;
+	background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/7319d87c79c9809cccd73517e85603d298667732/icons/star-rating-user-big.svg");
+	background-size: contain;
+	background-position: left center;
+	background-repeat: repeat-x;
 }
 
 .star-rating-container--big {
