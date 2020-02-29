@@ -330,6 +330,8 @@ blockquote {
 body {
 	color: #fff;
 	background-color: #191d2a;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23313852'/%3E%3Cstop offset='1' stop-color='%23191d2a'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23252b3e'/%3E%3Cstop offset='1' stop-color='%23191d2a'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='translate(400 0)'%3E%3Cg transform='translate(0 255)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(-46.8 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.24' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	background-size: cover;
 	font-family: "Open Sans", Tahoma, Helvetica, Geneva, sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
@@ -791,7 +793,8 @@ img[title=Time] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/time.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/time.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -804,7 +807,7 @@ img[title=Snatches] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/snatched.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/snatched.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -818,7 +821,7 @@ img[title=Leechers] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-white.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-white.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -832,7 +835,7 @@ img[title=Seeders] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -973,13 +976,14 @@ img[title=Seeders] {
 }
 
 .torrent_table img[src="static/common/check.png"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg") no-repeat
 		center center;
 }
 
 .torrent_table img[src="static/common/x.png"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/not-approved.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/not-approved.svg") no-repeat
 		center center;
+	margin-right: 1px;
 }
 
 img[src="static/common/Poppy1.png"] {
@@ -989,7 +993,7 @@ img[src="static/common/Poppy1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 70px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/poppy.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/poppy.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1011,21 +1015,21 @@ img[src="static/common/Poppy1.png"] {
 }
 
 #movie-ratings-table #imdb-title-link img {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg") no-repeat center
 		center;
 	width: 64px !important;
 	height: 64px !important;
 }
 
 #movie-ratings-table img[src="static/common/ratings/x2_metacritic.png"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg") no-repeat
 		center center;
 	width: 48px !important;
 	height: 48px !important;
 }
 
 #movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
 		center center;
 	width: 48px !important;
 	height: 48px !important;
@@ -1033,7 +1037,8 @@ img[src="static/common/Poppy1.png"] {
 
 #movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
 img[title="Rotten Tomatoes"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt_alt.svg") no-repeat center
+		center;
 }
 
 #movie-ratings-table #imdb-title-link img,
@@ -1041,15 +1046,31 @@ img[title="Rotten Tomatoes"] {
 #movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
 img[title="Rotten Tomatoes"],
 #movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
-	width: 48px !important;
-	height: 48px !important;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding-left: 48px;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
+}
+
+#movie-ratings-table #imdb-title-link img {
+	width: 48px !important;
+	height: 48px !important;
+	padding-left: 48px;
+}
+
+#movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
+	width: 42px !important;
+	height: 42px !important;
+	padding-left: 42px;
+}
+
+#movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
+img[title="Rotten Tomatoes"] {
+	width: 74px !important;
+	height: 74px !important;
+	padding-left: 74px;
 }
 
 .forum-post__movie-vote img {
@@ -1059,7 +1080,7 @@ img[title="Rotten Tomatoes"],
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 20px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1145,87 +1166,90 @@ img[title="Rotten Tomatoes"],
 }
 
 .js-bbcode-toolbar__bold-button {
-	background: url(https://gitcdn.xyz/cdn/datFunc/ptp__blue-night-theme/c4c75fbf7eb1027bab58f3d25eeac86589c3e42d/icons/toolbar/bold_alt.svg)
+	background: url("https://gitcdn.xyz/cdn/datFunc/ptp__blue-night-theme/c4c75fbf7eb1027bab58f3d25eeac86589c3e42d/icons/toolbar/bold_alt.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__italic-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/italic.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/italic.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__underline-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/underline.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/underline.svg")
+		no-repeat;
 }
 
 .js-bbcode-toolbar__strikethrough-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/strikethrough.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/strikethrough.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__link-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/link.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/link.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__image-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/image.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/image.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__hide-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/hide.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/hide.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__spoiler-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/spoiler.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/spoiler.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__quote-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/quote.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/quote.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__size-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/font-size.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/font-size.svg")
+		no-repeat;
 }
 
 .js-bbcode-toolbar__color-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/color.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/color.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__youtube-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/vid-ut.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/vid-ut.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__mediainfo-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/mediainfo.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/mediainfo.svg")
+		no-repeat;
 }
 
 .js-bbcode-toolbar__align-center-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__align-right-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align-right.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/align-right.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__code-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/code.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/code.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__list-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bullet-list.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/bullet-list.svg")
 		no-repeat;
 }
 
 .js-bbcode-toolbar__emoticon-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/emojis.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/emojis.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__comparison-button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/compare.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/compare.svg") no-repeat;
 }
 
 a[title="BBCode help"] .bbcode-toolbar__button {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/question.svg) no-repeat;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/toolbar/question.svg") no-repeat;
 }
 
 .js-bbcode-toolbar__align-center-button,
@@ -1375,174 +1399,181 @@ img[src="static/common/smileys/wub.gif"] {
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
 img[src="static/common/smileys/smile.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
 img[src="static/common/smileys/sad.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
 img[src="static/common/smileys/biggrin.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
 img[src="static/common/smileys/ohshit.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
 img[src="static/common/smileys/tongue.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
 img[src="static/common/smileys/blank.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg")
 		no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],
 img[src="static/common/smileys/angry.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
 img[src="static/common/smileys/blush.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
 img[src="static/common/smileys/cool.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
 img[src="static/common/smileys/creepy.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
 img[src="static/common/smileys/crying.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
 img[src="static/common/smileys/eyesright.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg) no-repeat center
-		center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg") no-repeat
+		center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
 img[src="static/common/smileys/frown.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
 img[src="static/common/smileys/hmm.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
 img[src="static/common/smileys/laughing.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
 img[src="static/common/smileys/ninja.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
 img[src="static/common/smileys/no.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
 img[src="static/common/smileys/nod.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
 img[src="static/common/smileys/ohnoes.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
 img[src="static/common/smileys/omg.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
 img[src="static/common/smileys/shifty.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
 img[src="static/common/smileys/sick.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
 img[src="static/common/smileys/wink.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
 img[src="static/common/smileys/worried.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
 img[src="static/common/smileys/wtf.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
 img[src="static/common/smileys/wub.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg") no-repeat center
+		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
 img[src="static/common/smileys/paddle.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg) no-repeat center
-		center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg") no-repeat
+		center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
 img[src="static/common/smileys/wave.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
 img[src="static/common/smileys/heart.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg") no-repeat center
 		center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
 img[src="static/common/smileys/thanks.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg") no-repeat center
 		center;
 }
 
@@ -1557,13 +1588,13 @@ img[src="static/common/smileys/thanks.gif"] {
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
 img[src="static/common/smileys/crom.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg") no-repeat
 		center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
 img[src="static/common/smileys/sorry.gif"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg") no-repeat center
 		center;
 }
 
@@ -1808,7 +1839,7 @@ img[src="static/common/smileys/sorry.gif"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 14px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/settings.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/settings.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1897,7 +1928,7 @@ img[src="static/common/symbols/donor.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/donor.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/donor.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1911,7 +1942,7 @@ img[src="static/common/symbols/miner.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/miner-alt.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/miner-alt.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1925,7 +1956,7 @@ img[src="static/common/symbols/filmclub.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 20px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/film-club-icon.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/film-club-icon.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1939,7 +1970,7 @@ img[src="static/common/symbols/encoder.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/encoder.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/encoder.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1954,7 +1985,7 @@ img[src="static/common/symbols/encoder_gp.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1968,7 +1999,7 @@ img[src="static/common/symbols/badge_checker.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1982,7 +2013,7 @@ img[src="static/common/symbols/badge_gpchecker.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 13px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge_gpchecker.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge_gpchecker.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -1997,7 +2028,7 @@ img[src="static/common/symbols/disabled.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 11px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2011,7 +2042,7 @@ img[src="static/common/symbols/Rank1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-1.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-1.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2025,7 +2056,7 @@ img[src="static/common/symbols/Rank2.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-2.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-2.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2039,7 +2070,7 @@ img[src="static/common/symbols/Rank3.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-3.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-3.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2053,7 +2084,7 @@ img[src="static/common/symbols/Rank4.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-4.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-4.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2067,7 +2098,7 @@ img[src="static/common/symbols/Rank5.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-5.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-5.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2082,7 +2113,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 10px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-6.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-6.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2109,6 +2140,20 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	max-width: 150px;
 	height: auto;
 	max-height: 400px;
+}
+
+img[alt="Default avatar"] {
+	width: 150px;
+	height: 150px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 150px;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/imgs/defualt_avatar_colored.svg")
+		no-repeat center center;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
 }
 
 .forum-post__body {
@@ -2139,7 +2184,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg") no-repeat
 		left center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2153,8 +2198,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg) no-repeat
-		left center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg")
+		no-repeat left center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -2167,8 +2212,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg) no-repeat
-		left center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
+		no-repeat left center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -2181,8 +2226,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 1rem;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg) no-repeat
-		center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg")
+		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -2191,8 +2236,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 .forum-topic--is-read-locked {
 	width: 30px;
 	height: 30px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg) no-repeat
-		left center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
+		no-repeat left center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -2205,7 +2250,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2219,7 +2264,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 30px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2229,7 +2274,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 .forum-topic--is-unread-locked {
 	width: 32px;
 	height: 32px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
 		no-repeat center center;
 	-o-background-size: contain;
 	background-size: contain;
@@ -2248,8 +2293,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 15px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-right.svg) no-repeat center
-		center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-right.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -2271,7 +2316,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 12px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/view-post.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/view-post.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2494,7 +2539,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 42px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2513,7 +2558,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 }
 
 .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2521,7 +2566,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 }
 
 .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"] {
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt.svg) no-repeat center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt_alt.svg") no-repeat center
+		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -2534,7 +2580,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 32px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -2556,7 +2602,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 }
 
 .table > tbody > tr.inbox-message--unread > td {
-	background-color: #af2525;
+	background-color: #586179;
 }
 
 .input-group {
@@ -2639,7 +2685,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 }
 
 #simplemodal-container a.modalCloseImg {
-	background: url(/static/common/simplemodal_close.png) no-repeat;
+	background: url("/static/common/simplemodal_close.png") no-repeat;
 	width: 25px;
 	height: 29px;
 	display: inline;
@@ -2928,7 +2974,7 @@ html.busy-cursor * {
 }
 
 .large-torrent-list-group-opener {
-	background: url(images/show.png) no-repeat center center;
+	background: url("images/show.png") no-repeat center center;
 	width: 28px;
 	height: 28px;
 }
@@ -3220,7 +3266,7 @@ html.busy-cursor * {
 	float: left;
 	width: 2px;
 	height: 9px;
-	background: url(images/bar_left.gif) center center no-repeat;
+	background: url("images/bar_left.gif") center center no-repeat;
 	margin: 0;
 	padding: 0;
 }
@@ -3228,7 +3274,7 @@ html.busy-cursor * {
 .poll__bar__center {
 	float: left;
 	height: 9px;
-	background: url(images/bar.gif) repeat;
+	background: url("images/bar.gif") repeat;
 	margin: 0;
 	padding: 0;
 }
@@ -3237,7 +3283,7 @@ html.busy-cursor * {
 	float: left;
 	width: 2px;
 	height: 9px;
-	background: url(images/bar_right.gif) center center no-repeat;
+	background: url("images/bar_right.gif") center center no-repeat;
 	margin: 0;
 	padding: 0;
 }
@@ -3816,17 +3862,20 @@ html.busy-cursor * {
 .star-rating-container {
 	display: inline-block;
 	padding-right: 5px;
+	margin: 10px 0 0;
 	cursor: pointer;
 }
 
 .star-rating {
 	display: inline-block;
 	width: 170px;
-	height: 20px;
+	height: 17px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) repeat-x;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-rating.svg");
+	background-size: contain;
+	background-position: left center;
 	cursor: pointer;
 }
 
@@ -3862,12 +3911,18 @@ html.busy-cursor * {
 }
 
 .star-rating__current-user {
-	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) left 125px;
+	height: 17px;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-rating-user.svg");
+	background-size: contain;
+	background-position: left center;
 	z-index: 19;
 }
 
 .star-rating__site {
-	background: url(https://static.passthepopcorn.me/static/common/stars/stars.png) left 100px;
+	height: 17px;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-rating-site.svg");
+	background-size: contain;
+	background-position: left center;
 	z-index: 18;
 }
 
@@ -3878,7 +3933,9 @@ html.busy-cursor * {
 .star-rating--big {
 	width: 300px;
 	height: 40px;
-	background: url(https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png) repeat-x;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-rating.svg");
+	background-size: contain;
+	background-position: left center;
 }
 
 .star-rating__current-user--big {
@@ -3887,7 +3944,7 @@ html.busy-cursor * {
 }
 
 .star-rating__current-user--big {
-	background: url(https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png) left 220px;
+	background: url("https://static.passthepopcorn.me/static/common/stars/stars2_big_light_v2.png") left 220px;
 }
 
 .star-rating-container--big {
@@ -3988,7 +4045,7 @@ html.busy-cursor * {
 
 .torrent-info-link--user-snatched {
 	font-weight: 700;
-	color: #2a8aed;
+	color: #4281da;
 }
 
 .torrent-info-link--user-downloaded {
@@ -4285,7 +4342,7 @@ img[src="static/common/stars/AwardRating.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4299,8 +4356,8 @@ img[src="static/common/stars/NoAwardRating.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-uncolored.svg) no-repeat
-		center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-uncolored.svg")
+		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -4313,7 +4370,7 @@ img[src="static/common/stars/AwardUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4327,7 +4384,7 @@ img[src="static/common/stars/AwardMetaUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-met.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-met.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4341,8 +4398,8 @@ img[src="static/common/stars/NoAwardUploads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-uncolored.svg) no-repeat
-		center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-uncolored.svg")
+		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -4355,8 +4412,8 @@ img[src="static/common/stars/AwardDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down.svg) no-repeat center
-		center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down.svg") no-repeat
+		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -4369,7 +4426,7 @@ img[src="static/common/stars/AwardMetaDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-met.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-met.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4383,7 +4440,7 @@ img[src="static/common/stars/NoAwardDownloads.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-uncolored.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-uncolored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4397,7 +4454,7 @@ img[src="static/common/stars/AwardData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4411,8 +4468,8 @@ img[src="static/common/stars/AwardMetaData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-met.svg) no-repeat
-		center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-met.svg")
+		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -4425,7 +4482,7 @@ img[src="static/common/stars/NoAwardData Transfer.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-uncolored.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-uncolored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4439,7 +4496,7 @@ img[src="static/common/stars/AwardRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-colored.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-colored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4453,8 +4510,8 @@ img[src="static/common/stars/AwardMetaRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-met.svg) no-repeat
-		center center;
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-met.svg")
+		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
 	background-size: contain;
@@ -4467,7 +4524,7 @@ img[src="static/common/stars/NoAwardRequests.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-uncolored.svg)
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-uncolored.svg")
 		no-repeat center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4481,7 +4538,7 @@ img[src="static/common/stars/AwardChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-colored.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-colored.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4495,7 +4552,7 @@ img[src="static/common/stars/AwardMetaChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-met.svg) no-repeat center
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-met.svg") no-repeat center
 		center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4509,7 +4566,7 @@ img[src="static/common/stars/NoAwardChat.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-uncolored.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-uncolored.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4523,7 +4580,7 @@ img[src="static/common/stars/NoAwardMeta Awards.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-uncolored.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-uncolored.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
@@ -4537,7 +4594,7 @@ img[src="static/common/stars/AwardMetaMeta Awards1.png"] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 17px;
-	background: url(https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-colored.svg) no-repeat
+	background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-colored.svg") no-repeat
 		center center;
 	-webkit-background-size: contain;
 	-o-background-size: contain;
