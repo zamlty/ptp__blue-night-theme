@@ -4378,7 +4378,7 @@ html.busy-cursor * {
 
 .user-info-bar__list {
   display: inline;
-  margin: 0 6px;
+  margin: 0;
   padding: 0;
 }
 
