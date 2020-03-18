@@ -660,7 +660,7 @@ th {
 .table > tfoot > tr > th,
 .table > thead > tr > td,
 .table > thead > tr > th {
-  border-top: solid thin #3a4055;
+  border-top: solid thin #1e2233;
   line-height: 1.42857;
   padding: 5px;
 }
@@ -740,12 +740,12 @@ th {
   border-top-right-radius: 5px !important;
 }
 
-.username {
+.forum-post__heading .username {
   position: relative;
   padding-bottom: 0.1rem;
 }
 
-.username:before {
+.forum-post__heading .username:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -775,7 +775,7 @@ th {
     -moz-transform 0.5s ease, -o-transform 0.5s ease;
 }
 
-.username:hover:before {
+.forum-post__heading .username:hover:before {
   -webkit-transform-origin: bottom left;
   -moz-transform-origin: bottom left;
   -ms-transform-origin: bottom left;
@@ -1240,7 +1240,7 @@ img[title="Rotten Tomatoes"] {
 }
 
 .bbcode-text-preview {
-  border: solid thin #3a4055;
+  border: solid thin #1e2233;
   padding: 0.5em;
 }
 
@@ -1815,7 +1815,9 @@ img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
 .cover-movie-list__movie__cover-link--seen,
 .huge-movie-list__movie__cover__link--seen,
 .small-cover-movie-list__movie__link--seen {
-  opacity: 0.65;
+  opacity: 0.75;
+  background-color: rgba(24, 28, 42, 0.25) !important;
+  background-blend-mode: multiply;
 }
 
 .basic-movie-list__movie__cover-link--seen:hover,
@@ -1823,6 +1825,8 @@ img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
 .huge-movie-list__movie__cover__link--seen:hover,
 .small-cover-movie-list__movie__link--seen:hover {
   opacity: 1;
+  background-color: none !important;
+  background-blend-mode: initial;
 }
 
 .cover-movie-list__movie__cover-link--seen::after {
@@ -1940,7 +1944,7 @@ img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
 
 .generic-form__footer,
 .search-form__footer {
-  border-top: thin solid #3a4055;
+  border-top: thin solid #1e2233;
   padding-top: 8px;
 }
 
@@ -3038,7 +3042,7 @@ body.lightbox__scroll-lock {
 .main-menu__link:hover,
 .user-info-bar__link:hover {
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
 }
 
 .mediainfo {
@@ -3264,6 +3268,8 @@ html.busy-cursor * {
   border-radius: 0.25rem;
   cursor: pointer;
   width: 100%;
+  border: 1px solid #3a4055;
+  box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .movie-tooltip__trailer__play {
@@ -3284,7 +3290,7 @@ html.busy-cursor * {
   -webkit-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
-  opacity: 0.65;
+  opacity: 0.75;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -3293,11 +3299,13 @@ html.busy-cursor * {
 
 .movie-tooltip__trailer__play:hover {
   opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .movie-tooltip__synopsis {
   margin-top: 10px;
-  line-height: 12px;
+  line-height: 1rem;
 }
 
 .movie-tooltip__torrents {
@@ -3460,6 +3468,7 @@ html.busy-cursor * {
   text-align: left;
   font-size: 0.75rem;
   line-height: 1rem;
+  box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .qtip-content label {
@@ -3511,10 +3520,12 @@ html.busy-cursor * {
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .qtip-ptp {
+  .qtip-ptp,
+  .user-info-bar__drop-down-menu,
+  .search-bar__results {
     -webkit-backdrop-filter: blur(10px) !important;
     backdrop-filter: blur(10px) !important;
-    background-color: rgba(7, 11, 22, 0.75) !important;
+    background-color: rgba(7, 11, 22, 0.65) !important;
   }
 }
 
@@ -3769,21 +3780,21 @@ html.busy-cursor * {
   padding: 0;
   border: none;
   z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .search-bar__results__list-item {
   display: block;
-  background: #0b0e1a;
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 0.9em;
   line-height: 15px;
-  border-bottom: 1px solid #1d212b;
+  border-bottom: 1px solid #2f3447;
 }
 
 .search-bar__results__list-item--is-highlighted {
-  background: #1e2233;
 }
 
 .search-bar__results__link {
@@ -3800,6 +3811,7 @@ html.busy-cursor * {
 .search-bar__results__list-item--is-highlighted
   > .search-bar__results__link:hover {
   color: #fff;
+  background: #4281da;
 }
 
 .sidebar {
@@ -4397,14 +4409,17 @@ html.busy-cursor * {
   z-index: 10;
   left: auto;
   right: 0;
-  padding: 5px;
+  padding: 0;
   margin: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .user-info-bar__drop-down-menu__item {
   display: block;
   float: none;
-  background: rgba(7, 11, 22, 0.9);
+  /* background: rgba(7, 11, 22, .9); */
 }
 
 .user-info-bar__item--drop-down-menu-opener:hover
@@ -4432,8 +4447,8 @@ html.busy-cursor * {
 
 .user-info-bar__drop-down-menu__link:hover {
   text-decoration: none;
-  background-color: #1e2233;
   color: #fff;
+  background: #4281da;
 }
 
 #nav_more:hover {
