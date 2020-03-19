@@ -382,6 +382,7 @@ blockquote {
 body {
   color: #fff;
   background-color: #191d2a;
+  background-image: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/73a9bdf1ec9fae3a48fbb282e7f29a11c54f5891/imgs/body_bg.svg");
   font-family: "Open Sans", Tahoma, Helvetica, Geneva, sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -2965,14 +2966,13 @@ body.lightbox__scroll-lock {
 }
 
 .main-menu {
-  background: rgba(7, 11, 22, 0.9);
+  background-color: rgba(7, 11, 22, 0.9);
   width: 750px;
   height: 28px;
   margin: 5px auto 10px auto;
   font-size: 10pt;
   text-align: left;
   z-index: 7;
-  opacity: 0.75;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
@@ -3325,7 +3325,7 @@ html.busy-cursor * {
 }
 
 .page__main-content {
-  background-color: #1e2333;
+  background: #1e2333;
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -3508,7 +3508,7 @@ html.busy-cursor * {
 
 .qtip-ptp {
   background: #070b16;
-  background-color: rgba(7, 11, 22, 0.9);
+  background-color: rgba(7, 11, 22, 0.8);
   line-height: normal !important;
   max-width: none !important;
   color: #fff;
@@ -3517,16 +3517,6 @@ html.busy-cursor * {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px !important;
-}
-
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .qtip-ptp,
-  .user-info-bar__drop-down-menu,
-  .search-bar__results {
-    -webkit-backdrop-filter: blur(10px) !important;
-    backdrop-filter: blur(10px) !important;
-    background-color: rgba(7, 11, 22, 0.65) !important;
-  }
 }
 
 .ratio-00 {
@@ -3772,6 +3762,7 @@ html.busy-cursor * {
 }
 
 .search-bar__results {
+  background-color: rgba(7, 11, 22, 0.9);
   display: block;
   position: absolute;
   left: 0;
@@ -3794,7 +3785,8 @@ html.busy-cursor * {
   border-bottom: 1px solid #2f3447;
 }
 
-.search-bar__results__list-item--is-highlighted {
+.search-bar__results__list-item:last-of-type {
+  border-bottom: none;
 }
 
 .search-bar__results__link {
@@ -3811,7 +3803,7 @@ html.busy-cursor * {
 .search-bar__results__list-item--is-highlighted
   > .search-bar__results__link:hover {
   color: #fff;
-  background: #4281da;
+  background-color: #4281da;
 }
 
 .sidebar {
@@ -4265,7 +4257,7 @@ html.busy-cursor * {
   left: 0;
   width: 100%;
   height: auto;
-  background: rgba(7, 11, 22, 0.9);
+  background-color: rgba(7, 11, 22, 0.9);
   padding: 0.5rem 0;
   margin: 0 auto;
   text-align: center;
@@ -4404,6 +4396,7 @@ html.busy-cursor * {
 }
 
 .user-info-bar__drop-down-menu {
+  background-color: rgba(7, 11, 22, 0.9);
   visibility: hidden;
   position: absolute;
   z-index: 10;
@@ -4419,7 +4412,11 @@ html.busy-cursor * {
 .user-info-bar__drop-down-menu__item {
   display: block;
   float: none;
-  /* background: rgba(7, 11, 22, .9); */
+  border-bottom: 1px solid #2f3447;
+}
+
+.user-info-bar__drop-down-menu__item:last-of-type {
+  border-bottom: none;
 }
 
 .user-info-bar__item--drop-down-menu-opener:hover
@@ -4448,7 +4445,7 @@ html.busy-cursor * {
 .user-info-bar__drop-down-menu__link:hover {
   text-decoration: none;
   color: #fff;
-  background: #4281da;
+  background-color: #4281da;
 }
 
 #nav_more:hover {
@@ -5091,4 +5088,14 @@ img[src="static/common/flags/vietnam.gif"] {
 
 #uploadtoken {
   font-size: 0.65rem;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .qtip-ptp,
+  .main-menu .search-bar__results,
+  .user-info-bar__drop-down-menu {
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(7, 11, 22, 0.55) !important;
+  }
 }
