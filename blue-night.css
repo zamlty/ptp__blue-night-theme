@@ -681,7 +681,6 @@ th {
 .table--bordered > tfoot > tr > th,
 .table--bordered > thead > tr > td,
 .table--bordered > thead > tr > th {
-  border: 1px solid #191d2a;
   padding: 0.4rem;
 }
 
@@ -1272,6 +1271,7 @@ img[title="Rotten Tomatoes"] {
 
 .bbcode-toolbar__button:hover {
   opacity: 1;
+  transform: translateY(-0.1rem);
 }
 
 .js-bbcode-toolbar__bold-button {
@@ -2254,7 +2254,7 @@ img[src="static/common/symbols/Rank6.png"],
 .forum-post__avatar {
   display: table-cell;
   position: relative;
-  border-right: 1px solid #191d2a;
+  border-right: 1px solid #070b16;
   padding: 5px;
   width: 161px;
 }
