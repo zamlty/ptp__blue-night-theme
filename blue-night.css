@@ -1147,20 +1147,9 @@ a[title="Close"] {
 .bbcode__image {
   max-width: 500px;
   cursor: pointer;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   border-radius: 5px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.bbcode__image:hover {
-  -webkit-transform: scale(1.04);
-  -moz-transform: scale(1.04);
-  -ms-transform: scale(1.04);
-  -o-transform: scale(1.04);
-  transform: scale(1.04);
 }
 
 .sidebar .bbcode__image {
