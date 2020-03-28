@@ -3426,6 +3426,30 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       border-top: 1px solid #3d4356;
     }
 
+    .torrent_table img[src="static/common/check.png"],
+    .torrent_table img[src="static/common/x.png"] {
+      width: 12px !important;
+      height: 12px !important;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 12px;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .torrent_table img[src="static/common/check.png"] {
+      background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg")
+          no-repeat center center;
+    }
+
+  .torrent_table img[src="static/common/x.png"] {
+      background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/baca928290b62658e2d1cb73521351ea9a331ff9/icons/not-approved_alt.svg")
+          no-repeat center center;
+      margin-right: 1px;
+    }
+
     img[src="static/common/Poppy1.png"] {
       width: 70px;
       height: 70px;
@@ -3454,19 +3478,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       -o-background-size: contain;
       background-size: contain;
       margin-right: 0.2rem;
-    }
-
-    .torrent_table img[src="static/common/check.png"],
-    .torrent_table img[src="static/common/x.png"] {
-      width: 12px;
-      height: 12px;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      padding-left: 12px;
-      -webkit-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
     }
 
     #movie-ratings-table #imdb-title-link img {
