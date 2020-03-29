@@ -1990,8 +1990,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       font-size: inherit;
       font-family: inherit;
       padding: .5em 1em;
-      -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     }
 
 input#post_preview {}
