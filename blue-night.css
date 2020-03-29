@@ -840,7 +840,7 @@ html.busy-cursor * {
 }
 
 body {
-  background: #191d2a url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/73a9bdf1ec9fae3a48fbb282e7f29a11c54f5891/imgs/body_bg.svg") center top;
+  background: #191d2a url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/73a9bdf1ec9fae3a48fbb282e7f29a11c54f5891/imgs/body_bg.svg");
   margin: 0 auto;
   max-width: 1013px;
 }
@@ -1990,7 +1990,11 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       font-size: inherit;
       font-family: inherit;
       padding: .5em 1em;
+      -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     }
+
+input#post_preview {}
 
     button:hover,
     input[type="button"]:hover,
@@ -2080,19 +2084,41 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       font-size: 13px;
     }
 
+    select,
+    select option,
+    select option:first-child {
+      color: #949aac;
+    }
+
     select:focus {
       -webkit-box-shadow: none;
       box-shadow: none;
       outline: 0;
     }
 
-    input::-webkit-input-placeholder,
-    textarea::-webkit-input-placeholder,
-    input:-ms-input-placeholder,
-    textarea:-ms-input-placeholder,
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color: #949aac;
+    }
+
+    input:-moz-placeholder, textarea:-moz-placeholder {
+      color: #949aac;
+    }
+
+    input::-moz-placeholder, textarea::-moz-placeholder {
+      color: #949aac;
+    }
+
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+      color: #949aac;
+    }
+
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+      color: #949aac;
+    }
+
     input::placeholder,
     textarea::placeholder {
-      color: #b9becc;
+        color: #949aac;
     }
 
     /* Validation */
@@ -2402,6 +2428,30 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       border-bottom: 1px solid #3a4055;
     }
 
+    .search-bar__search-field__input::-moz-placeholder {
+      color: #949aac;
+    }
+
+    .search-bar__search-field__input:-ms-input-placeholder {
+        color: #949aac;
+    }
+
+    .search-bar__search-field__input::-webkit-input-placeholder {
+        color: #949aac;
+    }
+
+    .search-bar__search-field__input:-moz-placeholder {
+        color: #949aac;
+    }
+
+    .search-bar__search-field__input::-ms-input-placeholder {
+        color: #949aac;
+    }
+
+    .search-bar__search-field__input::placeholder {
+        color: #949aac;
+    }
+
     .search-bar__list,
     .search-bar__search-field,
     .search-bar__search-field__form,
@@ -2431,15 +2481,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       padding: 2px 3px;
       text-align: center;
       margin: .4rem;
-    }
-
-    .search-bar__search-field__input::-moz-placeholder,
-    .search-bar__search-field__input:-ms-input-placeholder,
-    .search-bar__search-field__input::-webkit-input-placeholder,
-    .search-bar__search-field__input:-moz-placeholder,
-    .search-bar__search-field__input::-ms-input-placeholder,
-    .search-bar__search-field__input::placeholder {
-      color: #949aac;
     }
 
     .search-bar__results,
@@ -2756,10 +2797,11 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     }
 
     .basic-movie-list__movie__rating-container {
-      background-color: #4281da;
+      background-color: #2f3446;
       display: inline-block;
       padding: 1px 4px;
       margin: .1rem 0 0;
+      border: 1px solid #3a4055;
       border-radius: 2.5px;
     }
 
@@ -2888,10 +2930,13 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     }
 
     .cover-movie-list__movie__rating {
-      background-color: #4281da;
+      box-sizing: border-box;
+      background-color: #2f3446;
       color: #ffffff;
+      display: inline-block;
       padding: 1px 4px;
-      margin-right: 4px;
+      margin-right: 0.3rem;
+      border: 1px solid #3a4055;
       border-radius: 5px;
     }
 
@@ -3294,10 +3339,11 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     }
 
     .movie-tooltip__rating-container {
-      background-color: #4281da;
+      background-color: #2f3446;
       display: inline;
       margin-right: 4px;
       padding: 1px 4px;
+      border: 1px solid #3a4055;
       border-radius: .25rem;
     }
 
@@ -4140,6 +4186,11 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
         width: 50px;
         height: 50px;
         padding-left: 50px;
+    }
+
+    #friends .panel input[type="submit"] {
+        width: 78px;
+        margin-bottom: .2rem;
     }
 
     .forum-post__body {
@@ -5006,7 +5057,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
   .user-info-bar__drop-down-menu {
     -webkit-backdrop-filter: blur(10px) !important;
     backdrop-filter: blur(10px) !important;
-    background-color: rgba(7, 11, 22, .5) !important;
+    background-color: rgba(7, 11, 22, .55) !important;
   }
 }
 
