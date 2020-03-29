@@ -2249,10 +2249,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     .table--panel-like > thead > tr {
       background: rgba(7, 11, 22, .9);
-      background: -webkit-gradient(linear, left top, left bottom, from(#454958), to(#070b16));
-      background: -webkit-linear-gradient(top, #454958 0%, #070b16 100%);
-      background: -o-linear-gradient(top, #454958 0%, #070b16 100%);
-      background: linear-gradient(to bottom, #454958 0%, #070b16 100%);
     }
 
     .table--panel-like > thead > tr,
@@ -2393,10 +2389,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     .search-bar {
       width: 1013px;
       background: #2f3447;
-      background: -webkit-gradient(linear, left top, left bottom, from(#525a77), to(#3a4056));
-      background: -webkit-linear-gradient(top, #525a77 0%, #3a4056 100%);
-      background: -o-linear-gradient(top, #525a77 0%, #3a4056 100%);
-      background: linear-gradient(to bottom, #525a77 0%, #3a4056 100%);
       font-size: .8rem;
       padding: .6em;
       margin-left: auto;
@@ -2407,9 +2399,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       border-top-right-radius: 10px;
       -webkit-border-top-left-radius: 10px;
       border-top-left-radius: 10px;
-      border-bottom: 1px solid #586179;
-      -webkit-box-shadow: inset 0 0.5rem 1rem #7b8b9e;
-      box-shadow: inset 0 0.5rem 1rem #7b8b9e;
+      border-bottom: 1px solid #3a4055;
     }
 
     .search-bar__list,
@@ -2435,7 +2425,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       background-color: #0b0e1a;
       font-size: .8em;
       color: #b5b5b5;
-      border: 1px solid #586179;
+      border: 1px solid #3a4056;
       -webkit-border-radius: 5px;
       border-radius: 5px;
       padding: 2px 3px;
@@ -2597,11 +2587,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     .panel__heading {
       background-color: rgba(7, 11, 22, .9);
-      background: rgba(7, 11, 22, .9);
-      background: -webkit-gradient(linear, left top, left bottom, from(#454958), to(#070b16));
-      background: -webkit-linear-gradient(top, #454958 0%, #070b16 100%);
-      background: -o-linear-gradient(top, #454958 0%, #070b16 100%);
-      background: linear-gradient(to bottom, #454958 0%, #070b16 100%);
       border: none;
       padding: 7px;
     }
@@ -4073,11 +4058,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     .forum-post__heading {
       background-color: rgba(7, 11, 22, .9);
-      background: rgba(7, 11, 22, .9);
-      background: -webkit-gradient(linear, left top, left bottom, from(#454958), to(#070b16));
-      background: -webkit-linear-gradient(top, #454958 0%, #070b16 100%);
-      background: -o-linear-gradient(top, #454958 0%, #070b16 100%);
-      background: linear-gradient(to bottom, #454958 0%, #070b16 100%);
       padding: 7px;
       -webkit-border-top-left-radius: 5px;
       border-top-left-radius: 5px;
