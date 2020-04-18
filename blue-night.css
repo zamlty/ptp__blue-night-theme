@@ -2237,7 +2237,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     @supports (-webkit-appearance: none) or (-moz-appearance: none) {
       input[type='checkbox'],
       input[type='radio'] {
-        --active: #4281da;
+        --active: #0b0d19;
         --active-inner: #fff;
         --focus: 2px rgba(39, 94, 254, .3);
         --border: #3a4055;
@@ -2965,6 +2965,10 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       width: 128px;
       height: 196px;
       display: block;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     }
 
     .small-cover-movie-list__movie__link--smaller {
@@ -3477,6 +3481,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     .cover-movie-list__movie__cover-link:hover,
     .huge-movie-list__movie__cover__link:hover,
+    .small-cover-movie-list__movie__link:hover,
     .small-cover-movie-list__movie__link--smaller:hover {
       -webkit-transform: scale(1.04, 1.04);
       -moz-transform: scale(1.04, 1.04);
@@ -3497,11 +3502,11 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     #browse_settings:hover,
     img[src="static/common/symbols/settings.png"]:hover {
-      -webkit-transform: rotate(360deg) scale(1.2);
-      -moz-transform: rotate(360deg) scale(1.2);
-      -ms-transform: rotate(360deg) scale(1.2);
-      -o-transform: rotate(360deg) scale(1.2);
-      transform: rotate(360deg) scale(1.2);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
       -webkit-filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
       filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
     }
