@@ -1112,7 +1112,8 @@ body.lightbox__scroll-lock {
 }
 
 .light-youtube-embed:hover::after {
-  background-image: url("/static/common/symbols/play-big-hover.png");
+  background-image: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/050fe6d5a0751f460010d80e6185f98878b83cd1/icons/yt_icon_rgb.svg");
+  max-width: 80px;
 }
 
 /* Modal */
@@ -2398,7 +2399,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       }
 
     }
-
 
     /************************************************************************
     3.2 - Buttons */
