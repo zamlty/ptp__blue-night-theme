@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blue Night+
-// @namespace    http*://*passthepopcorn.me/*
+// @namespace    https://github.com/datFunc/
 // @version      0.1
 // @description  Add some visual enhancements to the Blue Night Stylesheet
 // @author       PuNkFuSe
