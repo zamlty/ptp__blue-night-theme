@@ -6,7 +6,7 @@
    TABLE OF CONTENTS
    ++++++++++++++++++++++++++++++++
    1.0 - Reset CSS
-        1.1 - Normalize.css 8..1
+        1.1 - Normalize.css 8.0.1
         1.2 - Custom Reset
    2.0 - Typography
    3.0 - Globals
@@ -669,18 +669,18 @@
 
 body {
   color: #fff;
-  font-family: "Open Sans", Helvetica, Tahoma, Geneva, sans-serif;
+  font-family: "Open Sans", Helvetica, Tahoma, Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: normal;
   word-wrap: break-word;
   -webkit-text-size-adjust: 100%;
-  -moz-font-variant-ligatures: none;
-  font-variant-ligatures: none;
-  -webkit-font-variant-ligatures: none;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: greyscale;
-  -webkit-font-smoothing: antialiased;
+  -moz-font-variant-ligatures: normal;
+  font-variant-ligatures: normal;
+  -webkit-font-variant-ligatures: normal;
+  text-rendering: optimizeLegibility !important;
+  -moz-osx-font-smoothing: greyscale !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .page__title {
@@ -704,16 +704,16 @@ body {
   display: inline;
   font-weight: 700;
   color: #dfa02d;
-  background: rgba(223, 160, 45, .15);
+  background: rgba(223, 160, 45, .15) !important;
   padding: .2rem .6rem;
-  border-radius: 1rem;
+  border: none !important;
+  /* border-radius: 1rem; */
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
 }
 
-.missing-torrent-status--trumpable:hover,
 .torrent-info__trumpable:hover {
   background: rgba(223, 160, 45, .25);
 }
@@ -728,12 +728,16 @@ body {
   color: #f44336;
 }
 
-.torrent-info__reported {
+.torrent-info__reported,
+.missing-torrent-status--missing,
+.missing-torrent-status--no-source,
+.missing-torrent-status--dead-source {
   display: inline;
   font-weight: 700;
   color: #f05555;
-  background: rgba(240, 85, 85, .15);
+  background: rgba(240, 85, 85, .15) !important;
   padding: .2rem .6rem;
+  border: none !important;
   border-radius: 1rem;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
@@ -741,8 +745,9 @@ body {
   transition: all .3s;
 }
 
-.torrent-info__reported:hover {
-  background: rgba(240, 85, 85, .25);
+.torrent-info__reported:hover,
+.missing-torrent-status--no-source {
+  background: rgba(240, 85, 85, .25) !important;
 }
 
 .encoding-history-status--expired,
@@ -774,12 +779,14 @@ body {
   color: #4281da;
 }
 
-.torrent-info__download-modifier--free {
+.torrent-info__download-modifier--free,
+.missing-torrent-status--exists {
     display: inline;
     font-weight: 700;
     color: #55b160;
-    background: rgba(85, 177, 96, .15);
+    background: rgba(85, 177, 96, .15) !important;
     padding: .2rem .6rem;
+    border: none !important;
     border-radius: 1rem;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -789,6 +796,19 @@ body {
 
 .torrent-info__download-modifier--free:hover {
   background: rgba(85, 177, 96, .25);
+}
+
+#missing .missing-torrent-status--trumpable,
+#missing .torrent-info__trumpable,
+#missing .torrent-info__reported,
+#missing .missing-torrent-status--missing,
+#missing .missing-torrent-status--no-source,
+#missing .missing-torrent-status--dead-source,
+#missing .torrent-info__download-modifier--free,
+#missing .missing-torrent-status--exists {
+  display: table-cell;
+  border-radius: initial;
+  padding: .2rem 0.6rem !important;
 }
 
 .log__message--edited {
@@ -1914,7 +1934,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     .generic-form__footer,
     .search-form__footer {
-      border-top: 1px solid #1e2233;
+      border-top: 1px solid #3a4055;
       padding-top: 8px;
     }
 
@@ -2019,14 +2039,17 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     }
 
     input[value="Delete"],
-    input[value="Delete conversation"] {
+    input[value="Delete conversation"],
+    input[value="Defriend"] {
       background: #9c4e4e;
     }
 
     input[value="Delete"]:hover,
     input[value="Delete"]:focus,
     input[value="Delete conversation"]:hover,
-    input[value="Delete conversation"]:focus {
+    input[value="Delete conversation"]:focus,
+    input[value="Defriend"]:hover,
+    input[value="Defriend"]:focus {
       background: #da4242;
       -webkit-box-shadow: 0 0 40px #da4242;
       box-shadow: 0 0 40px #da4242;
@@ -2327,16 +2350,13 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
       input[type='checkbox'] + label,
       input[type='radio'] + label {
-        font-size: 14px;
-        line-height: 21px;
-        display: inline-block;
         vertical-align: top;
         cursor: pointer;
-        margin-left: 4px;
       }
 
       input[type='checkbox']:not(.switch) {
         border-radius: 5px;
+        vertical-align: text-bottom;
       }
 
       input[type='checkbox']:not(.switch):after {
@@ -2565,6 +2585,20 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     .table > tbody > tr.release-name-movie-list__details-row {
       background-color: #2f3546;
+    }
+
+    #forums .form__input tr[style="vertical-align: top;"]  {
+      border: none;
+    }
+
+    #forums .form__input {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .movie-page__actor-column {
+      text-align: left !important;
+      padding-left: 1rem !important;
     }
 
     .tabs__bar__list {
@@ -2814,15 +2848,15 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       box-shadow: 0 0 40px #31517d;
     }
 
-    #user .sidebar-cover-image:hover {
+    #user .sidebar-cover-image[alt*="avatar"]:hover {
         -webkit-transform: scale(1);
       -moz-transform: scale(1);
       -ms-transform: scale(1);
       -o-transform: scale(1);
       transform: scale(1);
       cursor: initial;
-      -webkit-box-shadow: none;
-      box-shadow: none;
+      -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     }
 
     .release-name-movie-list__name {
