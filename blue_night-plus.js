@@ -4,6 +4,9 @@
 // @version      0.1
 // @description  Add some visual enhancements to the Blue Night Stylesheet
 // @author       PuNkFuSe
+// @updateURL    https://raw.githubusercontent.com/datFunc/ptp__blue-night-theme/master/blue_night-plus.js
+// @downloadURL  https://raw.githubusercontent.com/datFunc/ptp__blue-night-theme/master/blue_night-plus.js
+// @grant        none
 // @match        http*://*passthepopcorn.me/*
 // @run-at       document-body
 // @icon        https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg
