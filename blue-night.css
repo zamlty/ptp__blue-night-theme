@@ -701,8 +701,11 @@ body {
 
 .missing-torrent-status--trumpable,
 .torrent-info__trumpable {
-  display: inline;
+  box-sizing: border-box;
+  display: inline-block;
   font-weight: 700;
+  font-size: .6rem;
+  vertical-align: baseline;
   color: #dfa02d;
   background: rgba(223, 160, 45, .15) !important;
   padding: .2rem .6rem;
@@ -715,7 +718,7 @@ body {
 }
 
 .torrent-info__trumpable:hover {
-  background: rgba(223, 160, 45, .25);
+  background: rgba(223, 160, 45, .25) !important;
 }
 
 .encoding-history-status--canceled,
@@ -732,8 +735,11 @@ body {
 .missing-torrent-status--missing,
 .missing-torrent-status--no-source,
 .missing-torrent-status--dead-source {
-  display: inline;
+  box-sizing: border-box;
+  display: inline-block;
   font-weight: 700;
+  font-size: .6rem;
+  vertical-align: baseline;
   color: #f05555;
   background: rgba(240, 85, 85, .15) !important;
   padding: .2rem .6rem;
@@ -781,8 +787,11 @@ body {
 
 .torrent-info__download-modifier--free,
 .missing-torrent-status--exists {
-    display: inline;
+    box-sizing: border-box;
+    display: inline-block;
     font-weight: 700;
+    font-size: .6rem;
+    vertical-align: baseline;
     color: #55b160;
     background: rgba(85, 177, 96, .15) !important;
     padding: .2rem .6rem;
@@ -795,7 +804,7 @@ body {
 }
 
 .torrent-info__download-modifier--free:hover {
-  background: rgba(85, 177, 96, .25);
+  background: rgba(85, 177, 96, .25) !important;
 }
 
 #missing .missing-torrent-status--trumpable,
@@ -809,6 +818,7 @@ body {
   display: table-cell;
   border-radius: initial;
   padding: .2rem 0.6rem !important;
+  vertical-align: middle;
 }
 
 .log__message--edited {
@@ -820,7 +830,7 @@ body {
 }
 
 #uploadtoken {
-  font-size: .65rem;
+  font-size: .65rem !important;
 }
 
 optgroup {
@@ -1923,10 +1933,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       margin-bottom: 15px;
     }
 
-    .toggleable-search-form__search-form .panel__body {
-      border-radius: 5px;
-    }
-
     .search-form__advanced-basic-toggler {
       text-align: center;
       padding-bottom: 8px;
@@ -2025,6 +2031,10 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     input[type="checkbox"]:focus,
     input[type="radio"]:focus {
       outline-color: #88b4f3;
+    }
+
+    #inbox label {
+        vertical-align: baseline;
     }
 
     button[disabled],
@@ -2160,6 +2170,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     select option,
     select option:first-child {
       color: #949aac;
+      padding: .3rem;
     }
 
     select:focus {
@@ -2356,7 +2367,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
       input[type='checkbox']:not(.switch) {
         border-radius: 5px;
-        vertical-align: text-bottom;
+        vertical-align: middle;
       }
 
       input[type='checkbox']:not(.switch):after {
@@ -2599,6 +2610,14 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     .movie-page__actor-column {
       text-align: left !important;
       padding-left: 1rem !important;
+    }
+
+    #trumpable .table tbody tr td:nth-child(2) {
+        max-width: 657px;
+    }
+
+    #trumpable .release-name-movie-list__movie__release-name {
+        color: #ffffff;
     }
 
     .tabs__bar__list {
@@ -3112,9 +3131,12 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     .basic-movie-list__movie__new:before {
       visibility: visible;
-      display: inline-block;
       content: "New";
+      box-sizing: border-box;
+      display: inline-block;
       font-weight: 700;
+      font-size: .6rem;
+      vertical-align: baseline;
       color: #4281da;
       background: rgba(66, 129, 218, .15);
       padding: .2rem .6rem;
@@ -3162,6 +3184,10 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     .basic-torrent-list__movie__torrent-opener-link,
     .basic-movie-list__torrent-edition__main {
       font-weight: 700;
+    }
+
+    .basic-movie-list__torrent-edition {
+        background-color: #3a4055;
     }
 
     .basic-movie-list__movie__rating__title a {
@@ -3271,6 +3297,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       font-size: 10px;
       padding-left: 2px;
       text-transform: uppercase;
+      display: inline-block;
+      vertical-align: super;
     }
 
     .cover-movie-list__movie__rating-and-tags {
@@ -3428,8 +3456,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     }
 
     .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"],
-          .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"],
-          .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"] {
+    .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"],
+    .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"] {
       width: 32px;
       height: 32px;
       -webkit-box-sizing: border-box;
@@ -3454,13 +3482,14 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       background-size: contain;
     }
 
-    .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"] {
-      width: 32px;
-      height: 32px;
+    .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"],
+    img[src="static/common/ratings/x4_ptp.png"] {
+      width: 28px !important;
+      height: 28px !important;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      padding-left: 32px;
+      padding-left: 28px !important;
       background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg")
         no-repeat center center;
       -webkit-background-size: contain;
@@ -3963,9 +3992,9 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 
     #movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
     img[title="Rotten Tomatoes"] {
-      width: 74px !important;
-      height: 74px !important;
-      padding-left: 74px;
+      width: 64px !important;
+      height: 64px !important;
+      padding-left: 64px;
     }
 
     .star-rating-container {
@@ -5832,6 +5861,38 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       background-size: contain;
     }
 
+    /* Stats */
+    .highcharts-container .highcharts-background {
+        fill: #1f2333;
+    }
+
+    .highcharts-grid-line,
+    .highcharts-crosshair,
+    .highcharts-axis path {
+      stroke: #3a4055;
+    }
+
+    #ratings th {
+      background: #0c0e1b;
+      border: none;
+    }
+
+    #ratings th:nth-child(1) {
+        border-top-left-radius: 5px;
+    }
+
+    #ratings th:nth-child(2) {
+      border-top-right-radius: 5px;
+      border-left: 1px solid #3a4055;
+    }
+
+    #ratings .panel__body  td {
+      padding: .4rem;
+    }
+
+    #ratings .panel__body tr td {
+      text-align: left;
+    }
 
     /************************************************************************
     6.2 - Imagery */
