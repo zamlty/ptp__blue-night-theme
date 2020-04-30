@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Blue Night+
-// @namespace    https://github.com/datFunc/
-// @version      0.1
+// @namespace    http*://*passthepopcorn.me/*
+// @version      0.2
 // @description  Add some visual enhancements to the Blue Night Stylesheet
 // @author       PuNkFuSe
-// @updateURL    https://github.com/datFunc/ptp__blue-night-theme/raw/master/blue_night-plus.user.js
-// @downloadURL  https://github.com/datFunc/ptp__blue-night-theme/raw/master/blue_night-plus.user.js
+// @updateURL    https://raw.githubusercontent.com/datFunc/ptp__blue-night-theme/master/blue_night-plus.js
+// @downloadURL  https://raw.githubusercontent.com/datFunc/ptp__blue-night-theme/master/blue_night-plus.js
 // @grant        none
 // @match        http*://*passthepopcorn.me/*
 // @run-at       document-body
@@ -41,20 +41,20 @@
             };
 
             return {
-                documentHead: documentHead,
-                documentBody, documentBody,
-                linkElement: linkElement,
-                styleElement: styleElement,
-                divElement: divElement,
-                imgElement: imgElement,
-                paraElement: paraElement,
-                initElementBuild: initElementBuild
+                documentHead,
+                documentBody,
+                linkElement,
+                styleElement,
+                divElement,
+                imgElement,
+                paraElement,
+                initElementBuild
             };
 
         };
 
         return {
-            initElementsController: initElementsController
+            initElementsController
         };
 
     })();
@@ -66,7 +66,7 @@
         const initElement = () => {
             const classInit = new element.initElementBuild(element.documentBody, element.divElement, 'scrollToTop');
             return {
-                classInit: classInit
+                classInit
             }
         };
 
@@ -109,7 +109,7 @@
                     transition: all .3s;
                 }`;
             return {
-                elementStyle: elementStyle
+                elementStyle
             };
         };
 
@@ -127,7 +127,7 @@
                 element.imgElement.setAttribute('id', 'arrowUpImg');
                 let arrowUpImg = document.getElementById('arrowUpImg');
                 arrowUpImg.src = 'https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg';
-                scrollToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+                scrollToTop.addEventListener('click', () => window.scrollTo(0, 0));
                 scrollToTop.addEventListener('mouseover', () => { arrowUpImg.style.opacity = '1' });
                 scrollToTop.addEventListener('mouseout', () => { arrowUpImg.style.opacity = '.55' });
             };
@@ -153,7 +153,7 @@
         };
 
         return {
-            init: init
+            init
         };
 
     })();
@@ -164,7 +164,7 @@
         const initElement = () => {
             const classInit = new element.initElementBuild(element.documentHead, element.linkElement, 'favicon');
             return {
-                classInit: classInit
+                classInit
             }
         };
 
@@ -187,7 +187,7 @@
         };
 
         return {
-            init: init
+            init
         };
 
     })();
@@ -198,7 +198,7 @@
         const initElement = () => {
             const classInit = new element.initElementBuild(element.documentBody, element.divElement, 'loader');
             return {
-                classInit: classInit
+                classInit
             }
         };
 
@@ -206,13 +206,15 @@
 
             const elementStyle = element.styleElement;
             elementStyle.innerHTML = `
-                #wrapper {
-                    visibility: hidden;
-                    opacity: 0;
-                    -webkit-transition: all .3s;
-                    -o-transition: all .3s;
-                    -moz-transition: all .3s;
-                    transition: all .3s;
+                #blurry-bg {
+                    position: fixed;
+                    top: 0;
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    -webkit-backdrop-filter: blur(10px) !important;
+                    backdrop-filter: blur(10px) !important;
+                    background-color: rgba(7, 11, 22, .65) !important;
                 }
                 #loader {
                     position: absolute;
@@ -220,7 +222,7 @@
                     left: 50%;
                     -webkit-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
-                    z-index: 99;
+                    z-index: 99999;
                     width: 150px;
                     height: 150px;
                     margin: -75px 0 0 -75px;
@@ -247,7 +249,7 @@
                     100% { transform: rotate(360deg); }
                 }`;
             return {
-                elementStyle: elementStyle
+                elementStyle
             };
         };
 
@@ -285,6 +287,8 @@
                 setTimeout(() => {
                     wrapper.style.visibility = 'visible';
                     wrapper.style.opacity = '1';
+                    element.documentBody.style.overflow = 'auto';
+                    element.documentBody.style.height = 'auto';
                 }, 250);
                 initElementDestroy();
             });
@@ -293,6 +297,8 @@
                     initElementBuild();
                     wrapper.style.visibility = 'hidden';
                     wrapper.style.opacity = '0';
+                    element.documentBody.style.overflow = 'hidden';
+                    element.documentBody.style.height = '100%';
                 };
             });
 
@@ -304,7 +310,7 @@
         };
 
         return {
-            init: init
+            init
         };
 
     })();
@@ -322,7 +328,7 @@
                     width: 12px;
                 }`;
             return {
-                elementStyle: elementStyle
+                elementStyle
             };
         };
 
@@ -335,7 +341,7 @@
             initElement();
             const replaceUnicodeChars = (value, key, map) => {
                 const unicodeCharsRegExp = new RegExp(key, 'gi');
-                const tableRows = '.basic-movie-list__torrent-row > *, .compact-movie-list__torrent-row > *, .huge-movie-list__movie__torrent-summary__latest-row > span:nth-child(2)';
+                const tableRows = '.basic-movie-list__torrent-row > *, .compact-movie-list__torrent-row > *, .huge-movie-list__movie__torrent-summary__row__title + span';
                 const targetedElements = document.querySelectorAll(tableRows);
                 targetedElements.forEach((element) => {
                     element.innerHTML = element.innerHTML.replace(unicodeCharsRegExp, value)
@@ -358,7 +364,7 @@
         };
 
         return {
-            init: init
+            init
         };
 
     })();
@@ -369,7 +375,7 @@
         const initElement = () => {
             const classInit = new element.initElementBuild(element.documentBody, element.divElement, 'bookmarksModal');
             return {
-                classInit: classInit
+                classInit
             }
         };
 
@@ -387,7 +393,7 @@
                 transform: translate(-50%, -50%);
                 width: 420px;
                 height: 110px;
-                z-index: 999;
+                z-index: 99999;
                 -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
                 background-color: rgba(7,11,22,.65);
@@ -410,7 +416,7 @@
                 transform: translate(-50%, -50%);
             }`;
             return {
-                elementStyle: elementStyle
+                elementStyle
             };
         };
 
@@ -420,34 +426,109 @@
         };
 
         const initElementBuild = () => {
-            const getURL = window.location.href;
-            if ((getURL.includes('id='))) {
-                initElement();
-                element.documentBody.append(element.divElement);
-                const bookmarksModal = document.getElementById('bookmarksModal');
-                const bookmarkModalContent = element.paraElement;
-                bookmarkModalContent.setAttribute('class', 'bookmarkModalContent');
-                bookmarksModal.append(bookmarkModalContent);
-                const parentDOM = document.querySelector('.linkbox:first-of-type');
-                const bookmarkLink = parentDOM.getElementsByClassName('linkbox__link')[2];
-                bookmarkLink.addEventListener('click', () => {
-                    const bookmarkModalToggle = () => {
-                        bookmarksModal.style.visibility = 'visible';
-                        bookmarksModal.style.opacity = '1';
-                        setTimeout(() => {
-                            bookmarksModal.style.visibility = 'hidden';
-                            bookmarksModal.style.opacity = '0';
-                        }, 500);
-                    }
-                    if (bookmarkLink.innerHTML === '[Bookmark]') {
-                        bookmarkModalToggle();
-                        bookmarkModalContent.textContent = 'Added to bookmarks';
-                    } else {
-                        bookmarkModalToggle();
-                        bookmarkModalContent.textContent = 'Removed from bookmarks';
-                    }
+            initElement();
+            element.documentBody.append(element.divElement);
+            const bookmarksModal = document.getElementById('bookmarksModal');
+            const bookmarkModalContent = element.paraElement;
+            bookmarkModalContent.setAttribute('class', 'bookmarkModalContent');
+            bookmarksModal.append(bookmarkModalContent);
+
+            const targetNode = document.querySelector('body');
+            const mutationConfig = { attributes: true, childList: true, subtree: true };
+            const targetedElements1 = '.cover-movie-list__movie__cover-link, .basic-movie-list__movie__cover, .basic-movie-list__movie__title';
+            const targetedElements2 = '.basic-movie-list__movie__bookmark, .huge-movie-list__movie__bookmark';
+
+            window.addEventListener('load', () => {
+
+                // Bookmark links in tables
+                const regularBookmarkLinks = document.querySelectorAll(targetedElements2);
+                regularBookmarkLinks.forEach(regularBookmarkLink => {
+                    regularBookmarkLink.addEventListener('click', function () {
+                        const bookmarkModalToggle = function () {
+                            bookmarksModal.style.visibility = 'visible';
+                            bookmarksModal.style.opacity = '1';
+                            setTimeout(function () {
+                                bookmarksModal.style.visibility = 'hidden';
+                                bookmarksModal.style.opacity = '0';
+                            }, 700);
+                        };
+                        if (regularBookmarkLink.textContent === 'Bookmark') {
+                            bookmarkModalToggle();
+                            bookmarkModalContent.textContent = 'Added to bookmarks.';
+                        } else {
+                            bookmarkModalToggle();
+                            bookmarkModalContent.textContent = 'Removed from bookmarks.';
+                        }
+                    });
                 });
-            };
+
+                // Bookmark link in a single page
+                const getURL = window.location.href;
+                if ((getURL.includes('id='))) {
+                    const parentDOM = document.querySelector('.linkbox:first-of-type');
+                    const regularBookmarkLinkSingle = parentDOM.getElementsByClassName('linkbox__link')[2];
+                    regularBookmarkLinkSingle.addEventListener('click', () => {
+                        const bookmarkModalToggle = () => {
+                            bookmarksModal.style.visibility = 'visible';
+                            bookmarksModal.style.opacity = '1';
+                            setTimeout(() => {
+                                bookmarksModal.style.visibility = 'hidden';
+                                bookmarksModal.style.opacity = '0';
+                            }, 500);
+                        }
+                        if (regularBookmarkLinkSingle.textContent === '[Bookmark]') {
+                            bookmarkModalToggle();
+                            bookmarkModalContent.textContent = 'Added to bookmarks.';
+                        } else {
+                            bookmarkModalToggle();
+                            bookmarkModalContent.textContent = 'Removed from bookmarks.';
+                        }
+                    });
+                };
+
+
+                // Bookmark links when hovering on a movie cover (Appended qTip)
+                const qTipBookmarkLinks = document.querySelectorAll(targetedElements1);
+                qTipBookmarkLinks.forEach(qTipBookmarkLink => {
+                    qTipBookmarkLink.addEventListener('mouseenter', function () {
+                        const qtipCoverData = qTipBookmarkLink.parentElement;
+                        const callback = function (mutationList, observer) {
+                            for (let mutationRecord of mutationList) {
+                                if (mutationRecord.addedNodes) {
+                                    for (let addedNodes of mutationRecord.addedNodes) {
+                                        if (addedNodes.id === `qtip-${qtipCoverData.dataset.hasqtip}-content` || addedNodes.id === `qtip-${qTipBookmarkLink.dataset.hasqtip}-content`) {
+                                            const bookmarkLinks = document.querySelectorAll('.movie-tooltip__bookmark a');
+                                            for (const bookmarkLink of bookmarkLinks) {
+                                                bookmarkLink.addEventListener('click', function () {
+                                                    const bookmarkModalToggle = function () {
+                                                        bookmarksModal.style.visibility = 'visible';
+                                                        bookmarksModal.style.opacity = '1';
+                                                        setTimeout(function () {
+                                                            bookmarksModal.style.visibility = 'hidden';
+                                                            bookmarksModal.style.opacity = '0';
+                                                        }, 700);
+                                                    };
+                                                    if (bookmarkLink.textContent === 'Bookmark') {
+                                                        bookmarkModalToggle();
+                                                        bookmarkModalContent.textContent = 'Added to bookmarks.';
+                                                    } else {
+                                                        bookmarkModalToggle();
+                                                        bookmarkModalContent.textContent = 'Removed from bookmarks.';
+                                                    }
+                                                });
+                                            };
+                                            return;
+                                        };
+                                    };
+                                };
+                            };
+                        };
+                        const observer = new MutationObserver(callback);
+                        observer.observe(targetNode, mutationConfig);
+                    });
+                });
+            });
+
         };
 
         const initElementAction = () => {
@@ -460,7 +541,7 @@
         };
 
         return {
-            init: init
+            init
         };
 
     })();
