@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Night+
 // @namespace    http*://*passthepopcorn.me/*
-// @version      0.2
+// @version      0.3
 // @description  Add some visual enhancements to the Blue Night Stylesheet
 // @author       PuNkFuSe
 // @updateURL    https://raw.githubusercontent.com/datFunc/ptp__blue-night-theme/master/blue_night-plus.js
@@ -29,14 +29,14 @@
 
             const selectors = ['head', 'body'].map((selector) => (selector = document.querySelector(selector)));
             const [documentHead, documentBody] = selectors;
-            const elements = ['link', 'style', 'div', 'img', 'p'].map((element) => (element = document.createElement(element)));
-            const [linkElement, styleElement, divElement, imgElement, paraElement] = elements;
+            const elements = ['link', 'style', 'div', 'span', 'img', 'p'].map((element) => (element = document.createElement(element)));
+            const [linkElement, styleElement, divElement, spanElement, imgElement, paraElement] = elements;
 
             class initElementBuild {
-                constructor(parentElement, newElement, newElementID) {
+                constructor(parentElement, newElement, newElementClassName) {
                     this.parentElement = parentElement;
                     this.newElement = newElement;
-                    this.newElement.id = newElementID;
+                    this.newElement.className = newElementClassName;
                 };
             };
 
@@ -46,6 +46,7 @@
                 linkElement,
                 styleElement,
                 divElement,
+                spanElement,
                 imgElement,
                 paraElement,
                 initElementBuild
@@ -59,7 +60,7 @@
 
     })();
 
-    // Create a scroll to top element.
+    // Create a scroll to the top element.
     const scrollToTop = (() => {
 
         const element = elementsFactory.initElementsController();
@@ -74,9 +75,9 @@
 
             const elementStyle = element.styleElement;
             elementStyle.innerHTML = `
-                #scrollToTop {
-                    visibility: hidden;
+                .scrollToTop {
                     opacity: 0;
+                    visibility: hidden;
                     box-sizing: border-box;
                     position: fixed;
                     bottom: 30px;
@@ -94,7 +95,7 @@
                     transition: all .3s;
                 }
 
-                #arrowUpImg {
+                .arrowUpImg {
                     opacity: .55;
                     position: relative;
                     top: 50%;
@@ -114,18 +115,18 @@
         };
 
         const applyStyling = () => {
-            const callScrollToTopStyling = initElementStyle().elementStyle;
-            element.documentHead.append(callScrollToTopStyling.cloneNode(true));
+            const scrollToTopStyling = initElementStyle().elementStyle;
+            element.documentHead.append(scrollToTopStyling.cloneNode(true));
         };
 
         const initElementBuild = () => {
             initElement();
             element.documentBody.append(element.divElement);
-            let scrollToTop = document.getElementById('scrollToTop');
+            let scrollToTop = document.querySelector('.scrollToTop');
             if (scrollToTop) {
                 scrollToTop.append(element.imgElement);
-                element.imgElement.setAttribute('id', 'arrowUpImg');
-                let arrowUpImg = document.getElementById('arrowUpImg');
+                element.imgElement.classList.add('arrowUpImg');
+                let arrowUpImg = document.querySelector('.arrowUpImg');
                 arrowUpImg.src = 'https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg';
                 scrollToTop.addEventListener('click', () => window.scrollTo(0, 0));
                 scrollToTop.addEventListener('mouseover', () => { arrowUpImg.style.opacity = '1' });
@@ -133,13 +134,13 @@
             };
             window.addEventListener('scroll', () => {
                 const y = window.scrollY;
-                if (y >= 300) {
-                    scrollToTop.style.visibility = 'visible';
+                if (y >= 400) {
                     scrollToTop.style.opacity = '1';
+                    scrollToTop.style.visibility = 'visible';
                 } else {
-                    scrollToTop.style.visibility = 'hidden';
                     scrollToTop.style.opacity = '0';
-                };
+                    scrollToTop.style.visibility = 'hidden';
+                }
             });
         };
 
@@ -171,7 +172,7 @@
         const initElementBuild = () => {
             initElement();
             element.documentHead.append(element.linkElement);
-            let favicon = document.getElementById('favicon');
+            let favicon = document.querySelector('.favicon');
             let faviconImg = 'https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg';
             favicon.setAttribute('rel', 'shortcut icon');
             favicon.setAttribute('href', faviconImg);
@@ -206,17 +207,7 @@
 
             const elementStyle = element.styleElement;
             elementStyle.innerHTML = `
-                #blurry-bg {
-                    position: fixed;
-                    top: 0;
-                    left: 0
-                    width: 100%
-                    height: 100%
-                    -webkit-backdrop-filter: blur(10px) !important;
-                    backdrop-filter: blur(10px) !important;
-                    background-color: rgba(7, 11, 22, .65) !important;
-                }
-                #loader {
+                .loader {
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -235,8 +226,8 @@
                     -o-transition: all .3s;
                     -moz-transition: all .3s;
                     transition: all .3s;
-                    -webkit-animation: spin 1s linear infinite;
-                    animation: spin 1s linear infinite;
+                    -webkit-animation: spin .9s linear infinite;
+                    animation: spin .9s linear infinite;
                 }
 
                 @-webkit-keyframes spin {
@@ -261,7 +252,7 @@
         const initElementBuild = () => {
             initElement();
             element.documentBody.append(element.divElement);
-            let loader = document.getElementById('loader');
+            let loader = document.querySelector('.loader');
             if (loader) {
                 loader.style.visibility = 'visible';
                 loader.style.opacity = '1';
@@ -270,7 +261,7 @@
 
         const initElementDestroy = () => {
             initElement();
-            let loader = document.getElementById('loader');
+            let loader = document.querySelector('.loader');
             setTimeout(() => {
                 if (loader) {
                     loader.style.visibility = 'hidden';
@@ -301,7 +292,6 @@
                     element.documentBody.style.height = '100%';
                 };
             });
-
         };
 
         const init = () => {
@@ -321,7 +311,6 @@
         const initElement = () => { }
 
         const initElementStyle = () => {
-
             const elementStyle = element.styleElement;
             elementStyle.innerHTML = `
                 .torrentStatus {
@@ -351,7 +340,8 @@
             new Map([
                 ['☐' || '&#9744;', `<img src="https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/baca928290b62658e2d1cb73521351ea9a331ff9/icons/not-approved_alt.svg" class="torrentStatus">`]
                 , ['☑' || '&#9745;', `<img src="https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg" class="torrentStatus">`],
-                ['✿' || '&#10047;', `<img src="https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg" class="torrentStatus">`]]).forEach(replaceUnicodeChars);
+                ['✿' || '&#10047;', `<img src="https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg" class="torrentStatus">`]
+            ]).forEach(replaceUnicodeChars);
         };
 
         const initElementAction = () => {
@@ -383,7 +373,7 @@
 
             const elementStyle = element.styleElement;
             elementStyle.innerHTML = `
-            #bookmarksModal {
+            .bookmarksModal {
                 visibility: hidden;
                 opacity: 0;
                 position: fixed;
@@ -428,19 +418,18 @@
         const initElementBuild = () => {
             initElement();
             element.documentBody.append(element.divElement);
-            const bookmarksModal = document.getElementById('bookmarksModal');
+            const bookmarksModal = document.querySelector('.bookmarksModal');
             const bookmarkModalContent = element.paraElement;
-            bookmarkModalContent.setAttribute('class', 'bookmarkModalContent');
+            bookmarkModalContent.classList.add('bookmarkModalContent');
             bookmarksModal.append(bookmarkModalContent);
 
             const targetNode = document.querySelector('body');
             const mutationConfig = { attributes: true, childList: true, subtree: true };
             const targetedElements1 = '.cover-movie-list__movie__cover-link, .basic-movie-list__movie__cover, .basic-movie-list__movie__title';
-            const targetedElements2 = '.basic-movie-list__movie__bookmark, .huge-movie-list__movie__bookmark';
+            const targetedElements2 = '.basic-movie-list__movie__bookmark, .huge-movie-list__movie__bookmark, .small-cover-movie-list__movie__link, .small-cover-movie-list__movie__link--smaller';
 
+            // Outer table
             window.addEventListener('load', () => {
-
-                // Bookmark links in tables
                 const regularBookmarkLinks = document.querySelectorAll(targetedElements2);
                 regularBookmarkLinks.forEach(regularBookmarkLink => {
                     regularBookmarkLink.addEventListener('click', function () {
@@ -450,7 +439,7 @@
                             setTimeout(function () {
                                 bookmarksModal.style.visibility = 'hidden';
                                 bookmarksModal.style.opacity = '0';
-                            }, 700);
+                            }, 800);
                         };
                         if (regularBookmarkLink.textContent === 'Bookmark') {
                             bookmarkModalToggle();
@@ -462,7 +451,7 @@
                     });
                 });
 
-                // Bookmark link in a single page
+                // Inner table - Single
                 const getURL = window.location.href;
                 if ((getURL.includes('id='))) {
                     const parentDOM = document.querySelector('.linkbox:first-of-type');
@@ -474,7 +463,7 @@
                             setTimeout(() => {
                                 bookmarksModal.style.visibility = 'hidden';
                                 bookmarksModal.style.opacity = '0';
-                            }, 500);
+                            }, 800);
                         }
                         if (regularBookmarkLinkSingle.textContent === '[Bookmark]') {
                             bookmarkModalToggle();
@@ -486,13 +475,12 @@
                     });
                 };
 
-
                 // Bookmark links when hovering on a movie cover (Appended qTip)
                 const qTipBookmarkLinks = document.querySelectorAll(targetedElements1);
                 qTipBookmarkLinks.forEach(qTipBookmarkLink => {
                     qTipBookmarkLink.addEventListener('mouseenter', function () {
                         const qtipCoverData = qTipBookmarkLink.parentElement;
-                        const callback = function (mutationList, observer) {
+                        const qTipObserver = function (mutationList, observer) {
                             for (let mutationRecord of mutationList) {
                                 if (mutationRecord.addedNodes) {
                                     for (let addedNodes of mutationRecord.addedNodes) {
@@ -506,7 +494,7 @@
                                                         setTimeout(function () {
                                                             bookmarksModal.style.visibility = 'hidden';
                                                             bookmarksModal.style.opacity = '0';
-                                                        }, 700);
+                                                        }, 800);
                                                     };
                                                     if (bookmarkLink.textContent === 'Bookmark') {
                                                         bookmarkModalToggle();
@@ -523,7 +511,7 @@
                                 };
                             };
                         };
-                        const observer = new MutationObserver(callback);
+                        const observer = new MutationObserver(qTipObserver);
                         observer.observe(targetNode, mutationConfig);
                     });
                 });
@@ -546,10 +534,171 @@
 
     })();
 
+    // Expand/Collapse edition groups
+    const toggleEditionsView = (() => {
+        const element = elementsFactory.initElementsController();
+        const initElement = () => {
+            const classInit = new element.initElementBuild(element.documentBody, element.divElement, 'collapsible');
+            return {
+                classInit
+            }
+        };
+
+        const initElementStyle = () => {
+
+            const elementStyle = element.styleElement;
+            elementStyle.innerHTML = `
+                .collapsible {
+                    float: right;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    padding: 0;
+                    margin: 0 auto;
+                    background-color: #1e2233;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-size: .8rem;
+                    text-align: center;
+                    line-height: 20px;
+                    vertical-align: middle;
+                    border: none;
+                    border-radius: 2.5px;
+                    z-index: 99;
+                    cursor: pointer;
+                    -webkit-transition: all .3s;
+                    -o-transition: all .3s;
+                    -moz-transition: all .3s;
+                    transition: all .3s;
+                }
+                .collapsible:hover {
+                    background-color: #0a0e19;
+                }
+                `;
+            return {
+                elementStyle
+            };
+        };
+
+        const applyStyling = () => {
+            const collapsibleStyling = initElementStyle().elementStyle;
+            element.documentHead.appendChild(collapsibleStyling.cloneNode(true));
+        };
+
+        const initElementBuild = () => {
+            initElement();
+        };
+
+        const initElementAction = () => {
+            initElementBuild();
+            document.addEventListener('readystatechange', event => {
+                if (event.target.readyState === 'complete') {
+
+                    // Outer table
+                    const moviesTableRow = document.querySelectorAll('.torrent_table tbody tr');
+                    for (const tableRow of [moviesTableRow]) {
+                        for (const row of tableRow) {
+                            if (row.className === 'basic-movie-list__torrent-row') {
+
+                                const editionType = row.childNodes[0].children[1];
+
+                                // Get all releases
+                                const getEditionReleases = function (row) {
+                                    const editionReleases = [];
+                                    let release = row.nextElementSibling;
+                                    while (release && release.firstChild.className !== 'basic-movie-list__torrent-edition') {
+                                        if (release.nodeType === 1 && release !== row) {
+                                            editionReleases.push(release);
+                                        }
+                                        release = release.nextSibling
+                                    }
+                                    return editionReleases;
+                                };
+
+                                const collapsibleAction = () => {
+
+                                    let releases = getEditionReleases(row);
+                                    [row].forEach(edition => {
+                                        editionType.appendChild(element.divElement.cloneNode(true));
+                                        const collapsibleController = edition.childNodes[0].childNodes[2].children[0];
+                                        if (collapsibleController) {
+
+                                            releases.forEach(release => {
+                                                if (release.style.display === 'none') {
+                                                    collapsibleController.textContent = '+';
+                                                } else if (release.style.display = 'table-row') {
+                                                    collapsibleController.textContent = '-';
+                                                }
+                                            });
+
+                                            collapsibleController.addEventListener('click', function () {
+                                                releases.forEach(release => {
+                                                    if (release.style.display === 'none') {
+                                                        release.style.display = 'table-row';
+                                                        collapsibleController.textContent = '-';
+                                                    } else if (release.style.display = 'table-row') {
+                                                        release.style.display = 'none';
+                                                        collapsibleController.textContent = '+';
+                                                    }
+                                                });
+                                            });
+
+                                            const releasesView = (value, key, map) => {
+                                                const releaseType = new RegExp(key, 'g');
+                                                const firstReleaseParent = releases[0].previousElementSibling.childNodes[0].childNodes[2];
+                                                if (firstReleaseParent) {
+                                                    releases.forEach(release => {
+                                                        if (firstReleaseParent.textContent.match(releaseType)) {
+                                                            if (value === true) {
+                                                                release.style.display = 'table-row';
+                                                                collapsibleController.textContent = '-';
+                                                            } else {
+                                                                release.style.display = 'none';
+                                                                collapsibleController.textContent = '+';
+                                                            }
+                                                        }
+                                                    });
+                                                }
+                                            };
+
+                                            // Set the value for the editions you want to hide by default
+                                            // true = show, false = hide
+                                            new Map([
+                                                ['Standard Definition', false],
+                                                ['High Definition', true],
+                                                ['Ultra High Definition', false],
+                                                ['3D', false],
+                                                ['Other', false]
+                                            ]).forEach(releasesView);
+
+                                        }
+                                    });
+                                }
+                                collapsibleAction();
+                            }
+                        }
+                    }
+
+                };
+            });
+        };
+
+        const init = () => {
+            initElementAction();
+            applyStyling();
+        };
+
+        return {
+            init
+        };
+
+    })();
+
     scrollToTop.init();
     replaceFavicon.init();
     pagesLoader.init();
     tablesUnicodeCharToImg.init();
     bookmarksModal.init();
+    toggleEditionsView.init();
 
 })();

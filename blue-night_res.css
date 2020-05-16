@@ -2468,7 +2468,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
       background: #1e2333;
       margin: 0 auto;
       overflow: auto;
-      padding: 2.5rem;
+      padding: 15px 19px 15px 19px;
       font-size: .75rem;
       border-top: none;
       -webkit-box-shadow: 0 .6rem 2rem rgba(0, 0, 0, .6);
@@ -5457,7 +5457,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
 }
 
 .main-menu__link {
-  padding: 0.5em;
+  padding: .5em;
   color: #949aac;
   position: relative;
 }
@@ -6018,7 +6018,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
   }
 
   .table {
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
   }
 
   .sidebar {
@@ -6029,20 +6030,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
     width: 74%;
   }
 
-  .main-menu {
-      width: 100%
-  }
-
-  .main-menu__link {
-    padding: 1em;
-  }
-
   .search-bar {
     width: 100%;
-  }
-
-  .search-bar__search-field__input {
-      width: 12%;
   }
 
   .basic-movie-list__torrent-edition {
@@ -6054,7 +6043,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
   }
 
   .cover-movie-list {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -6062,29 +6051,17 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
   }
 
   .cover-movie-list__movie {
+    /*     width: 18.2%;
+    margin: 0 auto 10px 20px; */
     display: block;
-    margin: 0 0 10px 0;
-    width: 224px;
+    margin: auto;
+    width: 234px;
     }
 
-  .cover-movie-list__movie__cover-link {
-    display: block;
-    margin: 0 auto;
-    height: 328px;
-    width: 200px;
-    }
+  .cover-movie-list__movie__cover-link {display: block;height: 348px;width: 217px;}
 
   .cover-movie-list__movie__cover-link--seen::after {
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    width: 22px;
-    height: 22px;
-  }
 
-  .small-cover-movie-list__movie__link {
-      width: 150px;
-      height: 220px;
   }
 
   #top10 .table tbody tr td:nth-child(2) {
@@ -6099,7 +6076,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"] {
   .search-form,
   .generic-form--narrow,
   .search-form--narrow {
-    width: 100%;
+    width: 90%;
   }
 
 }
