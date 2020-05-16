@@ -619,7 +619,6 @@
 
                                     let releases = getEditionReleases(row);
                                     [row].forEach(edition => {
-                                        edition.classList.add('edition-parent');
                                         editionType.appendChild(element.divElement.cloneNode(true));
                                         const collapsibleController = edition.childNodes[0].childNodes[2].children[0];
                                         if (collapsibleController) {
