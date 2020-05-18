@@ -6117,3 +6117,195 @@ img[src="static/common/stars/AwardMetaMeta Awards1.png"] {
   color: #a0a6b7;
   font-size: 0.6rem;
 }
+
+/************************************************************************
+        8.0 - Media Queries/Responsive Layout */
+
+body {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#userinfo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  justify-content: center;
+}
+
+.main-menu {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  body {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 2048px) {
+  body {
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    max-width: 2160px;
+  }
+}
+
+#wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#content {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.main-column,
+.sidebar {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 576px) {
+  /* Main */
+  .site-logo__link:after {
+    font-size: 4rem;
+  }
+
+  .user-info-bar {
+  }
+
+  .main-menu__link {
+    font-size: 0.65rem;
+    padding: 0;
+  }
+
+  /* Forums */
+  #forums .last_poster {
+    display: none;
+  }
+
+  .table--panel-like > thead > tr > th,
+  .table > tbody > tr,
+  .table > thead > tr {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .last_poster {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .last_poster {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-column {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .sidebar {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .last_poster {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-column {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .sidebar {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .last_poster {
+    display: inline-block;
+  }
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+#wrapper {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
