@@ -6326,20 +6326,6 @@ body {
   }
 }
 
-body {
-  overflow: hidden;
-  height: 100%;
-}
-
-#wrapper {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
 /* Table stuff */
 
 #torrents-movie-view {
