@@ -6388,17 +6388,3 @@ body {
   flex: 0 0 100%;
   max-width: 100%;
 }
-
-body {
-  overflow: hidden;
-  height: 100%;
-}
-
-#wrapper {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
