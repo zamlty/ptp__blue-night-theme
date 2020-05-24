@@ -209,7 +209,7 @@ template {
 }
 
 /************************************************************************
-    1.2 - Custom Reset */
+          1.2 - Custom Reset */
 *,
 :after,
 :before {
@@ -266,7 +266,7 @@ textarea {
 }
 
 /****************************************************************************
-2.0 - Typography */
+      2.0 - Typography */
 
 /* Load The Fonts Required */
 
@@ -788,6 +788,8 @@ textarea {
     U+FEFF, U+FFFD;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
 body {
   color: #fff;
   font-family: "Open Sans", Helvetica, Tahoma, Arial, sans-serif;
@@ -1019,18 +1021,8 @@ optgroup {
   color: #418b00;
 }
 
-.ratio-00,
-.ratio-01,
-.ratio-02,
-.ratio-03 {
-  -webkit-animation: flickerAnimation 3s infinite;
-  -moz-animation: flickerAnimation 3s infinite;
-  -o-animation: flickerAnimation 3s infinite;
-  animation: flickerAnimation 3s infinite;
-}
-
 /****************************************************************************
-3.0 - Globals */
+      3.0 - Globals */
 html.busy-cursor,
 html.busy-cursor * {
   cursor: wait !important;
@@ -1572,69 +1564,69 @@ a[title="BBCode help"] .bbcode-toolbar__button {
 
 /* BBCode Emojis */
 img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
-img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
-img[src="static/common/smileys/angry.gif"],
-img[src="static/common/smileys/biggrin.gif"],
-img[src="static/common/smileys/blank.gif"],
-img[src="static/common/smileys/blush.gif"],
-img[src="static/common/smileys/cool.gif"],
-img[src="static/common/smileys/creepy.gif"],
-img[src="static/common/smileys/crom.gif"],
-img[src="static/common/smileys/crying.gif"],
-img[src="static/common/smileys/eyesright.gif"],
-img[src="static/common/smileys/frown.gif"],
-img[src="static/common/smileys/heart.gif"],
-img[src="static/common/smileys/hmm.gif"],
-img[src="static/common/smileys/laughing.gif"],
-img[src="static/common/smileys/ninja.gif"],
-img[src="static/common/smileys/no.gif"],
-img[src="static/common/smileys/nod.gif"],
-img[src="static/common/smileys/ohnoes.gif"],
-img[src="static/common/smileys/ohshit.gif"],
-img[src="static/common/smileys/omg.gif"],
-img[src="static/common/smileys/paddle.gif"],
-img[src="static/common/smileys/sad.gif"],
-img[src="static/common/smileys/shifty.gif"],
-img[src="static/common/smileys/sick.gif"],
-img[src="static/common/smileys/smile.gif"],
-img[src="static/common/smileys/sorry.gif"],
-img[src="static/common/smileys/thanks.gif"],
-img[src="static/common/smileys/tongue.gif"],
-img[src="static/common/smileys/wave.gif"],
-img[src="static/common/smileys/wink.gif"],
-img[src="static/common/smileys/worried.gif"],
-img[src="static/common/smileys/wtf.gif"],
-img[src="static/common/smileys/wub.gif"] {
+      img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
+      img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
+      img[src="static/common/smileys/angry.gif"],
+      img[src="static/common/smileys/biggrin.gif"],
+      img[src="static/common/smileys/blank.gif"],
+      img[src="static/common/smileys/blush.gif"],
+      img[src="static/common/smileys/cool.gif"],
+      img[src="static/common/smileys/creepy.gif"],
+      img[src="static/common/smileys/crom.gif"],
+      img[src="static/common/smileys/crying.gif"],
+      img[src="static/common/smileys/eyesright.gif"],
+      img[src="static/common/smileys/frown.gif"],
+      img[src="static/common/smileys/heart.gif"],
+      img[src="static/common/smileys/hmm.gif"],
+      img[src="static/common/smileys/laughing.gif"],
+      img[src="static/common/smileys/ninja.gif"],
+      img[src="static/common/smileys/no.gif"],
+      img[src="static/common/smileys/nod.gif"],
+      img[src="static/common/smileys/ohnoes.gif"],
+      img[src="static/common/smileys/ohshit.gif"],
+      img[src="static/common/smileys/omg.gif"],
+      img[src="static/common/smileys/paddle.gif"],
+      img[src="static/common/smileys/sad.gif"],
+      img[src="static/common/smileys/shifty.gif"],
+      img[src="static/common/smileys/sick.gif"],
+      img[src="static/common/smileys/smile.gif"],
+      img[src="static/common/smileys/sorry.gif"],
+      img[src="static/common/smileys/thanks.gif"],
+      img[src="static/common/smileys/tongue.gif"],
+      img[src="static/common/smileys/wave.gif"],
+      img[src="static/common/smileys/wink.gif"],
+      img[src="static/common/smileys/worried.gif"],
+      img[src="static/common/smileys/wtf.gif"],
+      img[src="static/common/smileys/wub.gif"] {
   width: 16px !important;
   height: 16px !important;
   -webkit-box-sizing: border-box !important;
@@ -1647,181 +1639,181 @@ img[src="static/common/smileys/wub.gif"] {
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/smile.gif"],
-      img[src="static/common/smileys/smile.gif"] {
+            img[src="static/common/smileys/smile.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/smile.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sad.gif"],
-      img[src="static/common/smileys/sad.gif"] {
+            img[src="static/common/smileys/sad.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sad.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/biggrin.gif"],
-      img[src="static/common/smileys/biggrin.gif"] {
+            img[src="static/common/smileys/biggrin.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/big-grin.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ohshit.gif"],
-      img[src="static/common/smileys/ohshit.gif"] {
+            img[src="static/common/smileys/ohshit.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-shit.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/tongue.gif"],
-      img[src="static/common/smileys/tongue.gif"] {
+            img[src="static/common/smileys/tongue.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/tongue.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/blank.gif"],
-      img[src="static/common/smileys/blank.gif"] {
+            img[src="static/common/smileys/blank.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blank-straight-face.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/angry.gif"],
-      img[src="static/common/smileys/angry.gif"] {
+            img[src="static/common/smileys/angry.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/angry.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/blush.gif"],
-      img[src="static/common/smileys/blush.gif"] {
+            img[src="static/common/smileys/blush.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/blush.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/cool.gif"],
-      img[src="static/common/smileys/cool.gif"] {
+            img[src="static/common/smileys/cool.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/cool.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/creepy.gif"],
-      img[src="static/common/smileys/creepy.gif"] {
+            img[src="static/common/smileys/creepy.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/creepy.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/crying.gif"],
-      img[src="static/common/smileys/crying.gif"] {
+            img[src="static/common/smileys/crying.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crying.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/eyesright.gif"],
-      img[src="static/common/smileys/eyesright.gif"] {
+            img[src="static/common/smileys/eyesright.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/eyes-right.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/frown.gif"],
-      img[src="static/common/smileys/frown.gif"] {
+            img[src="static/common/smileys/frown.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/frown.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/hmm.gif"],
-      img[src="static/common/smileys/hmm.gif"] {
+            img[src="static/common/smileys/hmm.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/hmm.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/laughing.gif"],
-      img[src="static/common/smileys/laughing.gif"] {
+            img[src="static/common/smileys/laughing.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/laughing.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ninja.gif"],
-      img[src="static/common/smileys/ninja.gif"] {
+            img[src="static/common/smileys/ninja.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/ninja.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/no.gif"],
-      img[src="static/common/smileys/no.gif"] {
+            img[src="static/common/smileys/no.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/no.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/nod.gif"],
-      img[src="static/common/smileys/nod.gif"] {
+            img[src="static/common/smileys/nod.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/nod.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/ohnoes.gif"],
-      img[src="static/common/smileys/ohnoes.gif"] {
+            img[src="static/common/smileys/ohnoes.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/oh-noes.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/omg.gif"],
-      img[src="static/common/smileys/omg.gif"] {
+            img[src="static/common/smileys/omg.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/omg.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/shifty.gif"],
-      img[src="static/common/smileys/shifty.gif"] {
+            img[src="static/common/smileys/shifty.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/shifty.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sick.gif"],
-      img[src="static/common/smileys/sick.gif"] {
+            img[src="static/common/smileys/sick.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sick.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wink.gif"],
-      img[src="static/common/smileys/wink.gif"] {
+            img[src="static/common/smileys/wink.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wink.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/worried.gif"],
-      img[src="static/common/smileys/worried.gif"] {
+            img[src="static/common/smileys/worried.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/worried.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wtf.gif"],
-      img[src="static/common/smileys/wtf.gif"] {
+            img[src="static/common/smileys/wtf.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wtf.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wub.gif"],
-      img[src="static/common/smileys/wub.gif"] {
+            img[src="static/common/smileys/wub.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wub.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/paddle.gif"],
-      img[src="static/common/smileys/paddle.gif"] {
+            img[src="static/common/smileys/paddle.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/paddle-alt.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/wave.gif"],
-      img[src="static/common/smileys/wave.gif"] {
+            img[src="static/common/smileys/wave.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/wave-hug.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/heart.gif"],
-      img[src="static/common/smileys/heart.gif"] {
+            img[src="static/common/smileys/heart.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/heart.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/thanks.gif"],
-      img[src="static/common/smileys/thanks.gif"] {
+            img[src="static/common/smileys/thanks.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/thanks.svg")
     no-repeat center center;
 }
@@ -1836,13 +1828,13 @@ img[src="static/common/smileys/thanks.gif"] {
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/crom.gif"],
-      img[src="static/common/smileys/crom.gif"] {
+            img[src="static/common/smileys/crom.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/crom-thanks.svg")
     no-repeat center center;
 }
 
 img[src="https://static.passthepopcorn.me/static/common/smileys/sorry.gif"],
-      img[src="static/common/smileys/sorry.gif"] {
+            img[src="static/common/smileys/sorry.gif"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/emojis/sorry.svg")
     no-repeat center center;
 }
@@ -1886,11 +1878,11 @@ img[src="static/common/symbols/filmclub.png"] {
 }
 
 img[src="static/common/symbols/encoder.png"],
-img[src="static/common/quality.gif"],
-img[src="https://passthepopcorn.me/static/common/quality.gif"],
-img[src="static/common/symbols/encoder_gp.png"],
-img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],
-img[src="static/common/symbols/disabled.png"] {
+      img[src="static/common/quality.gif"],
+      img[src="https://passthepopcorn.me/static/common/quality.gif"],
+      img[src="static/common/symbols/encoder_gp.png"],
+      img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],
+      img[src="static/common/symbols/disabled.png"] {
   width: 12px;
   height: 12px;
   padding-left: 12px;
@@ -1902,29 +1894,29 @@ img[src="static/common/symbols/encoder.png"] {
 }
 
 img[src="static/common/quality.gif"],
-img[src="https://passthepopcorn.me/static/common/quality.gif"],
-img[src="static/common/symbols/encoder_gp.png"] {
+      img[src="https://passthepopcorn.me/static/common/quality.gif"],
+      img[src="static/common/symbols/encoder_gp.png"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg")
     no-repeat center center;
 }
 
 img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],
-img[src="static/common/symbols/disabled.png"] {
+      img[src="static/common/symbols/disabled.png"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/banned.svg")
     no-repeat center center;
 }
 
 img[src="static/common/symbols/donor.png"],
-img[src="static/common/symbols/miner.png"],
-img[src="static/common/symbols/badge_checker.png"],
-img[src="static/common/symbols/badge_gpchecker.png"],
-img[src="static/common/symbols/filmclub.png"],
-img[src="static/common/symbols/encoder.png"],
-img[src="static/common/quality.gif"],
-img[src="https://passthepopcorn.me/static/common/quality.gif"],
-img[src="static/common/symbols/encoder_gp.png"],
-img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],
-img[src="static/common/symbols/disabled.png"] {
+      img[src="static/common/symbols/miner.png"],
+      img[src="static/common/symbols/badge_checker.png"],
+      img[src="static/common/symbols/badge_gpchecker.png"],
+      img[src="static/common/symbols/filmclub.png"],
+      img[src="static/common/symbols/encoder.png"],
+      img[src="static/common/quality.gif"],
+      img[src="https://passthepopcorn.me/static/common/quality.gif"],
+      img[src="static/common/symbols/encoder_gp.png"],
+      img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],
+      img[src="static/common/symbols/disabled.png"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1960,19 +1952,19 @@ img[src="static/common/symbols/Rank5.png"] {
 }
 
 img[src="static/common/symbols/Rank6.png"],
-img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
+      img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
 {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-6.svg")
     no-repeat center center;
 }
 
 img[src="static/common/symbols/Rank1.png"],
-img[src="static/common/symbols/Rank2.png"],
-img[src="static/common/symbols/Rank3.png"],
-img[src="static/common/symbols/Rank4.png"],
-img[src="static/common/symbols/Rank5.png"],
-img[src="static/common/symbols/Rank6.png"],
-img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
+      img[src="static/common/symbols/Rank2.png"],
+      img[src="static/common/symbols/Rank3.png"],
+      img[src="static/common/symbols/Rank4.png"],
+      img[src="static/common/symbols/Rank5.png"],
+      img[src="static/common/symbols/Rank6.png"],
+      img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
 {
   width: 10px;
   height: 10px;
@@ -2016,7 +2008,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
 }
 
 /************************************************************************
-    3.1 - Forms */
+          3.1 - Forms */
 .form--horizontal .form__label {
   float: right;
 }
@@ -2094,7 +2086,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
   float: left;
 }
 /************************************************************************
-    3.1 - Inputs */
+          3.1 - Inputs */
 .input-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2577,10 +2569,10 @@ textarea::placeholder {
 }
 
 /************************************************************************
-    3.2 - Buttons */
+          3.2 - Buttons */
 
 /************************************************************************
-    3.3 - Tables */
+          3.3 - Tables */
 .page__main-content {
   background: #1e2333;
   margin: 0 auto;
@@ -3009,16 +3001,6 @@ th {
   transition: all 0.3s;
 }
 
-.sidebar-cover-image:hover {
-  -webkit-transform: scale(1.04, 1.04);
-  -moz-transform: scale(1.04, 1.04);
-  -ms-transform: scale(1.04, 1.04);
-  -o-transform: scale(1.04, 1.04);
-  transform: scale(1.04, 1.04);
-  -webkit-box-shadow: 0 0 40px #31517d;
-  box-shadow: 0 0 40px #31517d;
-}
-
 #user .sidebar-cover-image[alt*="avatar"]:hover {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -3187,8 +3169,8 @@ th {
 .small-cover-movie-list__movie__link--seen::after {
   content: "";
   position: absolute;
-  right: 3px;
-  top: 3px;
+  right: 5px;
+  top: 5px;
   background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -3226,16 +3208,6 @@ th {
 .basic-movie-list__movie__cover-link {
   position: relative;
   display: block;
-}
-
-.basic-movie-list__movie__cover:hover {
-  -webkit-transform: scale(1.04, 1.04);
-  -moz-transform: scale(1.04, 1.04);
-  -ms-transform: scale(1.04, 1.04);
-  -o-transform: scale(1.04, 1.04);
-  transform: scale(1.04, 1.04);
-  -webkit-box-shadow: 0 0 40px #31517d;
-  box-shadow: 0 0 40px #31517d;
 }
 
 .basic-movie-list__movie__cover-link--seen::after {
@@ -3395,12 +3367,19 @@ th {
 
 .cover-movie-list__movie__cover-link {
   display: block;
-  height: 246px;
   width: 176px;
+  height: 246px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(7, 11, 22, 0.55);
+  box-shadow: 0 0.5rem 1rem rgba(7, 11, 22, 0.55);
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .cover-movie-list--narrow
@@ -3479,8 +3458,8 @@ th {
 .cover-movie-list__movie__cover-link--seen::after {
   content: "";
   position: absolute;
-  right: 3px;
-  top: 3px;
+  right: 5px;
+  top: 5px;
   background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -3608,8 +3587,8 @@ th {
 }
 
 .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x2_metacritic.png"],
-    .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"],
-    .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"]
+          .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x3_tomatoes.png"],
+          .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"]
 {
   width: 32px;
   height: 32px;
@@ -3638,7 +3617,7 @@ th {
 }
 
 .huge-movie-list__movie__ratings img[src="https://static.passthepopcorn.me/static/common/ratings/x4_ptp.png"],
-    img[src="static/common/ratings/x4_ptp.png"] {
+          img[src="static/common/ratings/x4_ptp.png"] {
   width: 28px !important;
   height: 28px !important;
   -webkit-box-sizing: border-box;
@@ -3697,17 +3676,26 @@ th {
   background-blend-mode: initial;
 }
 
+.basic-movie-list__movie__cover:hover,
 .cover-movie-list__movie__cover-link:hover,
 .huge-movie-list__movie__cover__link:hover,
 .small-cover-movie-list__movie__link:hover,
-.small-cover-movie-list__movie__link--smaller:hover {
-  -webkit-transform: scale(1.04, 1.04);
-  -moz-transform: scale(1.04, 1.04);
-  -ms-transform: scale(1.04, 1.04);
-  -o-transform: scale(1.04, 1.04);
-  transform: scale(1.04, 1.04);
-  -webkit-box-shadow: 0 0 40px #31517d;
-  box-shadow: 0 0 40px #31517d;
+.small-cover-movie-list__movie__link--smaller:hover,
+.sidebar-cover-image:hover,
+.user-recommendation__image:hover,
+.last5-movies__link:hover {
+  -webkit-transform: perspective(1000px) rotateY(-10deg) rotateX(5deg)
+    scale(1.04, 1.04) translateY(-15px);
+  -moz-transform: perspective(1000px) rotateY(-10deg) rotateX(5deg)
+    scale(1.04, 1.04) translateY(-15px);
+  -ms-transform: perspective(1000px) rotateY(-10deg) rotateX(5deg)
+    scale(1.04, 1.04) translateY(-15px);
+  -o-transform: perspective(1000px) rotateY(-10deg) rotateX(5deg)
+    scale(1.04, 1.04) translateY(-15px);
+  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg) scale(1.04, 1.04)
+    translateY(-15px);
+  -webkit-box-shadow: 20px 30px 30px rgba(7, 11, 22, 0.9);
+  box-shadow: 20px 30px 30px rgba(7, 11, 22, 0.9);
 }
 
 /* Torrents table icons */
@@ -4037,9 +4025,9 @@ img[src="static/common/symbols/uploader.png"] {
 }
 
 .torrent_table img[src="static/common/check.png"],
-    img[src="https://passthepopcorn.me/static/common/check.png"],
-    .torrent_table img[src="static/common/x.png"],
-    img[src="https://passthepopcorn.me/static/common/x.png"]
+          img[src="https://passthepopcorn.me/static/common/check.png"],
+          .torrent_table img[src="static/common/x.png"],
+          img[src="https://passthepopcorn.me/static/common/x.png"]
 {
   width: 12px !important;
   height: 12px !important;
@@ -4053,14 +4041,14 @@ img[src="static/common/symbols/uploader.png"] {
 }
 
 .torrent_table img[src="static/common/check.png"],
-    img[src="https://passthepopcorn.me/static/common/check.png"]
+          img[src="https://passthepopcorn.me/static/common/check.png"]
 {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg")
     no-repeat center center;
 }
 
 .torrent_table img[src="static/common/x.png"],
-  img[src="https://passthepopcorn.me/static/common/x.png"]
+        img[src="https://passthepopcorn.me/static/common/x.png"]
 {
   background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/baca928290b62658e2d1cb73521351ea9a331ff9/icons/not-approved_alt.svg")
     no-repeat center center;
@@ -4082,13 +4070,31 @@ img[src="static/common/Poppy1.png"] {
   margin-right: 10px;
 }
 
+.forum-post__movie-vote {
+  background: #1f2333 !important;
+}
+
+.spoiler {
+  background-color: #070b16 !important;
+  color: #070b16 !important;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.spoiler:hover {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
 .forum-post__movie-vote img {
-  width: 20px;
-  height: 20px;
+  width: 20px !important;
+  height: 20px !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 20px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg")
     no-repeat center center;
   -webkit-background-size: contain;
@@ -4304,17 +4310,6 @@ img[title="Rotten Tomatoes"] {
 
 .last5-movies__link {
   border-radius: 5px !important;
-}
-
-.user-recommendation__image:hover,
-.last5-movies__link:hover {
-  -webkit-transform: scale(1.04, 1.04);
-  -moz-transform: scale(1.04, 1.04);
-  -ms-transform: scale(1.04, 1.04);
-  -o-transform: scale(1.04, 1.04);
-  transform: scale(1.04, 1.04);
-  -webkit-box-shadow: 0 0 40px #31517d;
-  box-shadow: 0 0 40px #31517d;
 }
 
 .user-recommendation__body {
@@ -4635,14 +4630,6 @@ img[src="static/common/flags/vietnam.gif"] {
   border-radius: 5px;
 }
 
-.last5-movies__link:hover {
-  -webkit-transform: scale(1.04, 1.04);
-  -moz-transform: scale(1.04, 1.04);
-  -ms-transform: scale(1.04, 1.04);
-  -o-transform: scale(1.04, 1.04);
-  transform: scale(1.04, 1.04);
-}
-
 .last5-movies__show-all-row {
   text-align: right;
 }
@@ -4814,11 +4801,11 @@ img[alt="Default avatar"] {
   right: 0;
   height: 2px;
   background-color: #4281da;
-  -webkit-transform-origin: bottom right;
-  -moz-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  -o-transform-origin: bottom right;
-  transform-origin: bottom right;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -4837,11 +4824,11 @@ img[alt="Default avatar"] {
 }
 
 .forum-post__heading .username:hover:before {
-  -webkit-transform-origin: bottom left;
-  -moz-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  -o-transform-origin: bottom left;
-  transform-origin: bottom left;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -4867,6 +4854,9 @@ img[src="static/forums/locked_read.png"],
 }
 
 .forum-topic--is-read {
+  display: inline-block;
+  width: 11px !important;
+  padding: 11px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg")
     no-repeat left center;
   -webkit-background-size: contain;
@@ -4875,6 +4865,9 @@ img[src="static/forums/locked_read.png"],
 }
 
 .forum-topic--is-unread {
+  display: inline-block;
+  width: 11px !important;
+  padding: 11px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg")
     no-repeat left center;
   -webkit-background-size: contain;
@@ -4883,6 +4876,9 @@ img[src="static/forums/locked_read.png"],
 }
 
 .forum-topic--is-read-locked-sticky {
+  display: inline-block;
+  width: 10px !important;
+  padding: 10px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
     no-repeat left center;
   -webkit-background-size: contain;
@@ -4891,6 +4887,9 @@ img[src="static/forums/locked_read.png"],
 }
 
 .forum-topic--is-read-sticky {
+  display: inline-block;
+  width: 10px !important;
+  padding: 10px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg")
     no-repeat center center;
   -webkit-background-size: contain;
@@ -4914,6 +4913,9 @@ img[src="static/forums/locked_read.png"] {
 }
 
 .forum-topic--is-unread-locked-sticky {
+  display: inline-block;
+  width: 10px !important;
+  padding: 10px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
     no-repeat center center;
   -webkit-background-size: contain;
@@ -4922,11 +4924,14 @@ img[src="static/forums/locked_read.png"] {
 }
 
 .forum-topic--is-unread-sticky {
+  display: inline-block;
+  width: 9px;
+  padding: 9px !important;
   background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/bc1b070b5b46fc99430891d68be728ef97b93095/icons/topic-sticky-unread.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: contain !important;
+  -o-background-size: contain !important;
+  background-size: contain !important;
 }
 
 .forum-topic--is-unread-locked {
@@ -5034,7 +5039,7 @@ img[src="static/forums/locked_read.png"] {
 }
 
 /****************************************************************************
-    4.0 - Utilities */
+          4.0 - Utilities */
 .hidden {
   display: none;
 }
@@ -5335,7 +5340,7 @@ img[src="static/forums/locked_read.png"] {
   font-weight: 700;
 }
 /****************************************************************************
-        4.1 CSS Animation/Keyframes */
+              4.1 CSS Animation/Keyframes */
 @keyframes jelly-effect {
   0%,
   100% {
@@ -5412,10 +5417,10 @@ img[src="static/forums/locked_read.png"] {
 }
 
 /****************************************************************************
-4.0 - Color Palette */
+      4.0 - Color Palette */
 
 /****************************************************************************
-5.0 - Header */
+      5.0 - Header */
 
 /* User Info Bar */
 .user-info-bar {
@@ -5606,11 +5611,11 @@ img[src="static/forums/locked_read.png"] {
   right: 0;
   height: 2px;
   background-color: #4281da;
-  -webkit-transform-origin: bottom right;
-  -moz-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  -o-transform-origin: bottom right;
-  transform-origin: bottom right;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -5629,11 +5634,11 @@ img[src="static/forums/locked_read.png"] {
 }
 
 .main-menu__link:hover:before {
-  -webkit-transform-origin: bottom left;
-  -moz-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  -o-transform-origin: bottom left;
-  transform-origin: bottom left;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -5644,7 +5649,7 @@ img[src="static/forums/locked_read.png"] {
 .main-menu__link:hover,
 .user-info-bar__link:hover {
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -5652,11 +5657,10 @@ img[src="static/forums/locked_read.png"] {
   .lightbox__shroud,
   .main-menu,
   .search-bar__results,
-  .user-info-bar__drop-down-menu,
   .user-info-bar {
     -webkit-backdrop-filter: blur(10px) !important;
     backdrop-filter: blur(10px) !important;
-    background-color: rgba(7, 11, 22, 0.65) !important;
+    background-color: rgba(7, 11, 22, 0.72) !important;
   }
 }
 
@@ -5759,10 +5763,10 @@ img[src="static/forums/locked_read.png"] {
 }
 
 /****************************************************************************
-6.0 - Body */
+      6.0 - Body */
 
 /************************************************************************
-    6.1 - User Profile */
+          6.1 - User Profile */
 
 /* Awards */
 img[src="static/common/stars/AwardRating.png"] {
@@ -6065,10 +6069,10 @@ img[src="static/common/stars/AwardMetaMeta Awards1.png"] {
 }
 
 /************************************************************************
-    6.2 - Imagery */
+          6.2 - Imagery */
 
 /****************************************************************************
-7.0 - Footer */
+      7.0 - Footer */
 
 .pagination {
   margin: 5px;
