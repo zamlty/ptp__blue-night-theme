@@ -3689,18 +3689,13 @@ th {
 .sidebar-cover-image:hover,
 .user-recommendation__image:hover,
 .last5-movies__link:hover {
-  -webkit-transform: perspective(1000px) rotateY(-10deg) rotateX(5deg)
-    scale(1.04, 1.04) translateY(-15px);
-  -moz-transform: perspective(1000px) rotateY(-10deg) rotateX(5deg)
-    scale(1.04, 1.04) translateY(-15px);
-  -ms-transform: perspective(1000px) rotateY(-10deg) rotateX(5deg)
-    scale(1.04, 1.04) translateY(-15px);
-  -o-transform: perspective(1000px) rotateY(-10deg) rotateX(5deg)
-    scale(1.04, 1.04) translateY(-15px);
-  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg) scale(1.04, 1.04)
-    translateY(-15px);
-  -webkit-box-shadow: 20px 30px 30px rgba(7, 11, 22, 0.9);
-  box-shadow: 20px 30px 30px rgba(7, 11, 22, 0.9);
+  -webkit-transform: scale(1.04, 1.04);
+  -moz-transform: scale(1.04, 1.04);
+  -ms-transform: scale(1.04, 1.04);
+  -o-transform: scale(1.04, 1.04);
+  transform: scale(1.04, 1.04);
+  -webkit-box-shadow: 0 0 40px #31517d;
+  box-shadow: 0 0 40px #31517d;
 }
 
 /* Torrents table icons */
