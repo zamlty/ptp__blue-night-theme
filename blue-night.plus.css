@@ -4075,15 +4075,18 @@ img[src="static/common/Poppy1.png"] {
 }
 
 .spoiler {
-  background-color: #070b16 !important;
-  color: #070b16 !important;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.spoiler:hover {
+span.spoiler {
+  background-color: #070b16 !important;
+  color: #070b16 !important;
+}
+
+span.spoiler:hover {
   background-color: transparent !important;
   color: #ffffff !important;
 }
