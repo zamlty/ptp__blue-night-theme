@@ -425,8 +425,8 @@
 
             const targetNode = document.querySelector('body');
             const mutationConfig = { attributes: true, childList: true, subtree: true };
-            const targetedElements1 = '.cover-movie-list__movie__cover-link, .basic-movie-list__movie__cover, .basic-movie-list__movie__title, .small-cover-movie-list__movie__link, .small-cover-movie-list__movie__link--smaller';
-            const targetedElements2 = '.basic-movie-list__movie__bookmark, .huge-movie-list__movie__bookmark';
+            const targetedElements1 = '.cover-movie-list__movie__cover-link, .basic-movie-list__movie__cover, .basic-movie-list__movie__title, .small-cover-movie-list__movie__link, .small-cover-movie-list__movie__link--smaller, .release-name-movie-list__movie__release-name';
+            const targetedElements2 = '.basic-movie-list__movie__bookmark, .huge-movie-list__movie__bookmark, .release-name-movie-list__movie__action';
 
             // Outer table
             window.addEventListener('load', () => {
