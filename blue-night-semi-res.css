@@ -4084,11 +4084,13 @@ img[src="static/common/Poppy1.png"] {
   transition: all 0.3s;
 }
 
+a.spoiler,
 span.spoiler {
   background-color: #070b16 !important;
   color: #070b16 !important;
 }
 
+a.spoiler:hover,
 span.spoiler:hover {
   background-color: transparent !important;
   color: #ffffff !important;
@@ -5666,7 +5668,7 @@ img[src="static/forums/locked_read.png"] {
   .user-info-bar {
     -webkit-backdrop-filter: blur(10px) !important;
     backdrop-filter: blur(10px) !important;
-    background-color: rgba(7, 11, 22, 0.72) !important;
+    background-color: rgba(7, 11, 22, 0.65) !important;
   }
 }
 
