@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blue Night+
 // @namespace    http*://*passthepopcorn.me/*
-// @version      0.3
+// @version      0.3.1
 // @description  Add some visual enhancements to the Blue Night Stylesheet
 // @author       PuNkFuSe
 // @updateURL    https://raw.githubusercontent.com/datFunc/ptp__blue-night-theme/master/blue_night-plus.js
@@ -425,8 +425,8 @@
 
             const targetNode = document.querySelector('body');
             const mutationConfig = { attributes: true, childList: true, subtree: true };
-            const targetedElements1 = '.cover-movie-list__movie__cover-link, .basic-movie-list__movie__cover, .basic-movie-list__movie__title';
-            const targetedElements2 = '.basic-movie-list__movie__bookmark, .huge-movie-list__movie__bookmark, .small-cover-movie-list__movie__link, .small-cover-movie-list__movie__link--smaller';
+            const targetedElements1 = '.cover-movie-list__movie__cover-link, .basic-movie-list__movie__cover, .basic-movie-list__movie__title, .small-cover-movie-list__movie__link, .small-cover-movie-list__movie__link--smaller';
+            const targetedElements2 = '.basic-movie-list__movie__bookmark, .huge-movie-list__movie__bookmark';
 
             // Outer table
             window.addEventListener('load', () => {
@@ -453,7 +453,7 @@
 
                 // Inner table - Single
                 const getURL = window.location.href;
-                if ((getURL.includes('id='))) {
+                if ((getURL.includes('torrents.php?id='))) {
                     const parentDOM = document.querySelector('.linkbox:first-of-type');
                     const regularBookmarkLinkSingle = parentDOM.getElementsByClassName('linkbox__link')[2];
                     regularBookmarkLinkSingle.addEventListener('click', () => {
