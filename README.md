@@ -1,4 +1,4 @@
-# PTP - Blue Night Stylesheet
+# 🌃 PTP - Blue Night Stylesheet
 A modern flat ui-based stylesheet for PTP.
 
 ### Installation:
