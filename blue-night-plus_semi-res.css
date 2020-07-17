@@ -63,6 +63,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -212,8 +213,6 @@ template {
 *,
 :after,
 :before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -424,9 +423,6 @@ body {
   padding: 0.2rem 0.6rem;
   border: none !important;
   border-radius: 1rem;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -457,9 +453,6 @@ body {
   padding: 0.2rem 0.6rem;
   border: none !important;
   border-radius: 1rem;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -509,9 +502,6 @@ body {
   padding: 0.2rem 0.6rem;
   border: none !important;
   border-radius: 1rem;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -634,9 +624,6 @@ a {
   text-decoration: none;
   color: #a0a6b7;
   border: none;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -666,7 +653,6 @@ blockquote {
   margin: 10px;
   padding: 10px;
   border: 1px dashed #4e556b;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   background-color: #181c27;
 }
@@ -755,7 +741,6 @@ body.lightbox__scroll-lock {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -780,7 +765,6 @@ body.lightbox__scroll-lock {
   text-align: left;
   font-size: 0.75rem;
   line-height: 1rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -789,7 +773,6 @@ body.lightbox__scroll-lock {
 }
 
 .qtip-shadow {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -826,7 +809,6 @@ body.lightbox__scroll-lock {
   max-width: none !important;
   color: #fff;
   border: 1px solid transparent !important;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px !important;
@@ -890,22 +872,14 @@ body.lightbox__scroll-lock {
 a[title="Close"] {
   width: 26px !important;
   height: 26px !important;
-  -webkit-box-sizing: border-box !important;
-  -moz-box-sizing: border-box !important;
   box-sizing: border-box !important;
   padding-left: 26px !important;
   background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/d1f4ef7653822612f9645bc1f72bfd2cfde909fc/icons/close.svg")
     no-repeat center center !important;
-  -webkit-background-size: contain !important;
-  -o-background-size: contain !important;
   background-size: contain !important;
 }
 
 a[title="Close"]:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -976,13 +950,9 @@ a[title="Close"]:hover {
   height: 24px;
   float: left;
   border: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
   margin-bottom: 10px;
   opacity: 0.55;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -1116,8 +1086,6 @@ a[title="BBCode help"] .bbcode-toolbar__button {
 .js-bbcode-toolbar__underline-button,
 .js-bbcode-toolbar__youtube-button,
 a[title="BBCode help"] .bbcode-toolbar__button {
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
   background-position: center center !important;
   width: 12px !important;
@@ -1152,17 +1120,10 @@ a[title="BBCode help"] .bbcode-toolbar__button {
   border: none;
   padding: 2px;
   margin: 2px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .bbcode-toolbar__emoticon-popup-item:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -1233,12 +1194,8 @@ img[src="static/common/smileys/wtf.gif"],
 img[src="static/common/smileys/wub.gif"] {
   width: 16px !important;
   height: 16px !important;
-  -webkit-box-sizing: border-box !important;
-  -moz-box-sizing: border-box !important;
   box-sizing: border-box !important;
   padding-left: 20px !important;
-  -webkit-background-size: contain !important;
-  -o-background-size: contain !important;
   background-size: contain !important;
 }
 
@@ -1425,8 +1382,6 @@ img[src="static/common/smileys/thanks.gif"] {
 img[src="static/common/smileys/thanks.gif"] {
   width: 48px !important;
   height: 48px !important;
-  -webkit-box-sizing: border-box !important;
-  -moz-box-sizing: border-box !important;
   box-sizing: border-box !important;
   padding-left: 48px !important;
 }
@@ -1544,11 +1499,7 @@ img[src="https://passthepopcorn.me/static/common/symbols/disabled.png"],
 img[src="static/common/symbols/disabled.png"],
 img[src="https://passthepopcorn.me/static/common/symbols/warned.png"],
 img[src="static/common/symbols/warned.png"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -1595,12 +1546,8 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
 {
   width: 10px;
   height: 10px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 10px;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -1621,7 +1568,6 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
 
 .staff-toolbar__link--important {
   display: inline-block;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   padding: 4px;
   background-color: #ca2a43;
@@ -1715,18 +1661,10 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
 /************************************************************************
 3.1 - Inputs & Buttons */
 .input-group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .input-group__field {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
@@ -1751,12 +1689,8 @@ input[type="submit"] {
   border: 1px solid transparent;
   padding: 0.4rem 1rem;
   margin: 0.1rem;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   line-height: 1;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -1769,7 +1703,6 @@ input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
   background: #4281da;
-  -webkit-box-shadow: 0 0 40px #4281da;
   box-shadow: 0 0 40px #4281da;
   outline: 0;
 }
@@ -1779,7 +1712,6 @@ input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
   border: 1px solid #88b4f3;
-  -webkit-box-shadow: 0 0 40px #4281da;
   box-shadow: 0 0 40px #4281da;
 }
 
@@ -1821,7 +1753,6 @@ input[value="Delete conversation"]:focus,
 input[value="Defriend"]:hover,
 input[value="Defriend"]:focus {
   background: #da4242;
-  -webkit-box-shadow: 0 0 40px #da4242;
   box-shadow: 0 0 40px #da4242;
 }
 
@@ -1845,17 +1776,14 @@ input[type="reset"]:hover,
 input[type="submit"]:hover,
 input[value="Delete"]:hover {
   cursor: pointer;
+  -webkit-animation: jelly-effect 0.5s;
   animation: jelly-effect 0.5s;
 }
 
 input,
 textarea {
   border: 1px solid transparent;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1870,8 +1798,6 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: -7px 2px;
@@ -1886,8 +1812,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -1899,7 +1823,6 @@ input[type="search"]::-webkit-search-decoration {
 input[type="text"]:focus,
 textarea:focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 40px #4281da;
   box-shadow: 0 0 40px #4281da;
   border: 1px solid #3463a7;
 }
@@ -1922,7 +1845,6 @@ textarea {
   border: 1px solid #3a4056;
   background: #0b0d19;
   padding: 0.2rem 0.4rem;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -1934,7 +1856,6 @@ select option:first-child {
 }
 
 select:focus {
-  -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0;
 }
@@ -1953,8 +1874,23 @@ textarea::-webkit-input-placeholder {
   color: #586278;
 }
 
-input:-moz-placeholder,
-textarea:-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #586278;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #586278;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #586278;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #586278;
 }
 
@@ -1986,7 +1922,6 @@ textarea::placeholder {
   font-size: 11px;
   font-weight: 700;
   padding: 4px 10px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   position: relative;
   background: #d51111;
@@ -2055,7 +1990,6 @@ textarea::placeholder {
     cursor: pointer;
     border: 1px solid var(--bc, var(--border));
     background: var(--b, var(--background));
-    -webkit-transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
     transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
   }
 
@@ -2066,15 +2000,8 @@ textarea::placeholder {
     left: -1px;
     top: -1px;
     position: absolute;
-    -webkit-transition: opacity var(--d-o, 0.2s),
-      -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-    transition: opacity var(--d-o, 0.2s),
-      -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
     transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
       opacity var(--d-o, 0.2s);
-    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
-      opacity var(--d-o, 0.2s),
-      -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
   }
 
   input[type="checkbox"]:checked,
@@ -2148,7 +2075,6 @@ textarea::placeholder {
     border-left: 0;
     left: 5px;
     top: 2px;
-    -webkit-transform: rotate(var(--r, 20deg));
     transform: rotate(var(--r, 20deg));
   }
 
@@ -2168,7 +2094,6 @@ textarea::placeholder {
     width: 15px;
     height: 15px;
     background: var(--ab, var(--border));
-    -webkit-transform: translateX(var(--x, 0));
     transform: translateX(var(--x, 0));
   }
 
@@ -2191,7 +2116,6 @@ textarea::placeholder {
     border-radius: 50%;
     background: var(--active-inner);
     opacity: 0;
-    -webkit-transform: scale(var(--s, 0.7));
     transform: scale(var(--s, 0.7));
   }
 
@@ -2209,7 +2133,6 @@ textarea::placeholder {
   padding: 2.5rem;
   font-size: 0.75rem;
   border-top: none;
-  -webkit-box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.6);
   box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.6);
 }
 
@@ -2230,7 +2153,6 @@ th {
 .table {
   width: 100%;
   margin: 0 0 1em 0;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -2339,13 +2261,11 @@ th {
 
 .table--panel-like > thead > tr > th:first-child {
   border: none;
-  -webkit-border-top-left-radius: 5px !important;
   border-top-left-radius: 5px !important;
 }
 
 .table--panel-like > thead > tr > th:last-child {
   border: none;
-  -webkit-border-top-right-radius: 5px !important;
   border-top-right-radius: 5px !important;
 }
 
@@ -2380,7 +2300,6 @@ th {
 }
 
 #forums .form__input {
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -2403,15 +2322,7 @@ th {
 }
 
 .tabs__bar__list--centered {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -2432,7 +2343,6 @@ th {
   display: block;
   margin-top: 6px;
   border: none;
-  -webkit-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
   padding: 8px;
   background-color: #2f3447;
@@ -2497,9 +2407,7 @@ th {
   margin-right: auto;
   margin-top: 0;
   text-align: center;
-  -webkit-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
-  -webkit-border-top-left-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom: 1px solid #3a4056;
 }
@@ -2513,10 +2421,6 @@ th {
 }
 
 .search-bar__search-field__input::-webkit-input-placeholder {
-  color: #586278;
-}
-
-.search-bar__search-field__input:-moz-placeholder {
   color: #586278;
 }
 
@@ -2552,7 +2456,6 @@ th {
   font-size: 0.8em;
   color: #b5b5b5;
   border: 1px solid #3a4056;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 2px 3px;
   text-align: center;
@@ -2575,7 +2478,6 @@ th {
   border: none;
   z-index: 1000;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -2618,25 +2520,15 @@ th {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 #user .sidebar-cover-image[alt*="avatar"]:hover {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
   transform: scale(1);
   cursor: initial;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -2696,7 +2588,6 @@ th {
   background-color: #2f3547;
   border: none;
   margin-bottom: 1em;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -2743,9 +2634,7 @@ th {
 
 .panel,
 .panel__heading {
-  -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
 
@@ -2774,18 +2663,14 @@ th {
   width: 147px;
   height: 220px;
   display: block;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .small-cover-movie-list__movie__link--smaller {
   width: 140px;
   height: 214px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -2795,8 +2680,6 @@ th {
   right: 5px;
   top: 5px;
   background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
-  -webkit-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 20px;
   height: 20px;
@@ -2818,13 +2701,8 @@ th {
 
 .basic-movie-list__movie__cover {
   width: 116px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -2839,8 +2717,6 @@ th {
   right: 3px;
   top: 3px;
   background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
-  -webkit-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 20px;
   height: 20px;
@@ -2888,9 +2764,6 @@ th {
   padding: 0.2rem 0.6rem;
   border-radius: 1rem;
   margin-bottom: 0.1rem;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -2914,9 +2787,6 @@ th {
   margin: 0.1rem 0 0;
   border: 1px solid #3a4055;
   border-radius: 2.5px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -2963,9 +2833,7 @@ th {
 }
 
 .cover-movie-list {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: space-evenly;
@@ -2992,16 +2860,9 @@ th {
   display: block;
   width: 191px;
   height: 296px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(7, 11, 22, 0.55);
   box-shadow: 0 0.5rem 1rem rgba(7, 11, 22, 0.55);
-  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -3016,7 +2877,6 @@ th {
 .cover-movie-list__movie__undercover {
   padding: 0.5rem;
   background: 0 0;
-  -webkit-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
 }
 
@@ -3032,7 +2892,6 @@ th {
   max-width: 113px;
   white-space: nowrap;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
@@ -3057,7 +2916,6 @@ th {
 .cover-movie-list__movie__rating-and-tags {
   margin-top: 0.2rem;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -3084,8 +2942,6 @@ th {
   right: 5px;
   top: 5px;
   background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
-  -webkit-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 20px;
   height: 20px;
@@ -3111,9 +2967,7 @@ th {
   display: block;
   height: 360px;
   width: 256px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -3123,8 +2977,6 @@ th {
   right: 3px;
   top: 3px;
   background-image: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/seen.svg");
-  -webkit-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   width: 20px;
   height: 20px;
@@ -3198,14 +3050,10 @@ th {
 {
   width: 42px;
   height: 42px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 42px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/imdb-logo.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -3215,8 +3063,6 @@ th {
 {
   width: 32px;
   height: 32px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 32px;
 }
@@ -3225,8 +3071,6 @@ th {
 {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/metacritic-logo.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -3234,8 +3078,6 @@ th {
 {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rt_alt.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -3243,14 +3085,10 @@ th {
 img[src="static/common/ratings/x4_ptp.png"] {
   width: 28px !important;
   height: 28px !important;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 28px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -3307,12 +3145,7 @@ img[src="static/common/ratings/x4_ptp.png"] {
 .sidebar-cover-image:hover,
 .user-recommendation__image:hover,
 .last5-movies__link:hover {
-  -webkit-transform: scale(1.04, 1.04);
-  -moz-transform: scale(1.04, 1.04);
-  -ms-transform: scale(1.04, 1.04);
-  -o-transform: scale(1.04, 1.04);
   transform: scale(1.04, 1.04);
-  -webkit-box-shadow: 0 0 40px #31517d;
   box-shadow: 0 0 40px #31517d;
 }
 
@@ -3326,10 +3159,6 @@ img[src="static/common/symbols/settings.png"] {
 
 #browse_settings:hover,
 img[src="static/common/symbols/settings.png"]:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
   transform: rotate(360deg);
   -webkit-filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
   filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
@@ -3363,12 +3192,8 @@ img[title="Seeders"],
 img[title="Leechers"] {
   width: 14px;
   height: 14px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 14px;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -3378,21 +3203,16 @@ img[title="Leechers"] {
   margin: 10px;
   padding: 10px;
   border: 1px dashed #4a4e5b;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
 img[src="static/common/symbols/uploader.png"] {
   width: 12px;
   height: 12px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 12px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -3487,7 +3307,6 @@ img[src="static/common/symbols/uploader.png"] {
 
 .movie-page__trailer {
   margin-bottom: 14px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -3554,7 +3373,6 @@ img[src="static/common/symbols/uploader.png"] {
   cursor: pointer;
   width: 100%;
   border: 1px solid #3a4055;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -3562,30 +3380,21 @@ img[src="static/common/symbols/uploader.png"] {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
   width: 50px;
   height: 50px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 50px;
   background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/bc1b070b5b46fc99430891d68be728ef97b93095/icons/play-trailer.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
   opacity: 0.9;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .movie-tooltip__trailer__play:hover {
   opacity: 1;
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
   transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -3654,12 +3463,8 @@ img[src="https://passthepopcorn.me/static/common/x.png"]
 {
   width: 12px !important;
   height: 12px !important;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 12px !important;
-  -webkit-background-size: cover !important;
-  -o-background-size: cover !important;
   background-size: cover !important;
 }
 
@@ -3681,14 +3486,10 @@ img[src="https://passthepopcorn.me/static/common/x.png"]
 img[src="static/common/Poppy1.png"] {
   width: 70px;
   height: 70px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 70px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/poppy.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
   margin-right: 10px;
 }
@@ -3702,22 +3503,15 @@ img[src="static/common/Poppy1.png"] {
 .forum-post__movie-vote img {
   width: 16px !important;
   height: 16px !important;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 20px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
   margin-right: 0.2rem;
 }
 
 .spoiler {
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -3769,11 +3563,7 @@ img[title="Rotten Tomatoes"] {
 #movie-ratings-table img[src="static/common/ratings/x3_tomatoes.png"],
 img[title="Rotten Tomatoes"],
 #movie-ratings-table img[src="static/common/ratings/x4_ptp.png"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -3821,17 +3611,10 @@ img[title="Rotten Tomatoes"] {
 .star-rating--popup-starter,
 .star-rating-container,
 .star-rating-container--big {
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .star-rating--popup-starter:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -3906,15 +3689,7 @@ img[title="Rotten Tomatoes"] {
 }
 
 .user-recommendation {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -moz-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -3928,13 +3703,8 @@ img[title="Rotten Tomatoes"] {
 
 .user-recommendation__image {
   max-width: 64px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -3943,10 +3713,6 @@ img[title="Rotten Tomatoes"] {
 }
 
 .user-recommendation__body {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
@@ -4011,12 +3777,8 @@ img[src="static/common/flags/ukraine.png"],
 img[src="static/common/flags/vietnam.gif"] {
   width: 20px;
   height: 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 20px;
-  -webkit-background-size: contain !important;
-  -o-background-size: contain !important;
   background-size: contain !important;
   vertical-align: bottom;
 }
@@ -4253,10 +4015,7 @@ img[src="static/common/flags/vietnam.gif"] {
   margin-bottom: 5px;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -4276,7 +4035,6 @@ img[src="static/common/flags/vietnam.gif"] {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-bottom: 10px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -4299,9 +4057,7 @@ img[src="static/common/flags/vietnam.gif"] {
 .forum-post__heading {
   background-color: rgba(7, 11, 22, 0.9);
   padding: 7px;
-  -webkit-border-top-left-radius: 5px;
   border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
 
@@ -4346,14 +4102,10 @@ img[src="static/common/flags/vietnam.gif"] {
 img[alt="Default avatar"] {
   width: 150px;
   height: 150px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 150px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/imgs/defualt_avatar_colored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -4455,38 +4207,13 @@ img[alt="Default avatar"] {
   right: 0;
   height: 2px;
   background-color: #4281da;
-  -webkit-transform-origin: center;
-  -moz-transform-origin: center;
-  -ms-transform-origin: center;
-  -o-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  -o-transition: -o-transform 0.3s ease;
-  -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
-  -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease,
-    -moz-transform 0.3s ease, -o-transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease,
-    -moz-transform 0.3s ease, -o-transform 0.3s ease;
 }
 
 .forum-post__heading .username:hover:before {
-  -webkit-transform-origin: center;
-  -moz-transform-origin: center;
-  -ms-transform-origin: center;
-  -o-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -4501,8 +4228,6 @@ img[src="static/forums/locked_read.png"],
 .forum-topic--is-unread-sticky {
   width: 30px;
   height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 30px;
 }
@@ -4513,8 +4238,6 @@ img[src="static/forums/locked_read.png"],
   padding: 11px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-read.svg")
     no-repeat left center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -4524,8 +4247,6 @@ img[src="static/forums/locked_read.png"],
   padding: 11px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg")
     no-repeat left center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -4535,8 +4256,6 @@ img[src="static/forums/locked_read.png"],
   padding: 10px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
     no-repeat left center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -4546,8 +4265,6 @@ img[src="static/forums/locked_read.png"],
   padding: 10px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-read.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -4555,8 +4272,6 @@ img[src="static/forums/locked_read.png"],
 img[src="static/forums/locked_read.png"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-read.svg")
     no-repeat left center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -4572,8 +4287,6 @@ img[src="static/forums/locked_read.png"] {
   padding: 10px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -4583,8 +4296,6 @@ img[src="static/forums/locked_read.png"] {
   padding: 9px !important;
   background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/bc1b070b5b46fc99430891d68be728ef97b93095/icons/topic-sticky-unread.svg")
     no-repeat center center;
-  -webkit-background-size: contain !important;
-  -o-background-size: contain !important;
   background-size: contain !important;
 }
 
@@ -4593,7 +4304,6 @@ img[src="static/forums/locked_read.png"] {
   height: 32px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-locked-unread.svg")
     no-repeat center center;
-  -o-background-size: contain;
   background-size: contain;
   -webkit-background-size: contain;
 }
@@ -4606,23 +4316,15 @@ img[src="static/forums/locked_read.png"] {
   float: left;
   width: 15px;
   height: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-right.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
   margin-left: 5px;
 }
 
 .forum-topic__go-to-last-read:hover {
-  -webkit-transform: translate(3px);
-  -moz-transform: translate(3px);
-  -ms-transform: translate(3px);
-  -o-transform: translate(3px);
   transform: translate(3px);
   -webkit-filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
   filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
@@ -4631,14 +4333,10 @@ img[src="static/forums/locked_read.png"] {
 .view_post {
   width: 12px !important;
   height: 12px !important;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 12px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/view-post.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -4910,12 +4608,10 @@ img[src="static/forums/locked_read.png"] {
 }
 
 .alert {
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 7px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -4950,20 +4646,8 @@ img[src="static/forums/locked_read.png"] {
 }
 
 .alert--centered-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -4973,7 +4657,6 @@ img[src="static/forums/locked_read.png"] {
   padding: 0.2em;
   font-weight: 700;
   text-align: center;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   background-color: #c8af4b;
   border: 1px solid #ceb85f;
@@ -4995,6 +4678,24 @@ img[src="static/forums/locked_read.png"] {
 }
 /****************************************************************************
 4.1 CSS Animation/Keyframes */
+@-webkit-keyframes jelly-effect {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
 @keyframes jelly-effect {
   0%,
   100% {
@@ -5015,34 +4716,6 @@ img[src="static/forums/locked_read.png"] {
 }
 
 @keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes flickerAnimation {
   0% {
     opacity: 1;
   }
@@ -5088,7 +4761,6 @@ img[src="static/forums/locked_read.png"] {
   color: #fff;
   z-index: 20;
   font-size: 0.75rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -5099,17 +4771,11 @@ img[src="static/forums/locked_read.png"] {
 .user-info-bar__link {
   text-decoration: none;
   color: #949aac;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .user-info-bar__item--drop-down-menu-opener a:hover,
 #nav_more .user-info-bar__link:hover:after {
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -5141,8 +4807,6 @@ img[src="static/forums/locked_read.png"] {
   text-shadow: 0 0 4px #79f725, 0 0 10px #25ef61, 0 0 20px #5dec32,
     0 0 30px #32ec40, 0 0 40px #5dec32, 0 0 55px #5dec32, 0 0 75px #5dec32;
   -webkit-animation: flickerAnimation 3s infinite;
-  -moz-animation: flickerAnimation 3s infinite;
-  -o-animation: flickerAnimation 3s infinite;
   animation: flickerAnimation 3s infinite;
 }
 
@@ -5176,7 +4840,6 @@ img[src="static/forums/locked_read.png"] {
   margin: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -5198,9 +4861,6 @@ img[src="static/forums/locked_read.png"] {
 
 .user-info-bar__item--drop-down-menu-opener a {
   color: #949aac;
-  -webkit-transition: all 0s;
-  -o-transition: all 0s;
-  -moz-transition: all 0s;
   transition: all 0s;
 }
 
@@ -5232,7 +4892,6 @@ img[src="static/forums/locked_read.png"] {
   font-size: 10pt;
   text-align: left;
   z-index: 7;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -5263,38 +4922,13 @@ img[src="static/forums/locked_read.png"] {
   right: 0;
   height: 2px;
   background-color: #4281da;
-  -webkit-transform-origin: center;
-  -moz-transform-origin: center;
-  -ms-transform-origin: center;
-  -o-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  -o-transition: -o-transform 0.3s ease;
-  -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
-  -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease,
-    -moz-transform 0.3s ease, -o-transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease,
-    -moz-transform 0.3s ease, -o-transform 0.3s ease;
 }
 
 .main-menu__link:hover:before {
-  -webkit-transform-origin: center;
-  -moz-transform-origin: center;
-  -ms-transform-origin: center;
-  -o-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -5303,7 +4937,7 @@ img[src="static/forums/locked_read.png"] {
   color: #ffffff;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .qtip-ptp,
   .lightbox__shroud,
   .main-menu,
@@ -5335,44 +4969,6 @@ img[src="static/forums/locked_read.png"] {
   font-size: 6rem;
   text-align: center !important;
   background-color: #4281da;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(4%, #e66534),
-    color-stop(19%, #e69734),
-    color-stop(39%, #e2d956),
-    color-stop(60%, #62e080),
-    color-stop(80%, #d195cb),
-    to(#e646dd)
-  );
-  background-image: -webkit-linear-gradient(
-    left,
-    #e66534 4%,
-    #e69734 19%,
-    #e2d956 39%,
-    #62e080 60%,
-    #d195cb 80%,
-    #e646dd 100%
-  );
-  background-image: -moz-linear-gradient(
-    left,
-    #e66534 4%,
-    #e69734 19%,
-    #e2d956 39%,
-    #62e080 60%,
-    #d195cb 80%,
-    #e646dd 100%
-  );
-  background-image: -o-linear-gradient(
-    left,
-    #e66534 4%,
-    #e69734 19%,
-    #e2d956 39%,
-    #62e080 60%,
-    #d195cb 80%,
-    #e646dd 100%
-  );
   background-image: linear-gradient(
     90deg,
     #e66534 4%,
@@ -5385,16 +4981,15 @@ img[src="static/forums/locked_read.png"] {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-filter: brightness(110%);
   filter: brightness(110%);
   text-shadow: 0 0 15px rgba(230, 101, 52, 0.55);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .site-logo__link:hover:after {
   text-shadow: 0 0 25px rgba(230, 101, 52, 0.72);
+  -webkit-filter: brightness(120%);
   filter: brightness(120%);
 }
 
@@ -5422,266 +5017,190 @@ img[src="static/forums/locked_read.png"] {
 img[src="static/common/stars/AwardRating.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-colored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/NoAwardRating.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/popcorn-uncolored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardUploads.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardMetaUploads.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-met.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/NoAwardUploads.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-uncolored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardDownloads.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardMetaDownloads.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-met.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/NoAwardDownloads.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-down-uncolored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardData Transfer.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardMetaData Transfer.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-met.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/NoAwardData Transfer.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/two-way-arrows-uncolored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardRequests.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-colored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardMetaRequests.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-met.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/NoAwardRequests.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/requests-meta-uncolored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardChat.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-colored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardMetaChat.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-met.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/NoAwardChat.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/chat-uncolored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/NoAwardMeta Awards.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-uncolored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
 img[src="static/common/stars/AwardMetaMeta Awards1.png"] {
   width: 17px;
   height: 17px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-colored.svg")
     no-repeat center center;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
   background-size: contain;
 }
 
@@ -5784,9 +5303,7 @@ body {
 }
 
 #torrents-movie-view > div {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -5797,7 +5314,6 @@ body {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -5806,7 +5322,6 @@ body {
   width: 100%;
   padding-right: 5px;
   padding-left: 5px;
-  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -5816,15 +5331,12 @@ body {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
 .small-cover-movie-list__container {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
@@ -5880,13 +5392,11 @@ body {
   }
 
   .main-column {
-    -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
   .sidebar {
-    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
@@ -5914,13 +5424,11 @@ body {
   }
 
   .main-column {
-    -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
   .sidebar {
-    -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
@@ -5993,16 +5501,13 @@ body {
 }
 
 #wrapper {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
 
 #content {
-  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
   position: relative;
@@ -6016,7 +5521,6 @@ body {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
-  -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -6084,8 +5588,5 @@ body {
 #wrapper {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
