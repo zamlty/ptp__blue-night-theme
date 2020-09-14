@@ -861,7 +861,8 @@ body.lightbox__scroll-lock {
 #simplemodal-container a.modalCloseImg {
   background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/d1f4ef7653822612f9645bc1f72bfd2cfde909fc/icons/close.svg")
     no-repeat center center !important;
-  max-width: 25px;
+  background-size: 26px !important;
+  max-width: 26px;
   display: inline;
   z-index: 3200;
   position: absolute;
@@ -1504,6 +1505,20 @@ img[src="static/common/symbols/warned.png"] {
   background-size: contain;
 }
 
+.golden-popcorn-character {
+  display: block;
+  margin: 0 auto;
+  text-indent: -3000px;
+  font: 0/0 Arial;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0);
+  width: 12px;
+  height: 12px;
+  background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg")
+    no-repeat center center;
+  background-size: 12px;
+}
+
 /* Rank Icons */
 img[src="static/common/symbols/Rank1.png"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/rank-1.svg")
@@ -1728,6 +1743,10 @@ input[type="radio"]:focus {
 #inbox #messageformtable tr td img {
   margin: 0 2.5px;
   vertical-align: middle;
+}
+
+#inbox input[type="submit"] {
+  margin: 0.55rem 0.15rem 0.55rem 0;
 }
 
 button[disabled],
@@ -2408,6 +2427,10 @@ th {
   color: #ffffff;
 }
 
+#encodeoffers .l_movie {
+  color: #a0a6b7;
+}
+
 .tags {
   color: #a0a6b7;
 }
@@ -2523,6 +2546,18 @@ th {
   > .search-bar__results__link:hover {
   color: #fff;
   background-color: #4281da;
+}
+
+#log input[type="checkbox"],
+#log select[name="limit"] {
+  vertical-align: text-top;
+  margin-left: 0.55rem;
+}
+
+#log select[name="limit"] {
+  position: relative;
+  top: -6px;
+  margin-right: 0.55rem;
 }
 
 .sidebar {
@@ -3182,7 +3217,8 @@ img[src="static/common/symbols/settings.png"]:hover {
   filter: invert(0) sepia(0) saturate(1) hue-rotate(0) brightness(5);
 }
 
-img[title="Time"] {
+img[title="Time"],
+img[src="static/common/time.png"] {
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/time.svg")
     no-repeat center center;
 }
@@ -3205,6 +3241,7 @@ img[title="Leechers"] {
 #browse_settings,
 img[src="static/common/symbols/settings.png"],
 img[title="Time"],
+img[src="static/common/time.png"],
 img[title="Snatches"],
 img[title="Seeders"],
 img[title="Leechers"] {
@@ -3213,6 +3250,11 @@ img[title="Leechers"] {
   box-sizing: border-box;
   padding-left: 14px;
   background-size: contain;
+}
+
+#bprate img[src="static/common/time.png"] {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Torrent Single Table */
@@ -3379,6 +3421,11 @@ img[src="static/common/symbols/uploader.png"] {
   width: 150px;
   height: 120px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.movie-tooltip__trailer:hover {
+  opacity: 0.75;
 }
 
 .movie-tooltip__trailer__image {
@@ -3404,11 +3451,11 @@ img[src="static/common/symbols/uploader.png"] {
   background: url("https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/bc1b070b5b46fc99430891d68be728ef97b93095/icons/play-trailer.svg")
     no-repeat center center;
   background-size: contain;
-  opacity: 0.9;
+  opacity: 0.75;
   transition: all 0.3s;
 }
 
-.movie-tooltip__trailer__play:hover {
+.movie-tooltip__trailer:hover .movie-tooltip__trailer__play {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.1);
 }
@@ -3524,18 +3571,17 @@ img[src="static/common/Poppy1.png"] {
   margin-right: 0.2rem;
 }
 
-.spoiler {
+.spoiler *,
+span.spoiler,
+a.spoiler {
+  background-color: #070b16;
+  color: #070b16;
   transition: all 0.3s;
 }
 
-a.spoiler,
-span.spoiler {
-  background-color: #070b16 !important;
-  color: #070b16 !important;
-}
-
-a.spoiler:hover,
-span.spoiler:hover {
+.spoiler:hover,
+span.spoiler:hover *,
+a.spoiler:hover * {
   background-color: transparent !important;
   color: #ffffff !important;
 }
@@ -3614,7 +3660,7 @@ img[title="Rotten Tomatoes"] {
   padding: 0;
   list-style: none;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-rating.svg");
-  background-size: contain;
+  background-size: 17px;
   background-position: left center;
   background-repeat: repeat-x;
   cursor: pointer;
@@ -3657,7 +3703,7 @@ img[title="Rotten Tomatoes"] {
 .star-rating__current-user {
   height: 17px;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-rating-user.svg");
-  background-size: contain;
+  background-size: 17px;
   background-position: left center;
   background-repeat: repeat-x;
   z-index: 19;
@@ -3666,7 +3712,7 @@ img[title="Rotten Tomatoes"] {
 .star-rating__site {
   height: 17px !important;
   background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/star-rating-site.svg");
-  background-size: contain;
+  background-size: 17px;
   background-position: left center;
   background-repeat: repeat-x;
   z-index: 18;
@@ -4075,16 +4121,19 @@ img[src="static/common/flags/vietnam.gif"] {
 }
 
 .forum-post__heading .l_movie,
-.forum-post__heading .username {
+.forum-post__heading .username,
+.panel .username {
   color: #fff;
   margin-right: 2px;
+  font-weight: 700;
 }
 
 .forum-post__heading .time {
   color: #949aac;
 }
 
-.forum-post__heading img {
+.forum-post__heading img,
+.panel .username + img {
   margin: 0 2.5px;
 }
 
@@ -4620,64 +4669,37 @@ img[src="static/forums/locked_read.png"] {
   margin-bottom: 0.25em;
 }
 
-.alert {
-  border-radius: 4px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 7px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-.alert--warning {
-  background-color: #eedc94;
-  color: #404040;
-}
-
-.alert--error {
-  background-color: #ca2a43;
-  color: #fff;
-}
-
-.alert__link {
-  color: #404040;
-  font-weight: 700;
-}
-
-.alert__link:hover {
-  color: #404040;
-  text-decoration: underline;
-}
-
-.alert--error .alert__link {
-  color: #fff;
-  font-weight: 700;
-}
-
-.alert--error .alert__link:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
 .alert--centered-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.alert-bar {
-  width: 400px;
-  margin: 5px auto;
-  padding: 0.2em;
+.alert,
+.alert-bar,
+.alert--warning,
+.alert--error {
+  max-width: 512px;
+  padding: 0.75rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-align: center;
   border-radius: 4px;
-  background-color: #c8af4b;
-  border: 1px solid #ceb85f;
-  font-size: 0.75rem;
+  background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg")
+      no-repeat 20px center,
+    rgba(7, 11, 22, 0.65);
+  background-size: 20px;
+  border: none;
+  margin: 0 auto 1.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .alert-bar__link {
-  color: #202020;
+  color: #a0a6b7;
+}
+
+.alert__link:hover {
+  color: #ffffff;
 }
 
 .linkbox {
@@ -4906,6 +4928,7 @@ img[src="static/forums/locked_read.png"] {
   text-align: left;
   z-index: 7;
   border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .main-menu__list {
