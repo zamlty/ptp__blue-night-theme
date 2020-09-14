@@ -1505,7 +1505,7 @@ img[src="static/common/symbols/warned.png"] {
 }
 
 .golden-popcorn-character {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   text-indent: -3000px;
   font: 0/0 Arial;
@@ -2418,10 +2418,6 @@ th {
 }
 
 .l_movie {
-  color: #ffffff;
-}
-
-#encodeoffers .l_movie {
   color: #a0a6b7;
 }
 
@@ -3564,19 +3560,38 @@ img[src="static/common/Poppy1.png"] {
   margin-right: 0.2rem;
 }
 
-.spoiler *,
-span.spoiler,
-a.spoiler {
-  background-color: #070b16;
-  color: #070b16;
-  transition: all 0.3s;
+/* Spoiler Tag */
+span.spoiler a {
+  color: black;
 }
 
-.spoiler:hover,
-span.spoiler:hover *,
-a.spoiler:hover * {
+span.spoiler img {
+  visibility: hidden;
+}
+
+span.spoiler-show a {
+  color: #a0a6b7;
+}
+
+span.spoiler-show a:hover {
+  color: #ffffff;
+}
+
+span.spoiler ul {
+  background-color: black;
+}
+
+span.spoiler-show a:hover {
+  color: #fff;
+}
+
+span.spoiler-show img {
+  visibility: visible;
+}
+
+span.spoiler:hover,
+span.spoiler-show * {
   background-color: transparent !important;
-  color: #ffffff !important;
 }
 
 #movie-ratings-table #imdb-title-link img {
