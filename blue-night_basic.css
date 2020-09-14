@@ -1591,7 +1591,7 @@ img[src="https://static.passthepopcorn.me/static/common/symbols/Rank6.png"]
 
 .film-club-discuss-link {
   text-align: center;
-  font-size: 1.25em;
+  font-size: 0.71rem;
   padding-top: 0.5em;
 }
 
@@ -2332,6 +2332,10 @@ th {
   color: #ffffff;
 }
 
+#trumpable .release-name-movie-list__movie__release-name:hover {
+  color: #4281da;
+}
+
 #top10 .table tbody tr td:nth-child(2) {
   max-width: 70px;
   white-space: nowrap;
@@ -2418,7 +2422,11 @@ th {
 }
 
 .l_movie {
-  color: #a0a6b7;
+  color: #ffffff;
+}
+
+.l_movie:hover {
+  color: #4281da;
 }
 
 .tags {
@@ -4698,15 +4706,35 @@ img[src="static/forums/locked_read.png"] {
     rgba(7, 11, 22, 0.65);
   background-size: 20px;
   border: none;
-  margin: 0 auto 1.8rem;
+  margin: 1rem auto 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.alert-bar__link {
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .alert,
+  .alert-bar,
+  .alert--warning,
+  .alert--error {
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    background: url("https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/topic-sticky-unread.svg")
+        no-repeat 20px center,
+      rgba(7, 11, 22, 0.65);
+    background-size: 20px;
+  }
+}
+
+.alert a,
+.alert-bar a,
+.alert--warning a,
+.alert--error a {
   color: #a0a6b7;
 }
 
-.alert__link:hover {
+.alert a:hover,
+.alert-bar a:hover,
+.alert--warning a:hover,
+.alert--error a:hover {
   color: #ffffff;
 }
 
