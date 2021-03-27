@@ -9,7 +9,7 @@
 // @grant        none
 // @match        http*://*passthepopcorn.me/*
 // @run-at       document-body
-// @icon        https://gitcdn.link/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg
+// @icon        https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg
 // ==/UserScript==
 
 // [START - TO-DO] *********************************************************************************
@@ -127,7 +127,7 @@
                 scrollToTop.append(element.imgElement);
                 element.imgElement.classList.add('arrowUpImg');
                 let arrowUpImg = document.querySelector('.arrowUpImg');
-                arrowUpImg.src = 'https://gitcdn.link/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg';
+                arrowUpImg.src = 'https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/arrow-up-white.svg';
                 scrollToTop.addEventListener('click', () => window.scrollTo(0, 0));
                 scrollToTop.addEventListener('mouseover', () => { arrowUpImg.style.opacity = '1' });
                 scrollToTop.addEventListener('mouseout', () => { arrowUpImg.style.opacity = '.55' });
@@ -173,7 +173,7 @@
             initElement();
             element.documentHead.append(element.linkElement);
             let favicon = document.querySelector('.favicon');
-            let faviconImg = 'https://gitcdn.link/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg';
+            let faviconImg = 'https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/post-topic-unread.svg';
             favicon.setAttribute('rel', 'shortcut icon');
             favicon.setAttribute('href', faviconImg);
             favicon.setAttribute('type', 'image/x-icon');
@@ -339,8 +339,8 @@
 
             new Map([
                 ['☐' || '&#9744;', `<img src="https://rawcdn.githack.com/datFunc/ptp__blue-night-theme/baca928290b62658e2d1cb73521351ea9a331ff9/icons/not-approved_alt.svg" class="torrentStatus">`]
-                , ['☑' || '&#9745;', `<img src="https://gitcdn.link/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg" class="torrentStatus">`],
-                ['✿' || '&#10047;', `<img src="https://gitcdn.link/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg" class="torrentStatus">`]
+                , ['☑' || '&#9745;', `<img src="https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/badge-checker.svg" class="torrentStatus">`],
+                ['✿' || '&#10047;', `<img src="https://gitcdn.xyz/repo/datFunc/ptp__blue-night-theme/master/icons/gold-encode-checker.svg" class="torrentStatus">`]
             ]).forEach(replaceUnicodeChars);
         };
 
